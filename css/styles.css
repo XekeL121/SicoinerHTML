@@ -141,11 +141,11 @@ p{
 }
 
 .tarjetas{
-    height: auto !important;
+    height: max-content !important;
     position: unset;    
     overflow: hidden !important;
     justify-content: center !important;
-    align-items: center !important;
+    /* align-items: center !important; */
 }
 
 /* Estilos tabla */
@@ -195,12 +195,13 @@ hr {
 
 
 #total {    
-   border-top: rgb(31 59 117) solid 2px !important;   
+   border-top: rgb(31 59 117) solid 2px !important;
+   border-bottom: none !important;
 } 
 
 #total .celdaPlTotal {    
     color: rgb(31 195 59) !important;   
-    border-bottom: none;
+    border-bottom: none !important;
     opacity: 100;
     line-height: 30px;
     z-index: -1 !important;
@@ -336,7 +337,7 @@ footer{
     }
 
     .tarjetas{
-        height: auto !important; 
+        height: max-content !important;
         min-width: 450px;       
     }    
 
@@ -419,7 +420,7 @@ footer{
 
 @media (max-width: 461px) {    
     .tarjetas{
-        height: auto !important; 
+        height: max-content !important;
         min-width: 350px;       
     }    
     
@@ -456,7 +457,7 @@ footer{
 
     .tarjetas{
         min-width: 300px !important;
-        height: auto !important;             
+        height: max-content !important;            
         padding: 0% !important; 
         margin: 0% !important;          
     }      
@@ -558,6 +559,10 @@ footer{
     color: #fbb03b !important;
 }
 
+.fNaranja{    
+    background-color: #fbb03b !important;
+}
+
 .naranja2{    
     color: #f3cf96 !important;
 }
@@ -572,6 +577,10 @@ footer{
 
 .fondoRojo {
     background-color: rgb(43, 5, 5) !important;
+}
+
+.fondoVerde {
+    background-color: rgb(2, 29, 8) !important;
 }
 
 
