@@ -1,5 +1,4 @@
-<div class="container-full row">  
-    <header class="row justify-content-center azul1 py-2">
+            <header class="row justify-content-center azul1 py-2">
                 <div class="menuResponsive position-absolute text-center my-auto">
                     <img class=" float-end col-2 text-center" src="img/reorder_white_24dp.svg" alt="">
                 </div>
@@ -33,7 +32,8 @@
                             Powel | El oro se desploma tras noticia bla bla | + link + x de eliminar | Aquí deberían ir
                             titulares pudiendo eliminarlos manualmente, por ej.: Banco Central invierte en BTC
                             | A las 17:00h UTC comparece
-                            Powel | El oro se desploma tras noticia bla bla | + link + x de eliminar</span>
+                            Powel | El oro se desploma tras noticia bla bla | + link + x de eliminar
+                        </span>
                     </div>
                 </div>
                 <ul class="subSubMenu d-flex col-12 col-xl-2 col-sm-4 row justify-content-end text-center">
