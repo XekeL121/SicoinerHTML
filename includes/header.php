@@ -9,7 +9,7 @@
                     <ul class="d-flex col-lg-12 justify-content-center">
                         <li class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
                             <img class="icon align-middle" src="img/app_registration_white_24dp.svg" alt="">
-                            <a href="index.php" class="align-middle text-light">Mis portfolios</a>
+                            <a href="index.php" class="align-middle text-light">Portfolios</a>
                         </li>
                         <li class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
                             <img class="icon" src="img/insights_white_24dp.svg" alt="">
