@@ -7,13 +7,13 @@
                 </div>
                 <nav class="col-md-12 col-lg-12 col-xl-6 p-2 text-center">
                     <ul class="d-flex col-lg-12 justify-content-center">
-                        <li href="index.html" class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
+                        <li class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
                             <img class="icon align-middle" src="img/app_registration_white_24dp.svg" alt="">
-                            <span class="align-middle">Mis portfolios</span>
+                            <a href="index.php" class="align-middle text-light">Mis portfolios</a>
                         </li>
-                        <li href="#" class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
+                        <li class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
                             <img class="icon" src="img/insights_white_24dp.svg" alt="">
-                            <span class="align-middle">Operaciones</span>
+                            <a href="operaciones.php" class="align-middle text-light">Operaciones</a>
                         </li>
                         <li href="#" class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
                             <img class="icon" src="img/account_circle_white_24dp.svg" alt="">

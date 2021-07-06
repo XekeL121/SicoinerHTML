@@ -68,7 +68,12 @@ p{
     cursor: pointer;    
 }
 
-.navOferta:hover{
+.navOferta:hover {
+    background-color: rgba(0, 255, 255, 0.096); 
+    border-radius: 5px;
+}
+
+.navOferta:focus {
     background-color: rgba(0, 255, 255, 0.096); 
     border-radius: 5px;
 }
@@ -208,7 +213,7 @@ hr {
 
 .navFila{
     position: absolute;
-    width: 145px;
+   
     float: left !important;
     text-decoration: none; 
     margin-top: -20px !important;
@@ -303,11 +308,37 @@ footer{
 
 /* MEDIA QUERIES */
 
+@media (max-width: 980px) {
+
+    .celdaTop, .celdaPlTotal, .celdaPl{  
+        border-bottom: none !important;
+        font-size: 12px !important;        
+    }
+    
+    #datos .celda {   
+        padding-top: 1px !important;
+        padding-bottom: 1px !important; 
+        font-size: 12px !important;        
+    }
+
+    #total .celda {
+        white-space: nowrap;
+        font-size: 12px;
+
+    }
+
+}
+
 
 @media (max-width: 768px) {
     nav{
         display: none;
     }
+
+    .tarjetas{
+        height: auto !important; 
+        min-width: 450px;       
+    }    
 
     .divLogo img{
         padding-bottom: 10px !important;
@@ -325,7 +356,7 @@ footer{
     }
 
     .celda{
-        font-size: 12px;
+        font-size: 10px;
         text-decoration: none;
     }
 
@@ -333,22 +364,39 @@ footer{
         height: 2px !important;
         width: 25% !important;
         background-color: rgb(19, 236, 56);
-      }
+    }
 
-      #portConfig {
-          padding: 0px !important;
-          margin: 0px !important;
-      }
+    #portConfig {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
 
-      .navFila{    
-        margin-top: -20px !important;
-        margin-left: -120px !important;    
-        }
+    .navFila{    
+    margin-top: -20px !important;
+    margin-left: -120px !important;    
+    }
 
-        .navPort{    
-            margin-top: -25px !important;
-            margin-left: -170px !important;    
-            }
+    .navPort{    
+    margin-top: -25px !important;
+    margin-left: -170px !important;    
+    }
+
+    .celdaTop, .celdaPlTotal, .celdaPl{  
+        border-bottom: none !important;
+        font-size: 11px !important;        
+    }
+    
+    #datos .celda {   
+        padding-top: 1px !important;
+        padding-bottom: 1px !important; 
+        font-size: 11px !important;        
+    }
+    
+    #total .celda {
+        white-space: nowrap;
+        font-size: 11px;
+
+    }
 }
 
 
@@ -372,12 +420,29 @@ footer{
 @media (max-width: 461px) {    
     .tarjetas{
         height: auto !important; 
-        min-width: 300px;       
+        min-width: 350px;       
     }    
     
     .celdaTop{  
         border-bottom: none !important;
-        font-size: 12px !important;        
+        font-size: 9px !important;        
+    }
+
+    .celdaTop, .celdaPlTotal, .celdaPl{  
+        border-bottom: none !important;
+        font-size: 8px !important;        
+    }
+    
+    #datos .celda {   
+        padding-top: 1px !important;
+        padding-bottom: 1px !important; 
+        font-size: 8px !important;        
+    }
+
+    #total .celda {
+        white-space: nowrap;
+        font-size: 8px;
+
     }
 }
 
@@ -390,7 +455,7 @@ footer{
     }    
 
     .tarjetas{
-        min-width: 300px;
+        min-width: 300px !important;
         height: auto !important;             
         padding: 0% !important; 
         margin: 0% !important;          
@@ -406,17 +471,18 @@ footer{
     
     .celdaTop, .celdaPlTotal, .celdaPl{  
         border-bottom: none !important;
-        font-size: 10px !important;        
+        font-size: 8px !important;        
     }
     
     #datos .celda {   
         padding-top: 1px !important;
-        padding-bottom: 1px !important;         
+        padding-bottom: 1px !important; 
+        font-size: 8px !important;        
     }
 
     #total .celda {
         white-space: nowrap;
-        font-size: 9px;
+        font-size: 8px;
 
     }
 
@@ -502,6 +568,10 @@ footer{
 
 .rojoTrade {
     color: rgb(184, 0, 0) !important;
+}
+
+.fondoRojo {
+    background-color: rgb(43, 5, 5) !important;
 }
 
 
