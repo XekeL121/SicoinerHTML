@@ -25,7 +25,7 @@
             ?>
 
             <?php
-                include "includes/operaciones.php";
+                include "includes/historial.php";
             ?>                            
 
             <?php

@@ -13,7 +13,7 @@
                         </li>
                         <li class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
                             <img class="icon" src="img/insights_white_24dp.svg" alt="">
-                            <a href="operaciones.php" class="align-middle text-light">Operaciones</a>
+                            <a href="historial.php" class="align-middle text-light">Historial</a>
                         </li>
                         <li href="#" class="navOferta d-block col-12 col-md-4 p-2 mt-2 text-light text-center">
                             <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
