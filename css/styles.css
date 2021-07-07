@@ -48,9 +48,10 @@ p{
 
 /* botón menú formato móvil */
 .menuResponsive img {
-    width: 53px;
-    margin-right: 20px !important; 
+    width: 35px;
+    margin-right: 25px !important; 
     opacity: 80%;  
+
 }
 
 .menuResponsive img:hover {
@@ -59,7 +60,7 @@ p{
 }
 /* Fin botón menú formato móvil */
 
-.navOferta{
+.navButon{
     font-size: 20px;      
     font-family: 'Rubik', sans-serif;
     white-space: nowrap;
@@ -68,13 +69,27 @@ p{
     cursor: pointer;    
 }
 
-.navOferta:hover {
+.navButon:hover {
     background-color: rgba(0, 255, 255, 0.096); 
     border-radius: 5px;
 }
 
-.navOferta:focus {
+/* .navButon:focus {
     background-color: rgba(0, 255, 255, 0.096); 
+    border-radius: 5px;
+} */
+
+.navAcount{
+    font-size: 20px;      
+    font-family: 'Rubik', sans-serif;
+    white-space: nowrap;
+    margin-right: 15px;
+    margin-left: 15px;    
+    cursor: pointer;    
+}
+
+.navAcount img:hover {
+    color: #fbb03b !important; 
     border-radius: 5px;
 }
 
@@ -152,7 +167,7 @@ p{
 
 hr {
     height: 2px !important;
-    width: 150px !important;
+    width: 250px !important;
     background-color: rgb(19, 236, 56);
 }
 
@@ -236,6 +251,7 @@ hr {
     position: absolute;
     visibility: visible;    
     opacity: 100% !important;   
+    display: block;    
 }
 
 /* menu portfolio */
@@ -363,7 +379,7 @@ footer{
 
     hr {
         height: 2px !important;
-        width: 25% !important;
+        width: 35% !important;
         background-color: rgb(19, 236, 56);
     }
 
@@ -404,8 +420,7 @@ footer{
 
 /* Este media querie es de "MIN-width" */
 @media (min-width: 768px) {
-    .menuResponsive img {        
-        width: 40px;
+    .menuResponsive img {  
         display: none;       
     } 
 
@@ -418,7 +433,12 @@ footer{
 
 
 
-@media (max-width: 461px) {    
+@media (max-width: 461px) {  
+    
+    .divLogo img{
+        padding-bottom: 0px !important;
+    }
+
     .tarjetas{
         height: max-content !important;
         min-width: 350px;       
@@ -445,10 +465,21 @@ footer{
         font-size: 8px;
 
     }
+
+    .menuResponsive img {
+        width: 30px;
+    }
 }
 
 
 @media (max-width: 427px) {  
+
+    .menuResponsive img {
+        margin-right: 15px !important;
+        width: 30px;
+        margin-top: -10px !important;
+    }
+
     footer{    
         width: 100%;        
         bottom: 0 !important;

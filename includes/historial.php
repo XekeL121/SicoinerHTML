@@ -14,7 +14,10 @@
                                         <th class="celdaTop" scope="col">Cant.</th>
                                         <th class="celdaTop" scope="col">Precio</th>
                                         <th class="celdaTop" scope="col">Capital</th>
-                                        <th class="celdaTop">Portfolio</th>                                        
+                                        <th class="celdaTop">Portfolio<img class="rounded mb-2">
+                                        <img class="icon" src="img/arrow_drop_down_18dp.svg" alt="">
+                                        </img>
+                                        </th>                                        
                                         <!-- Botón configuración Portfolio -->
                                         <th class="bMenu mb-5">
                                             <button class="rounded mb-2"><img id="portConfig" class="my-auto p-1"
@@ -31,37 +34,7 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
-                                <tbody class="table fondoRojo">
-                                    <div class="">
-                                        <tr id="datos">
-                                            <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
-                                            <th class="celda opacityOff">Venta</th> 
-                                            <th class="celda">ETH/BTC</th> 
-                                            <th class="celda">200</th> 
-                                            <th class="celda naranja">0.078 btc</th> 
-                                            <th class="celda opacityOff verdeTrade">+480 btc</th>
-                                            <th class="celda">Criptomonedas</th>                                                                                    
-                                            <th class="celda bMenu">
-
-                                                <!-- Botón borrar fila del historial -->
-                                                <button class=""><img src="img/linear_scale_white_24dp.svg" alt=""></button> 
-                                                <ul class="navFila azulOscuro p-2 rounded">
-                                                    <li class="px-2 rounded"><a class="text-light" href="">Unificar con otra operación</a>
-                                                    </li>
-                                                    <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Se modificará el portfolio)</a>
-                                                    </li>
-                                                    
-                                                </ul>                                               
-                                                <!-- Fin botón borrar -->
-
-                                            </th>
-                                        </tr>
-                                        <tr id="salto"></tr>
-                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
-                                    </div>
-                                </tbody>
-                                <!-- Fin fila de datos del activo  -->
+                                
 
                                 <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
                                 <tbody class="table fondoVerde">
@@ -93,7 +66,39 @@
                                         <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
                                     </div>
                                 </tbody>
-                                <!-- Fin fila de datos del activo  -->                               
+                                <!-- Fin fila de datos del activo  -->  
+
+                                <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
+                                <tbody class="table fondoRojo">
+                                    <div class="">
+                                        <tr id="datos">
+                                            <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
+                                            <th class="celda opacityOff">Venta</th> 
+                                            <th class="celda">ETH/BTC</th> 
+                                            <th class="celda">200</th> 
+                                            <th class="celda naranja">0.078 btc</th> 
+                                            <th class="celda opacityOff verdeTrade">+480 btc</th>
+                                            <th class="celda">Criptomonedas</th>                                                                                    
+                                            <th class="celda bMenu">
+
+                                                <!-- Botón borrar fila del historial -->
+                                                <button class=""><img src="img/linear_scale_white_24dp.svg" alt=""></button> 
+                                                <ul class="navFila azulOscuro p-2 rounded">
+                                                    <li class="px-2 rounded"><a class="text-light" href="">Unificar con otra operación</a>
+                                                    </li>
+                                                    <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Se modificará el portfolio)</a>
+                                                    </li>
+                                                    
+                                                </ul>                                               
+                                                <!-- Fin botón borrar -->
+
+                                            </th>
+                                        </tr>
+                                        <tr id="salto"></tr>
+                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                    </div>
+                                </tbody>
+                                <!-- Fin fila de datos del activo  -->                             
 
                                     
 
