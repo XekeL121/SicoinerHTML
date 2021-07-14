@@ -107,13 +107,13 @@ p{
     max-width: 98%;   
 }
 
-.submenu li{   
+.submenu a{   
     color: white; 
     cursor: pointer;   
     white-space: nowrap;
 }
 
-.submenu li:hover{   
+.submenu a:hover{   
     background-color: rgb(44 83 178) !important;    
     cursor: pointer;
 }
@@ -139,11 +139,16 @@ p{
 }
 
 
-.subSubMenu > li > img {
-    width: 20px !important;
-    display: inline;
-    margin-bottom: 3px !important;
-    margin-right: 5px !important;
+.subSubMenu > a{
+    margin: 0 auto !important;
+    line-height: 25px !important;
+    
+}
+
+.subsub{   
+   line-height: 25px !important;
+
+   
 }
 /* Fin Cabecera */
 
