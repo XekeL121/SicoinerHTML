@@ -43,8 +43,8 @@
                     </div>
                 </div>
                 <ul class="subSubMenu d-flex col-12 col-xl-2 col-sm-4 row justify-content-end text-center">
-                    <li href="#" class="p-2 col-xl-6 col-sm-6 col-6 azulLogo2"><img class="my-auto align-middle"
-                            src="img/data_usage_white_24dp.svg" alt="">Herramientas</li>
+                    <a href="herramientas.php" class="p-2 col-xl-6 col-sm-6 col-6 azulLogo2"><img class="my-auto align-middle"
+                            src="img/data_usage_white_24dp.svg" alt="">Herramientas</a>
                     <li href="#" class="p-2 col-xl-6 col-sm-6 col-6 azulLogo2"><img class="my-auto align-middle"
                             src="img/notifications_white_24dp.svg" alt="">Notificaciones</li>
                 </ul>
