@@ -352,6 +352,11 @@ footer{
         display: none;
     }
 
+    .subSubMenu{
+        font-size: 14px !important;
+    }
+    
+
     .tarjetas{
         height: max-content !important;
         min-width: 450px;       
@@ -417,6 +422,14 @@ footer{
 }
 
 
+/* @media (max-width: 768px) {
+    .subSubMenu{
+        font-size: 12px !important;
+    }
+
+} */
+
+
 
 /* Este media querie es de "MIN-width" */
 @media (min-width: 768px) {
@@ -434,6 +447,10 @@ footer{
 
 
 @media (max-width: 461px) {  
+
+    .subSubMenu{
+        font-size: 12px !important;
+    }
     
     .divLogo img{
         padding-bottom: 0px !important;
@@ -487,10 +504,11 @@ footer{
     }    
 
     .tarjetas{
-        min-width: 300px !important;
+        min-width: 350px !important;
         height: max-content !important;            
         padding: 0% !important; 
-        margin: 0% !important;          
+        margin: 0% !important; 
+        margin-top: 10px !important;         
     }      
 
     .tabla{
