@@ -420,6 +420,10 @@ footer{
         font-size: 11px;
 
     }
+
+    #nuevoPort {
+        font-size: 12px !important;
+    }
 }
 
 
@@ -487,6 +491,8 @@ footer{
     .menuResponsive img {
         width: 30px;
     }
+
+   
 }
 
 
@@ -551,9 +557,13 @@ footer{
     .navPort{    
         margin-top: -25px !important;
         margin-left: -175px !important;    
-        }
+        }  
 
 }
+
+/* #nuevoPort {
+
+} */
 
 
 

@@ -86,6 +86,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <button id="nuevoPort" type="button" class="azulLogo2 mt-0 px-3 py-1 rounded text-light">Nuevo Portfolio</button>
                     </div>
                     <!-- Aquí termina el portfolio -->
                 </div>

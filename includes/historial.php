@@ -55,7 +55,7 @@
                                                 <ul class="navFila azulOscuro p-2 rounded">
                                                     <li class="px-2 rounded"><a class="text-light" href="">Unificar con otra operación</a>
                                                     </li>
-                                                    <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Se modificará el portfolio)</a>
+                                                    <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Afectará al portfolio)</a>
                                                     </li>
                                                     
                                                 </ul>                                               
@@ -87,7 +87,7 @@
                                                 <ul class="navFila azulOscuro p-2 rounded">
                                                     <li class="px-2 rounded"><a class="text-light" href="">Unificar con otra operación</a>
                                                     </li>
-                                                    <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Se modificará el portfolio)</a>
+                                                    <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Afectará al portfolio)</a>
                                                     </li>
                                                     
                                                 </ul>                                               
