@@ -42,14 +42,14 @@
                         </span>
                     </div>
                 </div>
-                <ul class="subSubMenu d-flex col-12 col-xl-2 col-sm-4 row">
-                    <a href="herramientas.php" class="p-2 col-xl-6 col-sm-6 col-6 azulLogo2 text-center">
+                <ul class="subSubMenu d-flex col-12 col-xl-2 col-sm-4 row azulLogo2">
+                    <a href="calculos.php" class="p-1 col-xl-6 col-sm-6 col-6 text-center">
                         <img class="" src="img/data_usage_white_24dp.svg" alt="">
-                        <span class="subsub text-light">Herramientas</span>
+                        <span class="subsub text-light">Cálculos</span>
                     </a>
-                    <a href="#" class="p-2 col-xl-6 col-sm-6 col-6 azulLogo2 text-center">
+                    <a href="#" class="p-1 col-xl-6 col-sm-6 col-6 text-center">
                         <img class="" src="img/notifications_white_24dp.svg" alt="">
-                        <span class="subsub text-light align-center">Notificaciones</span>
+                        <span class="subsub text-light align-center">Alertas</span>
                     </a>
                 </ul>
             </div>
