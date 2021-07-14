@@ -2,19 +2,19 @@
                     <!-- Aquí comienza el portfolio -->
                     <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-8 col-md-8 col-8 text-center  rounded">
                         <h3 class="mt-3 mb-1 text-light">HISTORIAL</h3>
-                        <hr class="text-light mx-auto rounded bg-white opacityOff mb-1">
-                        <div class="tabla text-light mt-2">
+                        <hr class="text-light mx-auto rounded bg-white opacityOff">
+                        <div class="tabla text-light">
                             <!-- La tabla tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
                             <table class="table mt-1 mb-5 overflow-hidden">
                                 <thead>
                                     <tr>
+                                        <th class="celdaTop">Portfolio<img class="rounded mb-2">
                                         <th class="celdaTop" scope="col">Fecha</th>
                                         <th class="celdaTop" scope="col">Tipo</th>
                                         <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
                                         <th class="celdaTop" scope="col">Precio</th>
                                         <th class="celdaTop" scope="col">Capital</th>
-                                        <th class="celdaTop">Portfolio<img class="rounded mb-2">
                                         <img class="icon" src="img/arrow_drop_down_18dp.svg" alt="">
                                         </img>
                                         </th>                                        
@@ -28,6 +28,7 @@
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Semanas</a></li>
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Meses</a></li>
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Años</a></li>
+                                                <li class="px-5 rounded"><a class="text-light" href=""> Portfolios</a></li>
                                                 <li class="px-5 rounded"><a class="text-warning" href="">Ver completo</a></li>
                                                 <li class="px-5 rounded"><a class="rojoTrade" href="">Borrar historial (Borrará los portfolios)</a></li>
                                             </ul>
@@ -40,13 +41,13 @@
                                 <tbody class="table fondoVerde">
                                     <div class="">
                                         <tr id="datos">
+                                            <th class="celda">Criptomonedas</th>                                                                                      
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
                                             <th class="celda opacityOff">Compra</th> 
                                             <th class="celda">ETH/BTC</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda naranja">0.025 btc</th> 
                                             <th class="celda opacityOff verdeTrade">-1000 eth</th> 
-                                            <th class="celda">Criptomonedas</th>                                                                                      
                                             <th class="celda bMenu">
 
                                                 <!-- Botón borrar fila del historial -->
@@ -72,13 +73,13 @@
                                 <tbody class="table fondoRojo">
                                     <div class="">
                                         <tr id="datos">
+                                            <th class="celda">Criptomonedas</th>                                                                                    
                                             <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
                                             <th class="celda opacityOff">Venta</th> 
                                             <th class="celda">ETH/BTC</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda naranja">0.078 btc</th> 
                                             <th class="celda opacityOff verdeTrade">+480 btc</th>
-                                            <th class="celda">Criptomonedas</th>                                                                                    
                                             <th class="celda bMenu">
 
                                                 <!-- Botón borrar fila del historial -->
@@ -111,10 +112,10 @@
                                     <th class="celdaPlTotal"></th> <!-- Vacía -->
                                     <th class="celdaPlTotal naranja opacityOff"></th>
                                     <!-- Total inversión en el portfolio entero-->
-                                    <th class="celdaPlTotal nowrap">15840 usdt</th>
                                     <!-- Total ganancias en el portfolio entero -->
                                     <!-- Botón + de añadir nueva fila -->
                                     <th class="celdaPlTotal nowrap"></th>
+                                    <th class="celdaPlTotal nowrap">15840 usdt</th>
                                     <th class="bMenu opacityOff"></th>
                                 </tr>
                                 <!-- Final fila de totales del portfolio -->

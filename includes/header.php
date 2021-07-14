@@ -19,7 +19,7 @@
                                 Historial
                             </li>
                         </a>
-                        <a href="#l" class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center">
+                        <a href="#" class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center">
                             <li>
                                 <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
                                 <img class="icon" src="img/arrow_drop_down_white_18dp.svg" alt="">
