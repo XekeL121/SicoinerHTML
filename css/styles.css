@@ -233,7 +233,7 @@ hr {
     float: left !important;
     text-decoration: none; 
     margin-top: -20px !important;
-    margin-left: -85px !important;
+    margin-left: -50px !important;
     z-index: 1 !important;
     opacity: 100% !important;
     visibility: hidden; 
@@ -344,6 +344,7 @@ footer{
 
     }
 
+    
 }
 
 
@@ -395,7 +396,7 @@ footer{
 
     .navFila{    
     margin-top: -20px !important;
-    margin-left: -120px !important;    
+    margin-left: -40px !important;    
     }
 
     .navPort{    
@@ -544,7 +545,7 @@ footer{
 
     .navFila{    
     margin-top: -20px !important;
-    margin-left: -125px !important;    
+    margin-left: -35px !important;    
     }
 
     .navPort{    
