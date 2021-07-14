@@ -1,11 +1,10 @@
 <div class="ofertas p-2 px-5 row text-center justify-content-center overflow-scroll azulFondo">
                     <!-- Aquí comienza el portfolio -->
                     <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-8 col-md-8 col-8 text-center  rounded">
-                        <h3 class="mt-3 mb-1 text-light">HISTORIAL</h3>
+                        <h3 class="mt-3 mb-1 text-light">Historial</h3>
                         <hr class="text-light mx-auto rounded bg-white opacityOff">
                         <div class="tabla text-light">
-                            <!-- La tabla tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
-                            <table class="table mt-1 mb-5 overflow-hidden">
+                           <table class="table mt-1 mb-5 overflow-hidden">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop">Portfolio<img class="rounded mb-2">
@@ -14,7 +13,7 @@
                                         <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
                                         <th class="celdaTop" scope="col">Precio</th>
-                                        <th class="celdaTop" scope="col">Capital</th>
+                                        <th class="celdaTop" scope="col">Capital *</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
                                         <img class="icon" src="img/arrow_drop_down_18dp.svg" alt="">
                                         </img>
                                         </th>                                        
@@ -38,16 +37,16 @@
                                 
 
                                 <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
-                                <tbody class="table fondoVerde">
+                                <tbody class="table fondoRojo">
                                     <div class="">
                                         <tr id="datos">
                                             <th class="celda">Criptomonedas</th>                                                                                      
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
-                                            <th class="celda opacityOff">Compra</th> 
-                                            <th class="celda">ETH/BTC</th> 
+                                            <th class="celda opacityOff">Venta</th> 
+                                            <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
-                                            <th class="celda naranja">0.025 btc</th> 
-                                            <th class="celda opacityOff verdeTrade">-1000 eth</th> 
+                                            <th class="celda naranja">1500 usdt</th> 
+                                            <th class="celda opacityOff verdeTrade">+300,000 usdt</th> 
                                             <th class="celda bMenu">
 
                                                 <!-- Botón borrar fila del historial -->
@@ -70,16 +69,16 @@
                                 <!-- Fin fila de datos del activo  -->  
 
                                 <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
-                                <tbody class="table fondoRojo">
+                                <tbody class="table fondoVerde">
                                     <div class="">
                                         <tr id="datos">
                                             <th class="celda">Criptomonedas</th>                                                                                    
                                             <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
-                                            <th class="celda opacityOff">Venta</th> 
-                                            <th class="celda">ETH/BTC</th> 
+                                            <th class="celda opacityOff">Compra</th> 
+                                            <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
-                                            <th class="celda naranja">0.078 btc</th> 
-                                            <th class="celda opacityOff verdeTrade">+480 btc</th>
+                                            <th class="celda naranja">1000 usdt</th> 
+                                            <th class="celda opacityOff verdeTrade">-200,000 usdt</th>
                                             <th class="celda bMenu">
 
                                                 <!-- Botón borrar fila del historial -->
@@ -115,7 +114,7 @@
                                     <!-- Total ganancias en el portfolio entero -->
                                     <!-- Botón + de añadir nueva fila -->
                                     <th class="celdaPlTotal nowrap"></th>
-                                    <th class="celdaPlTotal nowrap">15840 usdt</th>
+                                    <th class="celdaPlTotal nowrap">300,000 usdt</th>
                                     <th class="bMenu opacityOff"></th>
                                 </tr>
                                 <!-- Final fila de totales del portfolio -->

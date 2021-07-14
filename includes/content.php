@@ -10,8 +10,8 @@
                                     <tr>
                                         <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
-                                        <th class="celdaTop" scope="col">Precio</th>
-                                        <th class="celdaTop" scope="col">Valor</th>
+                                        <th class="celdaTop" scope="col">Precio</th> <!-- Precio medio de compra -->
+                                        <th class="celdaTop" scope="col">Valor *</th> <!-- Que solo se actualice con un icono de actualizar -->
                                         <th class="celdaTop" scope="col">Inversión</th>
                                         <th class="celdaTop" scope="col">P&L | %</th>
                                         <!-- Botón configuración Portfolio - Falta Modal-->
@@ -33,13 +33,13 @@
                                     <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
                                     <div>
                                         <tr id="datos">
-                                            <th class="celda opacityOff" scope="row">ETH/BTC</th>
+                                            <th class="celda opacityOff" scope="row">ETH</th>
                                             <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
-                                            <th class="celda opacityOff">4000</th> <!-- Cantidad de ADA en portfolio -->
-                                            <th class="celda">0.14</th> <!-- Precio medio de compra -->
-                                            <th class="celda">0.90</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda naranja">2840</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff verdeTrade">760 | 350%</th>
+                                            <th class="celda opacityOff">100</th> <!-- Cantidad de ADA en portfolio -->
+                                            <th class="celda">500</th> <!-- Precio medio de compra -->
+                                            <th class="celda">1500</th> <!-- Precio actual de ADA en el mercado -->
+                                            <th class="celda naranja">50,000 usd</th> <!-- Capital total invertido en ADA -->
+                                            <th class="celda opacityOff verdeTrade">100,000 usd | 200%</th>
                                             <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
                                             <th class="celda bMenu">
 
@@ -68,14 +68,14 @@
 
                                     <!-- Fila de totales del portfolio -->
                                     <tr id="total" class="azul2 opacityOff z0">
-                                        <th class="celda nowrap opacityOff" scope="row">Total X activos</th>
+                                        <th class="celda nowrap opacityOff" scope="row">Total "1" activos</th>
                                         <!-- Total de activos, o filas, que sería lo mismo -->
                                         <th class="celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
-                                        <th class="celda naranja opacityOff">10.000</th>
+                                        <th class="celda naranja opacityOff">50,000 usd</th>
                                         <!-- Total inversión en el portfolio entero-->
-                                        <th class="celdaPlTotal nowrap">45.000 | 350%</th>
+                                        <th class="celdaPlTotal nowrap">100,000 usd | 200%</th>
                                         <!-- Total ganancias en el portfolio entero -->
                                         <!-- Botón + de añadir nueva fila -->
                                         <th class="bMenu opacityOff">
