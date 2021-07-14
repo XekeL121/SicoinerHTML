@@ -3,7 +3,7 @@
                     <img class=" float-end col-2 text-center" src="img/reorder_white_24dp.svg" alt="">
                 </div>
                 <div class="divLogo col-xl-3 col-sm-8 col-12 p-2 text-center my-auto">
-                    <img href="index.html" class="text-center" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
+                    <a href="index.php"> <img class="text-center" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner"></a>
                 </div>
                 <nav class="col-md-12 col-lg-12 col-xl-6 p-2 text-center">
                     <ul class="d-flex col-lg-12 justify-content-center">
