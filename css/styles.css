@@ -463,7 +463,7 @@ footer{
 @media (max-width: 461px) {  
 
     .subSubMenu{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     
     .divLogo img{
@@ -567,12 +567,11 @@ footer{
         margin-top: -25px !important;
         margin-left: -175px !important;    
         }  
+   
 
 }
 
-/* #nuevoPort {
 
-} */
 
 
 
