@@ -297,6 +297,10 @@ hr {
     z-index: 1 !important;
 }
 
+#nuevoPort:hover {
+    background-color: #2c53b2 !important;
+}
+
 
 
 
