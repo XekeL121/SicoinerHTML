@@ -21,9 +21,9 @@
                                         <th class="bMenu mb-5">
                                             <button class="rounded mb-1 bg-transparent"><img id="portConfig" class="my-auto p-1"
                                                     src="img/date_range_white_18dp.svg" alt=""></button>
-                                            <ul class="navPort azulOscuro p-2 rounded">
+                                            <ul class="navHistorial azulOscuro p-2 rounded">
                                                 <li class="px-5 rounded"><a class="text-warning op50" href="">Ver en lista</a></li>
-                                            <li class="px-5 rounded"><a class="text-warning" href="">Ver en gráfico</a></li>
+                                                <li class="px-5 rounded"><a class="text-warning" href="">Ver en gráfico</a></li>
                                                 <li class="px-5 rounded"><a class="" href="">Dividir en:</a></li>
                                                 <li class="px-5 rounded"><a class="text-light" href=""> D/S/M/A</a></li>                                                
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Por Portfolios</a></li>

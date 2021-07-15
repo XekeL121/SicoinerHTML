@@ -234,7 +234,7 @@ hr {
     z-index: -1 !important;
  } 
 
-
+ 
 .bMenu:hover{
     opacity: 100% !important;    
 }
@@ -244,7 +244,7 @@ hr {
     float: left !important;
     text-decoration: none; 
     margin-top: -20px !important;
-    margin-left: -50px !important;
+    margin-left: -220px !important;
     z-index: 1 !important;
     /* opacity: 100% !important; */
     visibility: hidden; 
@@ -270,8 +270,8 @@ hr {
     position: absolute;
     float: left !important;
     text-decoration: none; 
-    margin-top: -30px !important;
-    margin-left: -140px !important;
+    margin-top: -20px !important;
+    margin-left: -150px !important;
     z-index: 1 !important;
     opacity: 100% !important;
     visibility: hidden; 
@@ -286,6 +286,58 @@ hr {
 
 
 .button + .navPort:active, button:focus + .navPort {
+    position: absolute;
+    visibility: visible;    
+    opacity: 100% !important;   
+}
+
+
+.navfilaPort{
+    position: absolute;
+    float: left !important;
+    text-decoration: none; 
+    margin-top: -20px !important;
+    margin-left: -55px !important;
+    z-index: 1 !important;
+    opacity: 100% !important;
+    visibility: hidden; 
+    text-align: left;  
+    /* color: white; */   
+}
+
+.navfilaPort li:hover{
+    background-color: rgb(8 27 72) !important;
+    /* color: white !important; */    
+}
+
+
+.button + .navfilaPort:active, button:focus + .navfilaPort {
+    position: absolute;
+    visibility: visible;    
+    opacity: 100% !important;   
+}
+
+
+.navHistorial{
+    position: absolute;
+    float: left !important;
+    text-decoration: none; 
+    margin-top: -20px !important;
+    margin-left: -195px !important;
+    z-index: 1 !important;
+    opacity: 100% !important;
+    visibility: hidden; 
+    text-align: left;  
+    /* color: white; */   
+}
+
+.navHistorial li:hover{
+    background-color: rgb(8 27 72) !important;
+    /* color: white !important; */    
+}
+
+
+.button + .navHistorial:active, button:focus + .navHistorial {
     position: absolute;
     visibility: visible;    
     opacity: 100% !important;   
@@ -391,6 +443,10 @@ footer{
     #costAver input{
         max-width: 130px !important;
     }
+
+    .navPort {
+        margin-left: -170px !important;
+    }
         
 }
 
@@ -439,6 +495,8 @@ footer{
     .calcCost p{
         font-size: 15px !important;
     }
+
+    
 
     
 }
@@ -506,10 +564,20 @@ footer{
     margin-left: -40px !important;    
     }
 
-    .navPort{    
-    margin-top: -25px !important;
-    margin-left: -170px !important;    
+    .navHistorial{    
+    margin-top: -20px !important;
+    margin-left: -210px !important;    
     }
+
+    .navPort{    
+        margin-top: -20px !important;
+        margin-left: -170px !important;    
+        }
+
+    .navHistorial{    
+        margin-top: -20px !important;
+        margin-left: -210px !important;    
+        }
 
     .celdaTop, .celdaPlTotal, .celdaPl{  
         border-bottom: none !important;
@@ -566,10 +634,10 @@ footer{
         display: none;       
     } 
 
-    .navPort{    
+    /* .navPort{    
         margin-top: -25px !important;
         margin-left: -150px !important;    
-        }
+        } */
 
         
 }
@@ -722,8 +790,13 @@ footer{
     }
 
     .navPort{    
-        margin-top: -25px !important;
-        margin-left: -175px !important;    
+        margin-top: -20px !important;
+        margin-left: -180px !important;    
+        }  
+
+    .navHistorial{    
+        margin-top: -20px !important;
+        margin-left: -215px !important;    
         }  
         
     .subsub{
