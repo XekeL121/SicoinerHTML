@@ -49,7 +49,6 @@ p{
 /* botón menú formato móvil */
 .menuResponsive img {
     width: 35px;
-    margin-right: 25px !important; 
     opacity: 80%;  
 
 }
@@ -85,7 +84,7 @@ p{
 .icon{    
     width: 30px;
     margin-top: auto;
-    margin-bottom: auto;   
+    margin-bottom: auto;  
     /* background-color: transparent !important;  */
 }
 
@@ -359,10 +358,6 @@ hr {
     height: 200px !important;
 }
 
-#costAver, .ticker, .calcCost{
-    /* border: 5px red solid !important; */
-}
-
 .calcCost input{
     border: none !important;
     /* border: 1px black solid !important; */
@@ -455,7 +450,7 @@ footer{
 
 @media (max-width: 768px) {
     nav{
-        display: none;
+        display: none !important;
     }
 
     .subSubMenu{
@@ -538,6 +533,23 @@ footer{
     .calcCost p{
         font-size: 12px !important;
     }
+
+    .menuResponsive {
+        position: relative !important;
+             
+    }
+
+    .menuResponsive img{
+        
+        margin-right: -5px !important;
+        
+    }
+
+   
+
+    /* .navButon {
+        font-size: 10px !important;
+    } */
 }
 
 
@@ -551,7 +563,7 @@ footer{
 
 
 /* Este media querie es de "MIN-width" */
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
     .menuResponsive img {  
         display: none;       
     } 
@@ -561,9 +573,21 @@ footer{
         margin-left: -150px !important;    
         }
 }
+
+
+
+
 /* Fin */
 
 
+
+@media (max-width:560px) {
+    nav{
+        display: none; 
+        width: 100% !important;       
+    }
+
+}
 
 @media (max-width: 461px) {  
 
@@ -634,9 +658,10 @@ footer{
 @media (max-width: 427px) {  
 
     .menuResponsive img {
-        margin-right: 15px !important;
+        margin-right: -8px !important;
         width: 30px;
         margin-top: -10px !important;
+        margin-bottom: -10px !important;
     }
 
     footer{    
