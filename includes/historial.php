@@ -22,15 +22,13 @@
                                             <button class="rounded mb-1 bg-transparent"><img id="portConfig" class="my-auto p-1"
                                                     src="img/date_range_white_18dp.svg" alt=""></button>
                                             <ul class="navPort azulOscuro p-2 rounded">
+                                                <li class="px-5 rounded"><a class="text-warning op50" href="">Ver completo</a></li>
+                                            <li class="px-5 rounded"><a class="text-warning" href="">Ver en gráfico</a></li>
                                                 <li class="px-5 rounded"><a class="" href="">Dividir en:</a></li>
-                                                <li class="px-5 rounded"><a class="text-light" href=""> Días</a></li>
-                                                <li class="px-5 rounded"><a class="text-light" href=""> Semanas</a></li>
-                                                <li class="px-5 rounded"><a class="text-light" href=""> Meses</a></li>
-                                                <li class="px-5 rounded"><a class="text-light" href=""> Años</a></li>
-                                                <li class="px-5 rounded"><a class="text-light" href=""> Portfolios</a></li>
+                                                <li class="px-5 rounded"><a class="text-light" href=""> D/S/M/A</a></li>                                                
+                                                <li class="px-5 rounded"><a class="text-light" href=""> Por Portfolios</a></li>
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Exportar</a></li>
-                                                <li class="px-5 rounded"><a class="text-warning" href="">Ver completo</a></li>
-                                                <li class="px-5 rounded"><a class="rojoTrade" href="">Borrar historial (Borrará los portfolios)</a></li>
+                                                <li class="px-5 rounded"><a class="rojoTrade" href="">Borrar historial (Popup)</a></li>
                                             </ul>
                                         </th>
                                     </tr>
@@ -53,8 +51,7 @@
                                                 <!-- Botón borrar fila del historial -->
                                                 <button class=""><img src="img/linear_scale_white_24dp.svg" alt=""></button> 
                                                 <ul class="navFila azulOscuro p-2 rounded">
-                                                    <li class="px-2 rounded"><a class="text-light" href="">Compartir operación*</a> <!-- Se copiaría un texto en diferentes líneas para poder pegar en otra app -->
-                                                    </li>
+                                                    <li class="px-2 rounded"><a class="text-light" href="">Compartir operación*</a></li> <!-- Se copiaría un texto en diferentes líneas para poder pegar en otra app -->
                                                     <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Afectará al portfolio)</a>
                                                     </li>
                                                     

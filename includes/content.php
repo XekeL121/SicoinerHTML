@@ -2,7 +2,7 @@
                     <!-- Aquí comienza el portfolio -->
                     <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-10 col-md-11 col-10 text-center">                       
                         <h3 class="textoAzul mt-3 mb-1 text-light">Criptomonedas</h3>
-                        <hr class="azulLogo text-light mx-auto rounded bg-white opacityOff">
+                        <hr class="azulLogo text-light mx-auto rounded bg-white">
                         <div class="tabla text-light mt-2">
                             <!-- La tabla tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
                             <table class="table mt-1 mb-5 overflow-hidden">
@@ -54,6 +54,7 @@
                                                     </li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Alerta</a></li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Editar</a></li>
+                                                    <li class="px-2 rounded op70"><a class="text-light" href="">Mover a..</a></li>
                                                     <li class="px-2 rounded op70"><a class="text-warning" href="">Eliminar</a>
                                                     </li>
                                                 </ul>
