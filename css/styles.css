@@ -2,7 +2,7 @@
     padding:0% !important;
     margin: 0% !important;
     list-style: none; 
-    /* flex-wrap: wrap; */        
+    flex-wrap: wrap;        
 }
 
 button{
@@ -135,7 +135,7 @@ p{
 .subSubMenu {
     white-space: nowrap !important;
     float: right !important;
-    /* margin: 0px !important; */
+    margin: 0px !important;
 }
 
 
@@ -351,7 +351,7 @@ hr {
     margin-top: -18px !important;
     margin-left: -60px !important;
     z-index: 1 !important;
-    /* opacity: 100% !important; */
+    opacity: 100% !important;
     visibility: hidden; 
     text-align: left;  
     /* color: white; */   
@@ -607,6 +607,20 @@ footer{
 
     .calcCost p{
         font-size: 12px !important;
+    }
+
+    .navAcount{
+        position: absolute;
+        float: left !important;
+        text-decoration: none; 
+        margin-top: -18px !important;
+        margin-left: -100px !important;
+        z-index: 1 !important;
+        opacity: 100 !important;
+        /* visibility: hidden;  */
+        text-align: left;  
+        z-index: 1 !important;
+        /* color: white; */   
     }
 
     
