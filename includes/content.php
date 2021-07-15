@@ -16,7 +16,7 @@
                                         <th class="celdaTop" scope="col">P&L | %</th>
                                         <!-- Botón configuración Portfolio - Falta Modal-->
                                         <th class="bMenu mb-5">
-                                            <button class="rounded mb-2 bg-transparent"><img id="portConfig" class="my-auto p-1"
+                                            <button class="rounded mb-1 bg-transparent"><img id="portConfig" class="my-auto p-1"
                                                     src="img/tune_white_18dp.svg" alt=""></button>
                                             <ul class="navPort azulOscuro p-2 rounded">
                                                 <li class="px-5 rounded"><a class="" href="">Color</a>
@@ -78,7 +78,7 @@
                                         <th class="celdaPlTotal nowrap">100,000 $ | 100%</th>
                                         <!-- Total ganancias en el portfolio entero -->
                                         <!-- Botón + de añadir nueva fila -->
-                                        <th class="bMenu opacityOff">
+                                        <th class="bMenu">
                                             <button><img src="img/add_box_white_24dp.svg" alt=""></button>
                                         </th>
                                     </tr>
@@ -86,7 +86,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <button id="nuevoPort" type="button" class="azulLogo2 mt-0 px-3 py-1 rounded text-light"><img class="p-1 mb-1" src="img/add_circle_white_24dp.svg" alt="">Nuevo Portfolio</button>
+                        <button id="nuevoPort" type="button" class="azulLogo2 pt-1 px-3 rounded text-light"><img class="p-1 mb-1" src="img/add_circle_white_24dp.svg" alt="">Nuevo Portfolio</button>
                     </div>
                     <!-- Aquí termina el portfolio -->
                 </div>

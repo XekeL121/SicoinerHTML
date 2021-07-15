@@ -420,7 +420,7 @@ footer{
     }
 
     .subsub {
-        font-size: 13px !important;
+        font-size: 16px !important;
         
     }
 
@@ -591,6 +591,11 @@ footer{
         width: 100% !important;       
     }
 
+    .bMenu > button > img{
+        width: 20px !important;
+        align-items: center !important;
+    }
+
     
 
 }
@@ -724,7 +729,10 @@ footer{
         margin-top: -25px !important;
         margin-left: -175px !important;    
         }  
-   
+        
+    .subsub{
+        font-size: 18px;
+    }
 
 }
 
