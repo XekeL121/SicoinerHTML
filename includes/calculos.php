@@ -36,19 +36,19 @@
                             <div class="calcCost text-light col-3">
                                 <h5>Cantidad</h5>
                                 <input class="rounded mb-3 mt-2 azul3 naranja text-center" type="text" value="200">
-                                <input class="rounded mb-3 mt-2 text-center" type="text">
+                                <input class="rounded mb-3 mt-2 text-center" type="number">
                                 <h5>Resultado:</h5>
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Precio Medio</h5>
                                 <input class="rounded mb-3 mt-2 azul3 naranja text-center" type="text"  value="500 $">
-                                <input class="rounded mb-3 mt-1 text-center" type="text">
+                                <input class="rounded mb-3 mt-1 text-center" type="number">
                                 <input class="rounded azul3 verdeTrade azulLogo2 text-center" type="text"  value="500 $">
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Inversión</h5>
                                 <input class="rounded mb-3 mt-2 azul3 naranja text-center" type="text"  value="100,000 $">
-                                <input class="rounded mb-3 mt-1 text-center" type="text">
+                                <input class="rounded mb-3 mt-1 text-center" type="number">
                                 <input class="rounded azul3 verdeTrade azulLogo2 text-center" type="text"  value="100,000 $">
                             </div>
                         </div>
@@ -62,17 +62,17 @@
                             <div class="calcCost text-light col-3">
                                 <h5>Cantidad</h5>
                                 
-                                <input class="rounded mb-3 mt-2 text-center" type="text">
+                                <input class="rounded mb-3 mt-2 text-center" type="number">
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Precio Medio</h5>
                                 
-                                <input class="rounded mb-3 mt-2 text-center" type="text">
+                                <input class="rounded mb-3 mt-2 text-center" type="number">
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Inversión</h5>
                                 
-                                <input class="rounded mb-3 mt-2 text-center" type="text">
+                                <input class="rounded mb-3 mt-2 text-center" type="number">
                             </div>
                         </div>
                         
