@@ -1,6 +1,6 @@
-<div class="ofertas p-2 px-5 row text-center justify-content-center overflow-scroll azulFondo">
+                <div class="ofertas p-2 px-5 row text-center justify-content-center overflow-scroll azulFondo">
                     <!-- Aquí comienza el portfolio -->
-                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-8 col-md-8 col-8 text-center  rounded">
+                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-8 col-md-8 col-8 text-center rounded">
                         <h3 class="mt-3 mb-1 text-light">Historial</h3>
                         <hr class="text-light mx-auto rounded bg-white opacityOff">
                         <div class="tabla text-light">
@@ -37,7 +37,7 @@
                                 </thead>
                                 
 
-                                <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
+                                <!-- Fila de datos del activo -->
                                 <tbody class="table fondoRojo">
                                     <div class="">
                                         <tr id="datos">
@@ -46,14 +46,14 @@
                                             <th class="celda opacityOff">Venta</th> 
                                             <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
-                                            <th class="celda naranja">1500 usdt</th> 
-                                            <th class="celda opacityOff verdeTrade">+300,000 usdt</th> 
+                                            <th class="celda naranja">1500 $</th> 
+                                            <th class="celda opacityOff verdeTrade">+300,000 $</th> 
                                             <th class="celda bMenu">
 
                                                 <!-- Botón borrar fila del historial -->
                                                 <button class=""><img src="img/linear_scale_white_24dp.svg" alt=""></button> 
                                                 <ul class="navFila azulOscuro p-2 rounded">
-                                                    <li class="px-2 rounded"><a class="text-light" href="">Unificar con otra operación</a>
+                                                    <li class="px-2 rounded"><a class="text-light" href="">Compartir operación*</a> <!-- Se copiaría un texto en diferentes líneas para poder pegar en otra app -->
                                                     </li>
                                                     <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Afectará al portfolio)</a>
                                                     </li>
@@ -63,13 +63,12 @@
 
                                             </th>
                                         </tr>
-                                        <tr id="salto"></tr>
-                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                        <tr id="salto"></tr> <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
                                     </div>
                                 </tbody>
                                 <!-- Fin fila de datos del activo  -->  
 
-                                <!-- Fila de datos del activo en proceso (maquetación casi terminada) -->
+                                <!-- Fila de datos del activo -->
                                 <tbody class="table fondoVerde">
                                     <div class="">
                                         <tr id="datos">
@@ -78,14 +77,14 @@
                                             <th class="celda opacityOff">Compra</th> 
                                             <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
-                                            <th class="celda naranja">1000 usdt</th> 
-                                            <th class="celda opacityOff verdeTrade">-200,000 usdt</th>
+                                            <th class="celda naranja">1000 $</th> 
+                                            <th class="celda opacityOff verdeTrade">-200,000 $</th>
                                             <th class="celda bMenu">
 
                                                 <!-- Botón borrar fila del historial -->
                                                 <button class=""><img src="img/linear_scale_white_24dp.svg" alt=""></button> 
                                                 <ul class="navFila azulOscuro p-2 rounded">
-                                                    <li class="px-2 rounded"><a class="text-light" href="">Unificar con otra operación</a>
+                                                    <li class="px-2 rounded"><a class="text-light" href="">Compartir operación</a>
                                                     </li>
                                                     <li class="px-2 rounded"><a class="rojoTrade" href="">Eliminar (Afectará al portfolio)</a>
                                                     </li>
@@ -95,8 +94,7 @@
 
                                             </th>
                                         </tr>
-                                        <tr id="salto"></tr>
-                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                        <tr id="salto"></tr> <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
                                     </div>
                                 </tbody>
                                 <!-- Fin fila de datos del activo  -->                             
@@ -115,7 +113,7 @@
                                     <!-- Total ganancias en el portfolio entero -->
                                     <!-- Botón + de añadir nueva fila -->
                                     <th class="celdaPlTotal nowrap"></th>
-                                    <th class="celdaPlTotal nowrap">300,000 usdt</th>
+                                    <th class="celdaPlTotal nowrap">+300,000 $</th>
                                     <th class="bMenu opacityOff"></th>
                                 </tr>
                                 <!-- Final fila de totales del portfolio -->

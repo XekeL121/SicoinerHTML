@@ -36,10 +36,10 @@
                                             <th class="celda opacityOff" scope="row">ETH</th>
                                             <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
                                             <th class="celda opacityOff">100</th> <!-- Cantidad de ADA en portfolio -->
-                                            <th class="celda">500</th> <!-- Precio medio de compra -->
-                                            <th class="celda">1500</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda naranja">50,000 usd</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff verdeTrade">100,000 usd | 200%</th>
+                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
+                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
+                                            <th class="celda naranja">50,000 $</th> <!-- Capital total invertido en ADA -->
+                                            <th class="celda opacityOff verdeTrade">100,000 $ | 200%</th>
                                             <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
                                             <th class="celda bMenu">
 
@@ -52,7 +52,7 @@
                                                     </li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Calcular</a>
                                                     </li>
-                                                    <li class="px-2 rounded op70"><a class="text-light" href="">Alarma</a></li>
+                                                    <li class="px-2 rounded op70"><a class="text-light" href="">Alerta</a></li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Editar</a></li>
                                                     <li class="px-2 rounded op70"><a class="text-warning" href="">Eliminar</a>
                                                     </li>
@@ -73,9 +73,9 @@
                                         <th class="celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
-                                        <th class="celda naranja opacityOff">50,000 usd</th>
+                                        <th class="celda naranja opacityOff">50,000 $</th>
                                         <!-- Total inversión en el portfolio entero-->
-                                        <th class="celdaPlTotal nowrap">100,000 usd | 200%</th>
+                                        <th class="celdaPlTotal nowrap">100,000 $ | 200%</th>
                                         <!-- Total ganancias en el portfolio entero -->
                                         <!-- Botón + de añadir nueva fila -->
                                         <th class="bMenu opacityOff">
