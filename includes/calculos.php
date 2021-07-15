@@ -11,7 +11,7 @@
                                         <label for="disabledSelect" class="form-label text-light col">Portfolio:</label>
                                         <select id="disabledSelect" class="form-select col">
                                             <option>Elegir...</option>
-                                            <option>Criptomonedas</option>
+                                            <option>Portfolio 1</option>
                                         </select>
                                     </div>
                                     <div class="mb-3 col p-3">
@@ -31,7 +31,7 @@
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
-                                <h4 class="op50">Criptomonedas</h4>
+                                <h4 class="op50">Portfolio 1</h4>
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Cantidad</h5>
@@ -83,7 +83,7 @@
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
-                                <h4 class="op50">Criptomonedas</h4>
+                                <h4 class="op50">Portfolio 1</h4>
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Cantidad</h5>

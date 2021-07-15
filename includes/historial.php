@@ -39,7 +39,7 @@
                                 <tbody class="table fondoRojo">
                                     <div class="">
                                         <tr id="datos">
-                                            <th class="celda">Criptomonedas</th>                                                                                      
+                                            <th class="celda">Portfolio 1</th>                                                                                      
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
                                             <th class="celda opacityOff">Venta</th> 
                                             <th class="celda">ETH</th> 
@@ -69,7 +69,7 @@
                                 <tbody class="table fondoVerde">
                                     <div class="">
                                         <tr id="datos">
-                                            <th class="celda">Criptomonedas</th>                                                                                    
+                                            <th class="celda">Portfolio 1</th>                                                                                    
                                             <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
                                             <th class="celda opacityOff">Compra</th> 
                                             <th class="celda">ETH</th> 
