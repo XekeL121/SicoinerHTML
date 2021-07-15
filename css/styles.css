@@ -826,7 +826,7 @@ footer{
 }
 
 .opacityOff {
-    opacity: 0.9 !important;
+    opacity: 100; !important;
 }
 
 .op80 {
@@ -849,3 +849,10 @@ footer{
     z-index: 0;
 }
 
+.cursor-na {
+    cursor: not-allowed !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
