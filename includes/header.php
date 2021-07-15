@@ -4,7 +4,7 @@
                 </div>
 
                 <!-- Menú responsive que aparece a partir de --> 
-                <div class="menuResponsive position-absolute flex-end">
+                <div class="menuResponsive position-absolute">
                     <ul class="d-flex row justify-content-center">
 
                             <a href="index.php" class="navButon col-2 p-2 mt-2 text-light text-center">
@@ -22,7 +22,7 @@
                             <div class="navButon col-2 p-2 mt-2 text-light text-center">
                                 
                                 <!-- Menú desplegable de botón usuario -->
-                                <button class="bg-transparent justify-content-right text-right">                                
+                                <button class="bg-transparent justify-content-center text-center">                                
                                     <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
                                     <img class="icon" src="img/arrow_drop_down_white_18dp.svg" alt="">
                                 </button>
