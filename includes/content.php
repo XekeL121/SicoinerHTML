@@ -3,7 +3,7 @@
                     <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-10 col-md-11 col-10 text-center">                       
                         <h3 class="textoAzul mt-3 mb-1 text-light">Portfolio 1</h3>
                         <hr class="azulLogo text-light mx-auto rounded bg-white">
-                        <div class="tabla text-light mt-2">
+                        <div class="text-light mt-2 w-100">
                             <!-- La tabla tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
                             <table class="table mt-1 mb-5 overflow-hidden">
                                 <thead>
@@ -61,7 +61,7 @@
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class="celda naranja opacityOff">100,000 $</th>
                                         <!-- Total inversión en el portfolio entero-->
-                                        <th class="celdaPlTotal nowrap">100,000 $ | 100%</th>
+                                        <th class="celdaPlTotal nowrap opacityOff">100,000 $ | 100%</th>
                                         <!-- Total ganancias en el portfolio entero -->
                                         <!-- Botón + de añadir nueva fila -->
                                         <th class="bMenu">

@@ -2,7 +2,7 @@
     padding:0% !important;
     margin: 0% !important;
     list-style: none; 
-    flex-wrap: wrap;        
+    /* flex-wrap: wrap; */        
 }
 
 button{
@@ -11,7 +11,7 @@ button{
 }
 
 a, a:hover {
-    list-style: none;
+    /* list-style: none; */
     text-decoration: none;
     /* color: white; */
 }
@@ -26,16 +26,15 @@ html{
 
 /* Fuentes */
 
-h1{
-    font-size: 50px;    
+h1{   
     font-family: 'Signika', sans-serif;
 }
 
 p{
-    flex-wrap: wrap;
-    padding:0% !important;
-    margin: 0% !important;
-    list-style: none; 
+    /* flex-wrap: wrap; */
+    /* padding:0% !important;
+    margin: 0% !important; */
+    /* list-style: none;  */
 }
 
 /* ------ */
@@ -49,13 +48,12 @@ p{
 /* botón menú formato móvil */
 .menuResponsive img {
     width: 35px;
-    opacity: 80%;  
-
+    /* opacity: 80%;  */ 
 }
 
 .menuResponsive img:hover {
     opacity: 100%; 
-    cursor: pointer; 
+   /*  cursor: pointer;  */
 }
 /* Fin botón menú formato móvil */
 
@@ -108,8 +106,8 @@ p{
 }
 
 .avisos{
-    color: #fbb03b;
-    opacity: 80%;
+    /* color: #fbb03b; */
+    /* opacity: 80%; */
     white-space: nowrap;
     overflow: hidden;
     max-height: 400px;
@@ -137,7 +135,7 @@ p{
 .subSubMenu {
     white-space: nowrap !important;
     float: right !important;
-    margin: 0px !important;
+    /* margin: 0px !important; */
 }
 
 
@@ -182,21 +180,20 @@ p{
 
 hr {
     height: 2px !important;
-    width: 250px !important;
-    background-color: rgb(19, 236, 56);
+    width: 250px !important;    
 }
 
-.tabla{
+/* .tabla{
     width: 100% !important;         
-}
+} */
 
-.tabla > table > thead > tr > th{
+.table > thead > tr > th{
     opacity: 90%;
     color: white;
     text-align: center;
 }
 
-.tabla > table > tbody > tr > th{
+.table > tbody > tr > th{
     opacity: 70%;
     color: white;
     text-align: center;
@@ -232,7 +229,7 @@ hr {
 #total .celdaPlTotal {    
     color: rgb(31 195 59) !important;   
     border-bottom: none !important;
-    opacity: 100;
+    /* opacity: 100; */
     line-height: 30px;
     z-index: -1 !important;
  } 
@@ -243,14 +240,13 @@ hr {
 }
 
 .navFila{
-    position: absolute;
-   
+    position: absolute;   
     float: left !important;
     text-decoration: none; 
     margin-top: -20px !important;
     margin-left: -50px !important;
     z-index: 1 !important;
-    opacity: 100% !important;
+    /* opacity: 100% !important; */
     visibility: hidden; 
     text-align: left;  
     /* color: white; */   
@@ -303,7 +299,7 @@ hr {
     margin-top: -18px !important;
     margin-left: -60px !important;
     z-index: 1 !important;
-    opacity: 100% !important;
+    /* opacity: 100% !important; */
     visibility: hidden; 
     text-align: left;  
     /* color: white; */   
@@ -826,7 +822,7 @@ footer{
 }
 
 .opacityOff {
-    opacity: 100% !important;
+    opacity: 100 !important;
 }
 
 .op80 {

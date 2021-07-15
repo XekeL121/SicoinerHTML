@@ -4,7 +4,7 @@
                 </div>
 
                 <!-- Menú responsive que aparece a partir de --> 
-                <div class="menuResponsive position-absolute">
+                <div class="menuResponsive position-absolute op80 cursor-pointer">
                     <ul class="d-flex row justify-content-center">
 
                             <a href="index.php" class="navButon col-2 p-2 mt-2 text-light text-center">
@@ -61,7 +61,7 @@
                 </nav>
             </header>
             <div class="submenu d-flex azul2 my-auto">
-                <div class="avisos col-12 col-xl-10 col-sm-8 my-auto p-2 align-middle">
+                <div class="avisos col-12 col-xl-10 col-sm-8 my-auto p-2 align-middle op80 naranja">
                     <div class="my-auto noticias">
                         <img id="info" class="icon my-auto align-middle" src="img/info_naranja.svg" alt="">
                         <span class="loop">Aquí deberían ir titulares pudiendo eliminarlos manualmente, por ej.: Banco
