@@ -35,7 +35,7 @@
                                         <tr id="datos">
                                             <th class="celda opacityOff" scope="row">ETH</th>
                                             <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
-                                            <th class="celda opacityOff">100</th> <!-- Cantidad de ADA en portfolio -->
+                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
                                             <th class="celda">500 $</th> <!-- Precio medio de compra -->
                                             <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
                                             <th class="celda naranja">50,000 $</th> <!-- Capital total invertido en ADA -->
