@@ -373,6 +373,15 @@ footer{
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1120px) {
+    #costAver input{
+        max-width: 130px !important;
+    }
+        
+}
+
+
+
 @media (max-width: 980px) {
 
     .celdaTop, .celdaPlTotal, .celdaPl{  
@@ -395,6 +404,26 @@ footer{
     .subsub {
         font-size: 13px !important;
         
+    }
+
+    #costAver input{
+        max-width: 100px !important;
+    }
+
+    #costAver h5{
+        font-size: 15px !important;
+    }
+
+    #costAver h2{
+        font-size: 20px !important;
+    }
+
+    #costAver h4{
+        font-size: 15px !important;
+    }
+
+    .calcCost p{
+        font-size: 15px !important;
     }
 
     
@@ -477,6 +506,15 @@ footer{
     #nuevoPort {
         font-size: 12px !important;
     }
+
+    #costAver input{
+        max-width: 80px !important;
+        font-size: 10px !important;
+    }
+
+    .calcCost p{
+        font-size: 12px !important;
+    }
 }
 
 
@@ -543,6 +581,27 @@ footer{
 
     .menuResponsive img {
         width: 30px;
+    }
+
+    #costAver input{
+        max-width: 70px !important;
+        font-size: 10px !important;
+    }
+
+    #costAver h5{
+        font-size: 10px !important;
+    }
+
+    #costAver h2{
+        font-size: 15px !important;
+    }
+
+    #costAver h4{
+        font-size: 10px !important;
+    }
+
+    .calcCost p{
+        font-size: 10px !important;
     }
 
    

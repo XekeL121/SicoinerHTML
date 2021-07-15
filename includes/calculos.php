@@ -25,7 +25,7 @@
                             </form>                            
                         </div>
 
-                        <h3 class="mt-3 mb-1 text-light">Cost Average</h3>
+                        <h4 class="mt-3 mb-2 text-light">Cost Average</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
@@ -57,7 +57,7 @@
                         </div>
 
 
-                        <h3 class="mt-5 mb-1 text-light">Cálculo inversión</h3>
+                        <h4 class="mt-5 mb-2 text-light">Cálculo inversión</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
@@ -70,7 +70,29 @@
                             <div class="calcCost text-light col-3">
                                 <h5>Precio Compra</h5>
                                 
-                                <input class="rounded mb-3 mt-2 text-center" type="text" value="1,000 $">
+                                <input class="azul3 text-light rounded mb-3 mt-2 text-center" type="text" value="1,000 $">
+                            </div>
+                            <div class="calcCost text-light col-3">
+                                <h5>Inversión</h5>
+                                
+                                <input class="rounded mb-3 mt-2 text-center naranja azulLogo2" type="text" value="100,000 $">
+                            </div>
+                        </div>
+
+                        <h4 class="mt-5 mb-2 text-light">Cálculo STP (Falta maquetar)</h4>
+                        <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
+
+                        <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
+                            
+                            <div class="calcCost text-light col-3">
+                                <h5>Cantidad</h5>
+                                
+                                <input class="rounded mb-3 mt-2 text-center" type="text" value="100">
+                            </div>
+                            <div class="calcCost text-light col-3">
+                                <h5>Precio Compra</h5>
+                                
+                                <input class="azul3 text-light rounded mb-3 mt-2 text-center" type="text" value="1,000 $">
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Inversión</h5>
