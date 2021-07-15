@@ -19,8 +19,8 @@
                                         </th>                                        
                                         <!-- Botón configuración Portfolio -->
                                         <th class="bMenu mb-5">
-                                            <button class="rounded mb-2"><img id="portConfig" class="my-auto p-1"
-                                                    src="img/date_range_black_18dp.svg" alt=""></button>
+                                            <button class="rounded mb-2 bg-transparent"><img id="portConfig" class="my-auto p-1"
+                                                    src="img/date_range_white_18dp.svg" alt=""></button>
                                             <ul class="navPort azulOscuro p-2 rounded">
                                                 <li class="px-5 rounded"><a class="" href="">Dividir en:</a></li>
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Días</a></li>

@@ -19,12 +19,22 @@
                                 Historial
                             </li>
                         </a>
-                        <a href="#" class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center">
-                            <li>
+                        <div href="#" class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center">
+                            
+                            <!-- Menú desplegable de botón usuario -->
+                            <button class="bg-transparent">                                
                                 <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
                                 <img class="icon" src="img/arrow_drop_down_white_18dp.svg" alt="">
-                            </li>
-                        </a>
+                            </button>
+                            <ul class="navAcount azulOscuro p-1 rounded">
+                                <li class="px-3 rounded"><a class="h6 text-primary" href="">Guardar</a></li>
+                                <li class="px-3 rounded"><a class="h6 text-light op80" href="">Mi cuenta</a></li>
+                                <li class="px-3 rounded"><a class="h6 text-light op80" href="">Ayuda</a></li>
+                                <li class="px-3 rounded"><a class="h6 text-light op80" href="">Versión Pro</a></li>
+                                <li class="px-3 rounded"><a class="h6 text-light op80" href="">Acerca de..</a></li>
+                                <li class="px-3 rounded"><a class="h6 rojoTrade" href="">Cerrar sesión</a></li>
+                            </ul>
+                        </div>
                     </ul>
                 </nav>
             </header>

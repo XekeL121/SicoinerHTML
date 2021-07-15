@@ -67,6 +67,7 @@ p{
     margin-right: 15px;
     margin-left: 15px;    
     cursor: pointer;    
+    /* background-color: transparent !important; */
 }
 
 .navButon:hover {
@@ -79,24 +80,13 @@ p{
     border-radius: 5px;
 } */
 
-.navAcount{
-    font-size: 20px;      
-    font-family: 'Rubik', sans-serif;
-    white-space: nowrap;
-    margin-right: 15px;
-    margin-left: 15px;    
-    cursor: pointer;    
-}
 
-.navAcount img:hover {
-    color: #fbb03b !important; 
-    border-radius: 5px;
-}
 
 .icon{    
     width: 30px;
     margin-top: auto;
-    margin-bottom: auto;    
+    margin-bottom: auto;   
+    /* background-color: transparent !important;  */
 }
 
 .submenu .noticias{
@@ -294,6 +284,32 @@ hr {
 
 
 .button + .navPort:active, button:focus + .navPort {
+    position: absolute;
+    visibility: visible;    
+    opacity: 100% !important;   
+}
+
+
+.navAcount{
+    position: absolute;
+    float: left !important;
+    text-decoration: none; 
+    margin-top: -18px !important;
+    margin-left: -60px !important;
+    z-index: 1 !important;
+    opacity: 100% !important;
+    visibility: hidden; 
+    text-align: left;  
+    /* color: white; */   
+}
+
+.navAcount li:hover{
+    background-color: rgb(8 27 72) !important;
+    /* color: white !important; */    
+}
+
+
+.button + .navAcount:active, button:focus + .navAcount {
     position: absolute;
     visibility: visible;    
     opacity: 100% !important;   

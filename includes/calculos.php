@@ -57,7 +57,7 @@
                         </div>
 
 
-                        <h4 class="mt-5 mb-2 text-light">Cálculo inversión</h4>
+                        <h4 class="mt-5 mb-2 text-light">Inversión</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
 
-                        <h4 class="mt-5 mb-2 text-light">Cálculo STP (Falta maquetar)</h4>
+                        <h4 class="mt-5 mb-2 text-light">Profit (Falta maquetar)</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
