@@ -28,6 +28,7 @@
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Meses</a></li>
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Años</a></li>
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Portfolios</a></li>
+                                                <li class="px-5 rounded"><a class="text-light" href=""> Exportar</a></li>
                                                 <li class="px-5 rounded"><a class="text-warning" href="">Ver completo</a></li>
                                                 <li class="px-5 rounded"><a class="rojoTrade" href="">Borrar historial (Borrará los portfolios)</a></li>
                                             </ul>

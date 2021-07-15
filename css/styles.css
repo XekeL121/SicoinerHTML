@@ -316,6 +316,11 @@ hr {
     z-index: 1 !important;
 }
 
+#nuevoPort img {
+    width: 30px !important;
+    line-height: 30px !important;
+}
+
 #nuevoPort:hover {
     background-color: #2c53b2 !important;
 }
