@@ -31,30 +31,33 @@
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
-                                <h4 class="op50">Croptomonedas</h4>
+                                <h4 class="op50">Criptomonedas</h4>
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Cantidad</h5>
-                                <input class="rounded mb-3 mt-2 azul3 naranja text-center" type="text" value="200">
-                                <input class="rounded mb-3 mt-2 text-center" type="number">
-                                <h5>Resultado:</h5>
+                                <input class="rounded mt-1 mb-2 azul3 text-center text-light" type="text" value="200">
+                                <input class="rounded mb-2 text-center" type="text" value="10">
+                                <p>Cantidad total</p>
+                                <input class="rounded azul3 naranja azulLogo2 text-center" type="text"  value="210">
                             </div>
                             <div class="calcCost text-light col-3">
-                                <h5>Precio Medio</h5>
-                                <input class="rounded mb-3 mt-2 azul3 naranja text-center" type="text"  value="500 $">
-                                <input class="rounded mb-3 mt-1 text-center" type="number">
-                                <input class="rounded azul3 verdeTrade azulLogo2 text-center" type="text"  value="500 $">
+                                <h5>Precio Compra</h5>
+                                <input class="rounded mt-1 mb-2 azul3 text-center text-light" type="text"  value="500 $">
+                                <input class="rounded mb-2 text-center" type="text" value="1000 $">
+                                <p>Cost average</p>
+                                <input class="rounded azul3 naranja azulLogo2 text-center" type="text"  value="523.80 $">
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Inversión</h5>
-                                <input class="rounded mb-3 mt-2 azul3 naranja text-center" type="text"  value="100,000 $">
-                                <input class="rounded mb-3 mt-1 text-center" type="number">
-                                <input class="rounded azul3 verdeTrade azulLogo2 text-center" type="text"  value="100,000 $">
+                                <input class="rounded mt-1 mb-2 azul3 text-center text-light" type="text"  value="100,000 $">
+                                <input class="rounded mb-2 text-center" type="text" value="10,000 $">
+                                <p>Total inversión</p>
+                                <input class="rounded azul3 naranja azulLogo2 text-center" type="text"  value="110,000 $">
                             </div>
                         </div>
 
 
-                        <h3 class="mt-5 mb-1 text-light">Cálculo simple</h3>
+                        <h3 class="mt-5 mb-1 text-light">Cálculo inversión</h3>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
                         <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
@@ -65,7 +68,7 @@
                                 <input class="rounded mb-3 mt-2 text-center" type="number">
                             </div>
                             <div class="calcCost text-light col-3">
-                                <h5>Precio Medio</h5>
+                                <h5>Precio Compra</h5>
                                 
                                 <input class="rounded mb-3 mt-2 text-center" type="number">
                             </div>
