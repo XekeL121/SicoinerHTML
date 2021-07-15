@@ -826,7 +826,7 @@ footer{
 }
 
 .opacityOff {
-    opacity: 100; !important;
+    opacity: 100% !important;
 }
 
 .op80 {
