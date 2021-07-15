@@ -19,7 +19,7 @@
                                 Historial
                             </li>
                         </a>
-                        <div href="#" class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center">
+                        <div class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center">
                             
                             <!-- Menú desplegable de botón usuario -->
                             <button class="bg-transparent">                                
@@ -32,7 +32,7 @@
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Ayuda</a></li>
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Versión Pro</a></li>
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Acerca de..</a></li>
-                                <li class="px-3 rounded"><a class="h6 rojoTrade" href="">Cerrar sesión</a></li>
+                                <li class="px-3 rounded"><a href="login.php" class="h6 rojoTrade">Cerrar sesión</a></li>
                             </ul>
                         </div>
                     </ul>

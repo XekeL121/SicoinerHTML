@@ -17,7 +17,7 @@
         <link rel="icon" type="image/png" style="height: 100%; width: 100%;" href="img/Sicoiner favicon.png">
         <title>Sicoiner - Portfolio financiero</title>
     </head>
-    <body> 
+    <body class="azulFondo"> 
         <div class="container-full row"> 
 
             <?php

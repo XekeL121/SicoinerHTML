@@ -18,19 +18,15 @@
         <title>Sicoiner - Portfolio financiero</title>
     </head>
     <body class="azulFondo"> 
-        <div class="container-full row"> 
+        <div class="container-full row azulFondo"> 
+
+            
 
             <?php
-                include "includes/header.php";
-            ?>
-
-            <?php
-                include "includes/content.php";
+                include "includes/login.php";
             ?>                            
 
-            <?php
-                include "includes/footer.php";
-            ?>    
+               
 
         </div>
 

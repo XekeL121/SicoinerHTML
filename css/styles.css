@@ -164,6 +164,13 @@ p{
     height: 100%;   
 }
 
+.login{
+    
+      width: 100% !important;
+      height: 100% !important;
+    
+}
+
 .tarjetas{
     height: max-content !important;
     position: unset;    
