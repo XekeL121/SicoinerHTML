@@ -38,8 +38,8 @@
                                             <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
                                             <th class="celda">500 $</th> <!-- Precio medio de compra -->
                                             <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda naranja">50,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff verdeTrade">100,000 $ | 200%</th>
+                                            <th class="celda naranja">100,000 $</th> <!-- Capital total invertido en ADA -->
+                                            <th class="celda opacityOff verdeTrade">100,000 $ | 100%</th>
                                             <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
                                             <th class="celda bMenu">
 
@@ -73,9 +73,9 @@
                                         <th class="celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
-                                        <th class="celda naranja opacityOff">50,000 $</th>
+                                        <th class="celda naranja opacityOff">100,000 $</th>
                                         <!-- Total inversión en el portfolio entero-->
-                                        <th class="celdaPlTotal nowrap">100,000 $ | 200%</th>
+                                        <th class="celdaPlTotal nowrap">100,000 $ | 100%</th>
                                         <!-- Total ganancias en el portfolio entero -->
                                         <!-- Botón + de añadir nueva fila -->
                                         <th class="bMenu opacityOff">
