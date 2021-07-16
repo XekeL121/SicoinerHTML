@@ -67,10 +67,7 @@
                                                     src="img/date_range_white_18dp.svg" alt=""></button>
                                             <ul class="navHistorial azulOscuro p-2 rounded">
                                                 <li class="px-5 rounded"><a class="text-warning op50" href="">Ver en lista</a></li>
-                                                <li class="px-5 rounded"><a class="text-warning" href="">Ver en gráfico</a></li>
-                                                <li class="px-5 rounded"><a class="" href="">Dividir en:</a></li>
-                                                <li class="px-5 rounded"><a class="text-light" href=""> D/S/M/A</a></li>                                                
-                                                <li class="px-5 rounded"><a class="text-light" href=""> Por Portfolios</a></li>
+                                                <li class="px-5 rounded"><a class="text-warning" href="">Ver en gráfico</a></li>                                                
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Exportar</a></li>
                                                 <li class="px-5 rounded"><a class="rojoTrade" href="">Borrar historial*</a></li> <!-- Esta acción afecta a sus respectivos portfolios? Es irreversible? -->
                                             </ul>
@@ -82,7 +79,7 @@
                                 <!-- Fila de datos del activo -->
                                 <tbody class="table fondoRojo">                                    
                                         <tr id="datos">
-                                            <th class="celda">Portfolio 1</th>                                                                                      
+                                            <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                      
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
                                             <th class="celda opacityOff">Venta</th> 
                                             <th class="celda">ETH</th> 
@@ -104,7 +101,7 @@
                                 <tbody class="table fondoVerde">
                                     <div class="">
                                         <tr id="datos">
-                                            <th class="celda">Portfolio 1</th>                                                                                    
+                                            <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                    
                                             <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
                                             <th class="celda opacityOff">Compra</th> 
                                             <th class="celda">ETH</th> 
