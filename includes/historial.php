@@ -3,8 +3,52 @@
                     <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-8 col-md-8 col-8 text-center rounded">
                         <h3 class="mt-3 mb-1 text-light op80">Historial</h3>
                         <hr class=" mx-auto rounded bg-white ">
+
+
+                        <div id="selectHist">                            
+                            <form class="mb-3 d-flex justify-content-center op80 w-100">
+                                <fieldset class="row">                                    
+                                    <div class="selector col-xl-3 col-6 p-3">
+                                        <label for="disabledSelect" class="form-label text-light col">Periodo:</label>
+                                        <select id="disabledSelect" class="form-select col">
+                                            <option>Completo</option>
+                                            <option>Mensual</option>
+                                            <option>Trimenstral</option>
+                                            <option>Semestral</option>
+                                            <option>Año en curso</option>
+                                            <option>Año anterior</option>
+                                        </select>
+                                    </div>
+                                    <div class="selector col-xl-3 col-6 p-3">
+                                        <label for="disabledSelect" class="form-label text-light col">Portfolio:</label>
+                                        <select id="disabledSelect" class="form-select col">
+                                            <option>Todos</option>
+                                            <option>Portfolio 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="selector col-xl-3 col-6 p-3">
+                                        <label for="disabledSelect" class="form-label text-light col">Ticker:</label>
+                                        <select id="disabledSelect" class="form-select col">
+                                            <option>Todos</option>
+                                            <option>ETH</option>
+                                        </select>
+                                    </div>
+                                    <div class="selector col-xl-3 col-6 p-3">
+                                        <label for="disabledSelect" class="form-label text-light col">Orden:</label>
+                                        <select id="disabledSelect" class="form-select col">
+                                            <option>Todas</option>
+                                            <option>Compra</option>
+                                            <option>Venta</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </form>                            
+                        </div>
+
+
+
                         <div class="tabla text-light">
-                           <table class="table mt-1 mb-5 overflow-hidden">
+                           <table class="table mb-5 overflow-hidden">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop">Portfolio<img class="rounded mb-2">
@@ -12,7 +56,7 @@
                                         <th class="celdaTop" scope="col">Tipo</th>
                                         <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
-                                        <th class="celdaTop" scope="col">Precio</th>
+                                        <th class="celdaTop" scope="col">Precio C/V</th>
                                         <th class="celdaTop" scope="col">Capital *</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
                                         <img class="icon" src="img/arrow_drop_down_18dp.svg" alt="">
                                         </img>
@@ -36,8 +80,7 @@
                                 
 
                                 <!-- Fila de datos del activo -->
-                                <tbody class="table fondoRojo">
-                                    <div class="">
+                                <tbody class="table fondoRojo">                                    
                                         <tr id="datos">
                                             <th class="celda">Portfolio 1</th>                                                                                      
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
@@ -47,15 +90,13 @@
                                             <th class="celda naranja">1500 $</th> 
                                             <th class="celda opacityOff verdeTrade">+300,000 $</th> 
                                             <th class="celda bMenu">
-
                                             <?php
                                                 include "includes/menufila_historial.php";
                                             ?> 
-
                                             </th>
                                         </tr>
                                         <tr id="salto"></tr> <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
-                                    </div>
+                                    
                                 </tbody>
                                 <!-- Fin fila de datos del activo  -->  
 

@@ -11,7 +11,7 @@
                                         <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
                                         <th class="celdaTop" scope="col">Precio</th> <!-- Precio medio de compra -->
-                                        <th class="celdaTop" scope="col">Valor *</th> <!-- Que solo se actualice con un icono de actualizar -->
+                                        <th class="celdaTop" scope="col">Cotización*</th> <!-- Que solo se actualice con un icono de actualizar -->
                                         <th class="celdaTop" scope="col">Inversión</th>
                                         <th class="celdaTop" scope="col">P&L | %</th>
                                         <!-- Botón configuración Portfolio -->

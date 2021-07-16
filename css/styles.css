@@ -196,7 +196,7 @@ hr {
 .table > tbody > tr > th{
     opacity: 70%;
     color: white;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .table > tr > .celda {
@@ -410,6 +410,20 @@ hr {
     border: none !important;
     /* border: 1px black solid !important; */
 }
+
+
+#selectHist form fieldset {
+    width: 600px !important;
+    font-size: 18px !important;
+    margin-bottom: -20px !important;
+    
+}
+
+#selectHist form .selector >{
+    
+    margin-top: -10px !important;
+}
+
 
 
 
