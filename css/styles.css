@@ -254,7 +254,8 @@ hr {
 
 .navFila li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */    
+    /* color: white !important; */
+    visibility: visible;    
 }
 
 
@@ -281,7 +282,8 @@ hr {
 
 .navPort li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */    
+    /* color: white !important; */ 
+    visibility: visible;   
 }
 
 
@@ -307,7 +309,8 @@ hr {
 
 .navfilaPort li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */    
+    /* color: white !important; */ 
+    visibility: visible;   
 }
 
 
@@ -333,7 +336,8 @@ hr {
 
 .navHistorial li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */    
+    /* color: white !important; */ 
+    visibility: visible;   
 }
 
 
@@ -359,7 +363,8 @@ hr {
 
 .navAcount li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */    
+    /* color: white !important; */ 
+    visibility: visible;   
 }
 
 
@@ -402,8 +407,8 @@ hr {
     font-size: 18px !important;
 }
 
-#costAver{
-    height: 200px !important;
+.calcRow{
+    /* height: 200px !important; */
 }
 
 .calcCost input{
@@ -454,7 +459,7 @@ footer{
 /* MEDIA QUERIES */
 
 @media (max-width: 1120px) {
-    #costAver input{
+    .calcRow input{
         max-width: 130px !important;
     }
 
@@ -490,19 +495,19 @@ footer{
         
     }
 
-    #costAver input{
+    .calcRow input{
         max-width: 100px !important;
     }
 
-    #costAver h5{
+    .calcRow h5{
         font-size: 15px !important;
     }
 
-    #costAver h2{
+    .calcRow h2{
         font-size: 20px !important;
     }
 
-    #costAver h4{
+    .calcRow h4{
         font-size: 15px !important;
     }
 
@@ -614,7 +619,7 @@ footer{
         font-size: 12px !important;
     }
 
-    #costAver input{
+    .calcRow input{
         max-width: 80px !important;
         font-size: 10px !important;
     }
@@ -733,20 +738,20 @@ footer{
         width: 30px;
     }
 
-    #costAver input{
+    .calcRow input{
         max-width: 70px !important;
         font-size: 10px !important;
     }
 
-    #costAver h5{
+    .calcRow h5{
         font-size: 10px !important;
     }
 
-    #costAver h2{
+    .calcRow h2{
         font-size: 15px !important;
     }
 
-    #costAver h4{
+    .calcRow h4{
         font-size: 10px !important;
     }
 

@@ -34,7 +34,7 @@
                                         </select>
                                     </div>
                                     <div class="selector col-xl-3 col-6 p-3">
-                                        <label for="disabledSelect" class="form-label text-light col">Orden:</label>
+                                        <label for="disabledSelect" class="form-label text-light col">Órdenes:</label>
                                         <select id="disabledSelect" class="form-select col">
                                             <option>Todas</option>
                                             <option>Compra</option>

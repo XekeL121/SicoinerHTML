@@ -28,7 +28,7 @@
                         <h4 class="mt-3 mb-2 text-light">Cost Average</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
-                        <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
+                        <div class="calcRow d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
                                 <h4 class="op50">Portfolio 1</h4>
@@ -60,7 +60,7 @@
                         <h4 class="mt-5 mb-2 text-light">Inversión</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
-                        <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
+                        <div class="calcRow d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
                             
                             <div class="calcCost text-light col-3">
                                 <h5>Cantidad</h5>
@@ -80,7 +80,7 @@
                         </div>
 
                         <h4 class="mt-5 mb-2 text-light">Profit (Falta maquetar)</h4>   
-                        <div id="costAver" class="d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
+                        <div class="calcRow d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
                                 <h4 class="op50">Portfolio 1</h4>
