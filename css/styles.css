@@ -10,10 +10,8 @@ button{
     text-decoration: none !important;
 }
 
-a, a:hover {
-    /* list-style: none; */
-    text-decoration: none;
-    /* color: white; */
+a, a:hover {    
+    text-decoration: none;    
 }
 
 html{
@@ -30,15 +28,7 @@ h1{
     font-family: 'Signika', sans-serif;
 }
 
-p{
-    /* flex-wrap: wrap; */
-    /* padding:0% !important;
-    margin: 0% !important; */
-    /* list-style: none;  */
-}
-
 /* ------ */
-
 
 .divLogo img{     
     width: 50%;  
@@ -48,13 +38,12 @@ p{
 /* botón menú formato móvil */
 .menuResponsive img {
     width: 35px;
-    /* opacity: 80%;  */ 
 }
 
 .menuResponsive img:hover {
     opacity: 100%; 
-   /*  cursor: pointer;  */
 }
+
 /* Fin botón menú formato móvil */
 
 .navButon{
@@ -64,7 +53,6 @@ p{
     margin-right: 15px;
     margin-left: 15px;    
     cursor: pointer;    
-    /* background-color: transparent !important; */
 }
 
 .navButon:hover {
@@ -72,18 +60,10 @@ p{
     border-radius: 5px;
 }
 
-/* .navButon:focus {
-    background-color: rgba(0, 255, 255, 0.096); 
-    border-radius: 5px;
-} */
-
-
-
 .icon{    
     width: 30px;
     margin-top: auto;
     margin-bottom: auto;  
-    /* background-color: transparent !important;  */
 }
 
 .submenu .noticias{
@@ -106,8 +86,6 @@ p{
 }
 
 .avisos{
-    /* color: #fbb03b; */
-    /* opacity: 80%; */
     white-space: nowrap;
     overflow: hidden;
     max-height: 400px;
@@ -125,11 +103,9 @@ p{
     width: 20px;    
 }
 
-.subSubMenu a img{
-    /* float: left; */
+.subSubMenu a img{   
     width: 25px !important;
-    margin-bottom: 3px !important;
-       
+    margin-bottom: 3px !important;       
 }
 
 .subSubMenu {
@@ -151,29 +127,24 @@ p{
     line-height: 25px !important;
     margin-left: 5px !important;
 }
+
 /* Fin Cabecera */
 
 /* Tablón de Ofertas */
-.ofertas{
-    /* max-height: 800px !important; */
-    min-height: 657px !important;   
-    /* margin-top: 500px; */
+.ofertas{    
+    min-height: 657px !important;    
     height: 100%;   
 }
 
-.login{
-    
-      width: 100% !important;
-      height: 100% !important;
-    
+.login{    
+    width: 100% !important;
+    height: 100% !important;   
 }
 
 .tarjetas{
     height: max-content !important;
     position: unset;    
     overflow: hidden !important;
-   /*  justify-content: center !important; */
-    /* align-items: center !important; */
 }
 
 /* Estilos tabla */
@@ -183,9 +154,6 @@ hr {
     width: 250px !important;    
 }
 
-/* .tabla{
-    width: 100% !important;         
-} */
 
 .table > thead > tr > th{
     opacity: 90%;
@@ -195,8 +163,7 @@ hr {
 
 .table > tbody > tr > th{
     opacity: 70%;
-    color: white;
-    /* text-align: center; */
+    color: white;    
 }
 
 .table > tr > .celda {
@@ -209,8 +176,7 @@ hr {
 .celdaTop{  
     font-size: 16px !important;
     border-bottom: none !important;
-    padding-bottom: 5px !important;   
-    /* border-bottom: rgb(31 59 117) solid 2px !important; */
+    padding-bottom: 5px !important;
 }
 
 #datos .celda {   
@@ -228,8 +194,7 @@ hr {
 
 #total .celdaPlTotal {    
     color: rgb(31 195 59) !important;   
-    border-bottom: none !important;
-    /* opacity: 100; */
+    border-bottom: none !important;    
     line-height: 30px;
     z-index: -1 !important;
  } 
@@ -245,16 +210,13 @@ hr {
     text-decoration: none; 
     margin-top: -20px !important;
     margin-left: -220px !important;
-    z-index: 1 !important;
-    /* opacity: 100% !important; */
+    z-index: 1 !important;   
     visibility: hidden; 
-    text-align: left;  
-    /* color: white; */   
+    text-align: left;     
 }
 
 .navFila li:hover{
-    background-color: rgb(8 27 72) !important;
-    /* color: white !important; */
+    background-color: rgb(8 27 72) !important;    
     visibility: visible;    
 }
 
@@ -276,13 +238,11 @@ hr {
     z-index: 1 !important;
     opacity: 100% !important;
     visibility: hidden; 
-    text-align: left;  
-    /* color: white; */   
+    text-align: left;        
 }
 
 .navPort li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */ 
     visibility: visible;   
 }
 
@@ -303,13 +263,11 @@ hr {
     z-index: 1 !important;
     opacity: 100% !important;
     visibility: hidden; 
-    text-align: left;  
-    /* color: white; */   
+    text-align: left;      
 }
 
 .navfilaPort li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */ 
     visibility: visible;   
 }
 
@@ -320,7 +278,6 @@ hr {
     opacity: 100% !important;   
 }
 
-
 .navHistorial{
     position: absolute;
     float: left !important;
@@ -330,23 +287,19 @@ hr {
     z-index: 1 !important;
     opacity: 100% !important;
     visibility: hidden; 
-    text-align: left;  
-    /* color: white; */   
+    text-align: left;      
 }
 
 .navHistorial li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */ 
     visibility: visible;   
 }
-
 
 .button + .navHistorial:active, button:focus + .navHistorial {
     position: absolute;
     visibility: visible;    
     opacity: 100% !important;   
 }
-
 
 .navAcount{
     position: absolute;
@@ -357,13 +310,11 @@ hr {
     z-index: 1 !important;
     opacity: 100% !important;
     visibility: hidden; 
-    text-align: left;  
-    /* color: white; */   
+    text-align: left;       
 }
 
 .navAcount li:hover{
     background-color: rgb(8 27 72) !important;
-    /* color: white !important; */ 
     visibility: visible;   
 }
 
@@ -376,16 +327,13 @@ hr {
 
 /* Fin menu portfolio */
 
-
-
 #salto{
     height: 5px;
 }
 
 .bMenu {
     background-color: none !important;
-    border: none !important;
-    /* opacity: 100% !important; */
+    border: none !important;    
     color: none !important;
     clear: both !important;
     z-index: 1 !important;
@@ -407,13 +355,9 @@ hr {
     font-size: 18px !important;
 }
 
-.calcRow{
-    /* height: 200px !important; */
-}
 
 .calcCost input{
-    border: none !important;
-    /* border: 1px black solid !important; */
+    border: none !important;    
 }
 
 
@@ -421,16 +365,11 @@ hr {
     width: 600px !important;
     font-size: 18px !important;
     margin-bottom: -20px !important;
-    
 }
 
-#selectHist form .selector >{
-    
+#selectHist form .selector >{    
     margin-top: -10px !important;
 }
-
-
-
 
 
 /* Fin estilos tabla */
@@ -440,7 +379,6 @@ footer{
     bottom: 0 !important;
     left: 0 !important;  
 }
-
 
 
 /* Key frames */
@@ -465,8 +403,7 @@ footer{
 
     .navPort {
         margin-left: -170px !important;
-    }
-        
+    }        
 }
 
 
@@ -487,12 +424,10 @@ footer{
     #total .celda {
         white-space: nowrap;
         font-size: 12px;
-
     }
 
     .subsub {
-        font-size: 16px !important;
-        
+        font-size: 16px !important;        
     }
 
     .calcRow input{
@@ -513,11 +448,7 @@ footer{
 
     .calcCost p{
         font-size: 15px !important;
-    }
-
-    
-
-    
+    } 
 }
 
 
@@ -527,21 +458,17 @@ footer{
     }
 
     .menuResponsive {
-        position: relative !important;
-             
+        position: relative !important;            
     }
 
-    .menuResponsive img{
-        
-        margin-right: -5px !important;
-        
+    .menuResponsive img{        
+        margin-right: -5px !important;        
     }
 
     .subSubMenu{
         font-size: 14px !important;
     }
     
-
     .tarjetas{
         height: max-content !important;
         min-width: 450px;       
@@ -635,29 +562,11 @@ footer{
         margin-top: -18px !important;
         margin-left: -100px !important;
         z-index: 1 !important;
-        opacity: 100 !important;
-        /* visibility: hidden;  */
+        opacity: 100 !important;        
         text-align: left;  
-        z-index: 1 !important;
-        /* color: white; */   
+        z-index: 1 !important;        
     }
-
-    
-
-   
-
-    /* .navButon {
-        font-size: 10px !important;
-    } */
 }
-
-
-/* @media (max-width: 768px) {
-    .subSubMenu{
-        font-size: 12px !important;
-    }
-
-} */
 
 
 
@@ -665,21 +574,10 @@ footer{
 @media (min-width: 768px) {  
     .menuResponsive {  
         display: none;       
-    } 
-
-    /* .navPort{    
-        margin-top: -25px !important;
-        margin-left: -150px !important;    
-        } */
-
-        
+    }     
 }
 
-
-
-
 /* Fin */
-
 
 
 @media (max-width:560px) {
@@ -691,10 +589,7 @@ footer{
     .bMenu > button > img{
         width: 20px !important;
         align-items: center !important;
-    }
-
-    
-
+    }   
 }
 
 @media (max-width: 461px) {  
@@ -757,9 +652,7 @@ footer{
 
     .calcCost p{
         font-size: 10px !important;
-    }
-
-   
+    }   
 }
 
 
@@ -818,9 +711,9 @@ footer{
     }
 
     .navFila{    
-    margin-top: -20px !important;
-    margin-left: -35px !important;    
-    }
+        margin-top: -20px !important;
+        margin-left: -35px !important;    
+        }
 
     .navPort{    
         margin-top: -20px !important;
@@ -835,20 +728,11 @@ footer{
     .subsub{
         font-size: 18px;
     }
-
 }
 
 
 
-
-
-
-
-
 /* Colores personalizados */
-
-
-
 
 .azul1 {
     background-color: rgb(8 27 72) !important;
@@ -917,7 +801,6 @@ footer{
 .fondoVerde {
     background-color: rgb(2, 29, 8) !important;
 }
-
 
 
 
