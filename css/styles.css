@@ -17,7 +17,7 @@ a, a:hover {
 }
 
 html{
-    scroll-behavior: auto;
+    /* scroll-behavior: auto; */
 }
 
 ::-webkit-scrollbar {
@@ -155,7 +155,7 @@ p{
 
 /* Tablón de Ofertas */
 .ofertas{
-    max-height: 800px !important;
+    /* max-height: 800px !important; */
     min-height: 657px !important;   
     /* margin-top: 500px; */
     height: 100%;   
