@@ -204,20 +204,24 @@ hr {
     opacity: 100% !important;    
 }
 
-.navFila{
-    position: absolute;   
-    float: left !important;
-    text-decoration: none; 
+.navFila{    
     margin-top: -20px !important;
-    margin-left: -220px !important;
-    z-index: 1 !important;   
-    visibility: hidden; 
-    text-align: left;     
+    margin-left: -220px !important;   
 }
 
-.navFila li:hover{
+.navFila, .navPort, .navfilaPort, .navHistorial, .navAcount > li:hover{
     background-color: rgb(8 27 72) !important;    
     visibility: visible;    
+}
+
+.navFila, .navPort, .navfilaPort, .navHistorial, .navAcount{
+    position: absolute;
+    float: left !important;
+    text-decoration: none;    
+    z-index: 1 !important;
+    opacity: 100% !important;
+    visibility: hidden; 
+    text-align: left;
 }
 
 
@@ -228,24 +232,12 @@ hr {
     display: block;    
 }
 
-/* menu portfolio */
-.navPort{
-    position: absolute;
-    float: left !important;
-    text-decoration: none; 
+/* Modals portfolio */
+
+.navPort{    
     margin-top: -20px !important;
-    margin-left: -150px !important;
-    z-index: 1 !important;
-    opacity: 100% !important;
-    visibility: hidden; 
-    text-align: left;        
+    margin-left: -150px !important; 
 }
-
-.navPort li:hover{
-    background-color: rgb(8 27 72) !important;
-    visibility: visible;   
-}
-
 
 .button + .navPort:active, button:focus + .navPort {
     position: absolute;
@@ -255,20 +247,8 @@ hr {
 
 
 .navfilaPort{
-    position: absolute;
-    float: left !important;
-    text-decoration: none; 
     margin-top: -20px !important;
-    margin-left: -55px !important;
-    z-index: 1 !important;
-    opacity: 100% !important;
-    visibility: hidden; 
-    text-align: left;      
-}
-
-.navfilaPort li:hover{
-    background-color: rgb(8 27 72) !important;
-    visibility: visible;   
+    margin-left: -55px !important;    
 }
 
 
@@ -278,22 +258,11 @@ hr {
     opacity: 100% !important;   
 }
 
-.navHistorial{
-    position: absolute;
-    float: left !important;
-    text-decoration: none; 
+.navHistorial{   
     margin-top: -20px !important;
-    margin-left: -195px !important;
-    z-index: 1 !important;
-    opacity: 100% !important;
-    visibility: hidden; 
-    text-align: left;      
+    margin-left: -195px !important;    
 }
 
-.navHistorial li:hover{
-    background-color: rgb(8 27 72) !important;
-    visibility: visible;   
-}
 
 .button + .navHistorial:active, button:focus + .navHistorial {
     position: absolute;
@@ -301,21 +270,9 @@ hr {
     opacity: 100% !important;   
 }
 
-.navAcount{
-    position: absolute;
-    float: left !important;
-    text-decoration: none; 
+.navAcount{   
     margin-top: -18px !important;
-    margin-left: -60px !important;
-    z-index: 1 !important;
-    opacity: 100% !important;
-    visibility: hidden; 
-    text-align: left;       
-}
-
-.navAcount li:hover{
-    background-color: rgb(8 27 72) !important;
-    visibility: visible;   
+    margin-left: -80px !important;    
 }
 
 
@@ -555,16 +512,9 @@ footer{
         font-size: 12px !important;
     }
 
-    .navAcount{
-        position: absolute;
-        float: left !important;
-        text-decoration: none; 
-        margin-top: -18px !important;
-        margin-left: -100px !important;
-        z-index: 1 !important;
-        opacity: 100 !important;        
-        text-align: left;  
-        z-index: 1 !important;        
+    .navAcount{        
+        margin-top: 29px !important;
+        margin-left: 44px !important;       
     }
 }
 
@@ -652,7 +602,12 @@ footer{
 
     .calcCost p{
         font-size: 10px !important;
-    }   
+    } 
+    
+    .navAcount{        
+        margin-top: 29px !important;
+        margin-left: -70px !important;        
+    }
 }
 
 
@@ -727,6 +682,11 @@ footer{
         
     .subsub{
         font-size: 18px;
+    }
+
+    .navAcount{       
+        margin-top: 29px !important;
+        margin-left: -80px !important;        
     }
 }
 

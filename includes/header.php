@@ -17,19 +17,17 @@
                                 <li>
                                     <img class="icon" src="img/insights_white_24dp.svg" alt="">                                
                                 </li>
-                            </a>
-
-                            <div class="navButon col-2 p-2 mt-2 text-light text-center">
+                            </a>                            
                                 
-                                <!-- Menú desplegable de botón usuario -->
-                                <button class="bg-transparent justify-content-center text-center">                                
-                                    <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
-                                    <img class="icon" src="img/arrow_drop_down_white_18dp.svg" alt="">
-                                </button>
-                                <?php
-                                    include "includes/modalheader.php";
-                                ?> 
-                            </div>
+                            <!-- Menú desplegable de botón usuario -->
+                            <button class="navButon col-2 p-2 mt-2 text-light bg-transparent justify-content-center text-center">                                
+                                <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
+                                <img class="icon" src="img/arrow_drop_down_white_18dp.svg" alt="">
+                            </button>
+                            <?php
+                                include "includes/modalheader.php";
+                            ?> 
+                            
                         </ul>
                 </div>
                 <nav class="col-md-12 col-lg-12 col-xl-6 p-2 text-center">
