@@ -1,6 +1,6 @@
             <header class="row justify-content-center azul1 py-2">
                 <div class="divLogo col-xl-3 col-sm-8 col-12 p-2 text-center my-auto">
-                    <a href="login.php"> <img class="text-center w-50 cursor-pointer" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner"></a>
+                    <a href="index.php"> <img class="text-center w-50 cursor-pointer" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner"></a>
                 </div>
 
                 <!-- Menú responsive que aparece a partir de --> 
