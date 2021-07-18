@@ -48,7 +48,7 @@
 
 
                         <div class="tabla text-light">
-                           <table class="table mb-5 overflow-hidden">
+                           <table class="table mb-5 of-hidden">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop">Portfolio<img class="rounded mb-2">
@@ -69,7 +69,7 @@
                                                 <li class="px-5 rounded"><a class="text-warning op50" href="">Ver en lista</a></li>
                                                 <li class="px-5 rounded"><a class="text-warning" href="">Ver en gráfico</a></li>                                                
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Exportar</a></li>
-                                                <li class="px-5 rounded"><a class="rojoTrade" href="">Borrar historial*</a></li> <!-- Esta acción afecta a sus respectivos portfolios? Es irreversible? -->
+                                                <li class="px-5 rounded"><a class="red-trade" href="">Borrar historial*</a></li> <!-- Esta acción afecta a sus respectivos portfolios? Es irreversible? -->
                                             </ul>
                                         </th>
                                     </tr>
@@ -77,15 +77,15 @@
                                 
 
                                 <!-- Fila de datos del activo -->
-                                <tbody class="table fondoRojo">                                    
+                                <tbody class="table bg-rojo">                                    
                                         <tr id="datos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                      
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
                                             <th class="celda opacityOff">Venta</th> 
                                             <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
-                                            <th class="celda naranja">1500 $</th> 
-                                            <th class="celda opacityOff verdeTrade">+300,000 $</th> 
+                                            <th class="celda text-orange">1500 $</th> 
+                                            <th class="celda opacityOff green-trade">+300,000 $</th> 
                                             <th class="celda bMenu">
                                             <?php
                                                 include "includes/menufila_historial.php";
@@ -98,7 +98,7 @@
                                 <!-- Fin fila de datos del activo  -->  
 
                                 <!-- Fila de datos del activo -->
-                                <tbody class="table fondoVerde">
+                                <tbody class="table bg-verde">
                                     <div class="">
                                         <tr id="datos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                    
@@ -106,8 +106,8 @@
                                             <th class="celda opacityOff">Compra</th> 
                                             <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
-                                            <th class="celda naranja">1000 $</th> 
-                                            <th class="celda opacityOff verdeTrade">-200,000 $</th>
+                                            <th class="celda text-orange">1000 $</th> 
+                                            <th class="celda opacityOff green-trade">-200,000 $</th>
                                             <th class="celda bMenu">
 
                                             <?php
@@ -130,7 +130,7 @@
                                     <th class="celdaPlTotal"></th> <!-- Vacía -->
                                     <th class="celdaPlTotal"></th> <!-- Vacía -->
                                     <th class="celdaPlTotal"></th> <!-- Vacía -->
-                                    <th class="celdaPlTotal naranja opacityOff"></th>
+                                    <th class="celdaPlTotal text-orange opacityOff"></th>
                                     <!-- Total inversión en el portfolio entero-->
                                     <!-- Total ganancias en el portfolio entero -->
                                     <!-- Botón + de añadir nueva fila -->

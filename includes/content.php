@@ -5,7 +5,7 @@
                         <hr class="azulLogo text-light mx-auto rounded bg-white">
                         <div class="text-light mt-2 w-100">
                             <!-- La tabla tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
-                            <table class="table mt-1 mb-5 overflow-hidden">
+                            <table class="table mt-1 mb-5 of-hidden">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop" scope="col">Ticker</th>
@@ -38,8 +38,8 @@
                                             <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
                                             <th class="celda">500 $</th> <!-- Precio medio de compra -->
                                             <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda naranja">100,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff verdeTrade">100,000 $ | 100%</th>
+                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
+                                            <th class="celda opacityOff green-trade">100,000 $ | 100%</th>
                                             <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
                                             <th class="celda bMenu">
                                             <?php
@@ -59,7 +59,7 @@
                                         <th class="celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
-                                        <th class="celda naranja opacityOff">100,000 $</th>
+                                        <th class="celda text-orange opacityOff">100,000 $</th>
                                         <!-- Total inversión en el portfolio entero-->
                                         <th class="celdaPlTotal nowrap opacityOff">100,000 $ | 100%</th>
                                         <!-- Total ganancias en el portfolio entero -->

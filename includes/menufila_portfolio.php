@@ -1,8 +1,8 @@
                                                 <!-- Menú desplegable de cada fila -->
                                                 <button class=""><img src="img/linear_scale_white_24dp.svg" alt=""></button>
                                                 <ul class="navfilaPort azulOscuro p-2 rounded opacityOff">
-                                                    <li class="px-2 rounded"><a class="verdeTrade" href="">Comprar</a> </li>
-                                                    <li class="px-2 rounded"><a class="rojoTrade" href="">Vender</a>
+                                                    <li class="px-2 rounded"><a class="green-trade" href="">Comprar</a> </li>
+                                                    <li class="px-2 rounded"><a class="red-trade" href="">Vender</a>
                                                     </li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Calcular</a>
                                                     </li>
