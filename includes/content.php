@@ -39,7 +39,7 @@
                                             <th class="celda">500 $</th> <!-- Precio medio de compra -->
                                             <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
                                             <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff green-trade">100,000 $ | 100%</th>
+                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
                                             <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
                                             <th class="celda bMenu">
                                             <?php

@@ -709,10 +709,10 @@ footer{
 .text-orange2{    
     color: #f3cf96 !important;
 }
-.green-trade {
+.text-green {
     color: rgb(31 195 59) !important;
 }
-.red-trade {
+.text-red {
     color: rgb(184, 0, 0) !important;
 }
 

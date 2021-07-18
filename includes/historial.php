@@ -69,7 +69,7 @@
                                                 <li class="px-5 rounded"><a class="text-warning op50" href="">Ver en lista</a></li>
                                                 <li class="px-5 rounded"><a class="text-warning" href="">Ver en gráfico</a></li>                                                
                                                 <li class="px-5 rounded"><a class="text-light" href=""> Exportar</a></li>
-                                                <li class="px-5 rounded"><a class="red-trade" href="">Borrar historial*</a></li> <!-- Esta acción afecta a sus respectivos portfolios? Es irreversible? -->
+                                                <li class="px-5 rounded"><a class="text-red" href="">Borrar historial*</a></li> <!-- Esta acción afecta a sus respectivos portfolios? Es irreversible? -->
                                             </ul>
                                         </th>
                                     </tr>
@@ -85,7 +85,7 @@
                                             <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda text-orange">1500 $</th> 
-                                            <th class="celda opacityOff green-trade">+300,000 $</th> 
+                                            <th class="celda opacityOff text-green">+300,000 $</th> 
                                             <th class="celda bMenu">
                                             <?php
                                                 include "includes/menufila_historial.php";
@@ -107,7 +107,7 @@
                                             <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda text-orange">1000 $</th> 
-                                            <th class="celda opacityOff green-trade">-200,000 $</th>
+                                            <th class="celda opacityOff text-green">-200,000 $</th>
                                             <th class="celda bMenu">
 
                                             <?php

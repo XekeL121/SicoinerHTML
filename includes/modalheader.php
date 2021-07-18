@@ -6,5 +6,5 @@
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Compartir</a></li>
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Ayuda</a></li>
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Acerca de..</a></li>
-                                <li class="px-3 rounded"><a href="login.php" class="h6 red-trade">Cerrar sesión</a></li>
+                                <li class="px-3 rounded"><a href="login.php" class="h6 text-red">Cerrar sesión</a></li>
                             </ul>
