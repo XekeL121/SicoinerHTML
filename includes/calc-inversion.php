@@ -6,7 +6,7 @@
                             <div class="calcCost text-light col-3">
                                 <h5>Cantidad</h5>
                                 
-                                <input class="w-75 rounded mb-3 mt-2 text-center cursor-pointer" type="number" ng-model="n1">
+                                <input class="w-75 rounded mb-3 mt-2 text-center cursor-pointer text-bold" type="number" ng-model="n1">
                             </div>
                             <div class="calcCost text-light col-3">
                                 <h5>Precio Compra</h5>

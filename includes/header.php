@@ -61,14 +61,10 @@
             <div class="submenu d-flex azul2 my-auto nowrap">
                 <div class="avisos col-12 col-xl-10 col-sm-8 my-auto p-2 align-middle op80 text-orange nowrap of-hidden">
                     <div class="my-auto noticias nowrap of-hidden">
-                        <img id="info" class="icon my-auto align-middle" src="img/info_naranja.svg" alt="">
-                        <span class="loop">Aquí deberían ir titulares pudiendo eliminarlos manualmente, por ej.: Banco
-                            Central invierte en BTC
-                            | A las 17:00h UTC comparece
-                            Powel | El oro se desploma tras noticia bla bla | + link + x de eliminar | Aquí deberían ir
-                            titulares pudiendo eliminarlos manualmente, por ej.: Banco Central invierte en BTC
-                            | A las 17:00h UTC comparece
-                            Powel | El oro se desploma tras noticia bla bla | + link + x de eliminar
+                        <!-- <img id="info" class="icon my-auto align-middle" src="img/info_naranja.svg" alt=""> -->
+                        <span class="loop"> BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% |
+                        BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% |
+                        BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% |
                         </span>
                     </div>
                 </div>

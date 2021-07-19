@@ -55,9 +55,9 @@ h1{
 }
 
 .submenu .noticias{   
-    margin-left: 10px !important;   
-    text-overflow: ellipsis;
-    max-width: 98%;   
+    /* margin-left: 10px !important;  */  
+    /* text-overflow: ellipsis; */
+   /*  max-width: 98%;   */ 
 }
 
 #nuevoPort:hover,
@@ -66,19 +66,33 @@ h1{
 }
 
 .avisos{     
-    max-height: 400px;
+    /* max-height: 400px; */
     border-top: 0.1px rgb(137, 116, 230) inset !important;
     border-bottom: 0.1px rgb(86, 68, 168) inset !important;
 }
 
-#info {
+/* #info {
     width: 12px;
     margin-bottom: 2.5px !important;
     margin-right: 2px !important;
+} */
+
+/* #info p{
+    width: 20px;    
+} */
+
+
+/* Falta maquetar */
+.noticias {
+   /*  white-space: nowrap; */
+    animation: loop 200s linear !important;
 }
 
-#info p{
-    width: 20px;    
+@keyframes loop {
+    0% {transform: translateX(20%);}
+   
+    100% {transform: translateX(-200%);}
+    
 }
 
 .subSubMenu a img{   
