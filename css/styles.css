@@ -84,15 +84,14 @@ h1{
 
 /* Falta maquetar */
 .noticias {
-   /*  white-space: nowrap; */
-    animation: loop 200s linear !important;
+    /* white-space: nowrap; */
+    animation: loop 150s linear infinite !important;
 }
 
 @keyframes loop {
-    0% {transform: translateX(20%);}
+    0% {transform: translateX(80%);}
    
-    100% {transform: translateX(-200%);}
-    
+    100% {transform: translateX(-200%);}  
 }
 
 .subSubMenu a img{   
