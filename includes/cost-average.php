@@ -17,7 +17,7 @@
                                 <h5>Precio Compra</h5>
                                 <input class="rounded mt-1 mb-2 azul3 text-center w-75 cursor-na text-green opacityOff" type="submit"  value="500 $">
                                 <input class="rounded mb-2 text-center w-75 cursor-pointer" type="text" value="1,000 $">
-                                <p class="mt-2">Cost average</p>
+                                <p class="mt-2">Break even</p>
                                 <input class="rounded text-orange azulLogo2 text-center w-75 cursor-na" type="submit"  value="523.80 $">
                             </div>
                             <div class="calcCost text-light col-3">
