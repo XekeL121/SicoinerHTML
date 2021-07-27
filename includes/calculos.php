@@ -1,4 +1,4 @@
-                <div class="ofertas p-2 px-5 text-center justify-content-center  azulFondo">
+                <div class="ofertas row p-2 px-5 text-center justify-content-center azulFondo">
                     <!-- Aquí comienza el contenido -->
                     <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-8 col-md-8 col-8 text-center rounded of-hidden mx-auto">                        
                         <div id="selectCalc">                            
