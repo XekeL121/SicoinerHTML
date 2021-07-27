@@ -10,9 +10,14 @@ button{
     border: none !important;   
 }
 
+.form-select > option{
+    text-align: center !important;
+}
+
 body{
     min-height: 100vh;
 }
+
 
 
 /* html{
@@ -58,12 +63,6 @@ h1{
     margin-bottom: auto;  
 }
 
-.submenu .noticias{   
-    /* margin-left: 10px !important;  */  
-    /* text-overflow: ellipsis; */
-   /*  max-width: 98%;   */ 
-}
-
 #nuevoPort:hover,
 .submenu a:hover{   
     background-color: rgb(44 83 178) !important;  
@@ -74,16 +73,6 @@ h1{
     border-top: 0.1px rgb(137, 116, 230) inset !important;
     border-bottom: 0.1px rgb(86, 68, 168) inset !important;
 }
-
-/* #info {
-    width: 12px;
-    margin-bottom: 2.5px !important;
-    margin-right: 2px !important;
-} */
-
-/* #info p{
-    width: 20px;    
-} */
 
 
 /* Falta maquetar */
@@ -160,7 +149,8 @@ hr {
     color: white;    
 }
 
-.table > tr > .celda {
+.table > tr, 
+#total > .celda{
     border-bottom: none !important;
     border-top: none !important;   
     vertical-align: middle !important;   
@@ -173,7 +163,7 @@ hr {
     padding-bottom: 5px !important;
 }
 
-#datos .celda {   
+.activos .celda {   
     padding-top: 3px !important;
     padding-bottom: 3px !important; 
     border-bottom: rgb(32 61 119) solid 0.5px !important;  
@@ -372,7 +362,7 @@ footer{
         font-size: 12px !important;        
     }
     
-    #datos .celda {   
+    .activos .celda {   
         padding-top: 1px !important;
         padding-bottom: 1px !important; 
         font-size: 12px !important;        
@@ -490,7 +480,7 @@ footer{
         font-size: 11px !important;        
     }
     
-    #datos .celda {   
+    .activos .celda {   
         padding-top: 1px !important;
         padding-bottom: 1px !important; 
         font-size: 11px !important;        
@@ -578,7 +568,7 @@ footer{
         font-size: 8px !important;        
     }
     
-    #datos .celda {   
+    .activos .celda {   
         padding-top: 1px !important;
         padding-bottom: 1px !important; 
         font-size: 8px !important;        
@@ -662,7 +652,7 @@ footer{
         font-size: 10px !important;        
     }
     
-    #datos .celda {   
+    .activos .celda {   
         padding-top: 1px !important;
         padding-bottom: 1px !important; 
         font-size: 10px !important;        

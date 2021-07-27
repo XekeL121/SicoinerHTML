@@ -10,7 +10,7 @@
                                 <fieldset class="row">                                    
                                     <div class="selector col-xl-3 col-6 p-3">
                                         <label for="disabledSelect" class="form-label text-light col">Periodo:</label>
-                                        <select id="disabledSelect" class="form-select col">
+                                        <select id="disabledSelect" class="form-select col px-2">
                                             <option>Completo</option>
                                             <option>Mensual</option>
                                             <option>Trimenstral</option>
@@ -21,21 +21,21 @@
                                     </div>
                                     <div class="selector col-xl-3 col-6 p-3">
                                         <label for="disabledSelect" class="form-label text-light col">Portfolio:</label>
-                                        <select id="disabledSelect" class="form-select col">
+                                        <select id="disabledSelect" class="form-select col px-2">
                                             <option>Todos</option>
                                             <option>Portfolio 1</option>
                                         </select>
                                     </div>
                                     <div class="selector col-xl-3 col-6 p-3">
                                         <label for="disabledSelect" class="form-label text-light col">Ticker:</label>
-                                        <select id="disabledSelect" class="form-select col">
+                                        <select id="disabledSelect" class="form-select col px-2">
                                             <option>Todos</option>
                                             <option>ETH</option>
                                         </select>
                                     </div>
                                     <div class="selector col-xl-3 col-6 p-3">
                                         <label for="disabledSelect" class="form-label text-light col">Órdenes:</label>
-                                        <select id="disabledSelect" class="form-select col">
+                                        <select id="disabledSelect" class="form-select col px-2">
                                             <option>Todas</option>
                                             <option>Compra</option>
                                             <option>Venta</option>
@@ -48,7 +48,7 @@
 
 
                         <div class="tabla text-light">
-                           <table class="table mb-5 of-hidden">
+                           <table class="table mb-5 of-hidden table-hover">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop">Portfolio<img class="rounded mb-2">
@@ -78,7 +78,7 @@
 
                                 <!-- Fila de datos del activo -->
                                 <tbody class="table bg-rojo">                                    
-                                        <tr id="datos">
+                                        <tr class="activos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                      
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
                                             <th class="celda opacityOff">Venta</th> 
@@ -100,7 +100,7 @@
                                 <!-- Fila de datos del activo -->
                                 <tbody class="table bg-verde">
                                     <div class="">
-                                        <tr id="datos">
+                                        <tr class="activos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                    
                                             <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
                                             <th class="celda opacityOff">Compra</th> 

@@ -1,11 +1,11 @@
-                <div class="ofertas p-2 px-5 row text-center justify-content-center overflow-scroll azulFondo">
+                <div class="ofertas row p-2 px-5 text-center justify-content-center overflow-scroll azulFondo">
                     <!-- Aquí comienza el portfolio -->
-                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-10 col-md-11 col-10 text-center">                       
+                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-10 col-md-11 col-10 text-center mx-auto">                       
                         <h3 class="textoAzul mt-3 mb-1 text-light">Portfolio 1</h3>
                         <hr class="azulLogo text-light mx-auto rounded bg-white">
                         <div class="text-light mt-2 w-100">
                             <!-- La tabla tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
-                            <table class="table mt-1 mb-5 of-hidden">
+                            <table class="table mt-1 mb-5 of-hidden table-hover table-stripped">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop" scope="col">Ticker</th>
@@ -30,9 +30,11 @@
                                     </tr>
                                 </thead>
                                 <tbody class="table azul1">
+
+                                
                                     <!-- Fila de datos del activo -->
                                     <div>
-                                        <tr id="datos">
+                                        <tr class="activos">
                                             <th class="celda opacityOff" scope="row">ETH</th>
                                             <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
                                             <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
@@ -52,6 +54,80 @@
                                     </div>
                                     <!-- Fin fila de datos del activo  -->
 
+
+                                    <!-- Fila de datos del activo -->
+                                    <div>
+                                        <tr class="activos">
+                                            <th class="celda opacityOff" scope="row">ETH</th>
+                                            <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
+                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
+                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
+                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
+                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
+                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
+                                            <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
+                                            <th class="celda bMenu">
+                                            <?php
+                                                include "includes/menufila_portfolio.php";
+                                            ?> 
+                                            </th>
+                                        </tr>
+                                        <tr id="salto"></tr>
+                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                    </div>
+                                    <!-- Fin fila de datos del activo  -->
+
+
+                                    <!-- Fila de datos del activo -->
+                                    <div>
+                                        <tr class="activos">
+                                            <th class="celda opacityOff" scope="row">ETH</th>
+                                            <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
+                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
+                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
+                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
+                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
+                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
+                                            <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
+                                            <th class="celda bMenu">
+                                            <?php
+                                                include "includes/menufila_portfolio.php";
+                                            ?> 
+                                            </th>
+                                        </tr>
+                                        <tr id="salto"></tr>
+                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                    </div>
+                                    <!-- Fin fila de datos del activo  -->
+
+
+                                    <!-- Fila de datos del activo -->
+                                    <div>
+                                        <tr class="activos">
+                                            <th class="celda opacityOff" scope="row">ETH</th>
+                                            <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
+                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
+                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
+                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
+                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
+                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
+                                            <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
+                                            <th class="celda bMenu">
+                                            <?php
+                                                include "includes/menufila_portfolio.php";
+                                            ?> 
+                                            </th>
+                                        </tr>
+                                        <tr id="salto"></tr>
+                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                    </div>
+                                    <!-- Fin fila de datos del activo  -->
+
+
+
+
+
+
                                     <!-- Fila de totales del portfolio -->
                                     <tr id="total" class="azul2 opacityOff z0">
                                         <th class="celda nowrap opacityOff" scope="row">Total "1" activos</th>
@@ -65,7 +141,7 @@
                                         <!-- Total ganancias en el portfolio entero -->
                                         <!-- Botón + de añadir nueva fila -->
                                         <th class="bMenu">
-                                            <button><img src="img/add_box_white_24dp.svg" alt=""></button>
+                                            <button class="mb-1"><img src="img/add_box_white_24dp.svg" alt=""></button>
                                         </th>
                                     </tr>
                                     <!-- Final fila de totales del portfolio -->
