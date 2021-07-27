@@ -10,6 +10,10 @@ button{
     border: none !important;   
 }
 
+body{
+    min-height: 100vh;
+}
+
 
 /* html{
     scroll-behavior: auto;
