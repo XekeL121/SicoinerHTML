@@ -52,9 +52,9 @@
                                 <thead>
                                     <tr>
                                         <th class="celdaTop">Portfolio<img class="rounded mb-2">
+                                        <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Fecha</th>
                                         <th class="celdaTop" scope="col">Tipo</th>
-                                        <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
                                         <th class="celdaTop" scope="col">Precio C/V</th>
                                         <th class="celdaTop" scope="col">Capital *</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
@@ -80,9 +80,9 @@
                                 <tbody class="table bg-rojo">                                    
                                         <tr class="activos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                      
+                                            <th class="celda bg-marca">ETH</th> 
                                             <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
                                             <th class="celda opacityOff">Venta</th> 
-                                            <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda text-orange">1500 $</th> 
                                             <th class="celda opacityOff text-green">+300,000 $</th> 
@@ -102,9 +102,9 @@
                                     <div class="">
                                         <tr class="activos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                    
+                                            <th class="celda bg-marca">ETH</th> 
                                             <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
                                             <th class="celda opacityOff">Compra</th> 
-                                            <th class="celda">ETH</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda text-orange">1000 $</th> 
                                             <th class="celda opacityOff text-green">-200,000 $</th>
