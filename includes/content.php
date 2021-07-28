@@ -1,9 +1,9 @@
                 <div class="ofertas row p-2 px-5 text-center justify-content-center overflow-scroll azulFondo">
                     <!-- Aquí comienza el portfolio -->
-                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-10 col-md-11 col-10 text-center mx-auto">                       
+                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-10 col-md-11 col-10 text-center">                       
                         <h3 class="textoAzul mt-3 mb-1 text-light">Portfolio 1</h3>
                         <hr class="azulLogo text-light mx-auto rounded bg-white">
-                        <div class="text-light mt-2 w-100">
+                        <div class="text-light mt-2 w-100 mx-auto">
                             <!-- La tabla tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
                             <table class="table mt-1 mb-5 of-hidden table-hover table-stripped">
                                 <thead>
@@ -29,19 +29,18 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody class="table azul1">
+                                <tbody class="table azul1 justify-content-center">
 
-                                
-                                    <!-- Fila de datos del activo -->
-                                    <div>
+                                 <!-- Fila de datos del activo -->
+                                 <div>
                                         <tr class="activos">
-                                            <th class="celda opacityOff" scope="row">ETH</th>
+                                            <th id="ticker" class="celda opacityOff" scope="row">ETH</th>
                                             <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
-                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
-                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
-                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
+                                            <th id="cantidad" class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
+                                            <th id="breakEven" class="celda">500 $</th> <!-- Precio medio de compra -->
+                                            <th class="celda"><input id="coti" class="opacityOff text-bold coti text-white text-center border-0 cursor-pointer rounded azulLogo2 w-75 h-75 p-1" type="number" value="1500"></th> <!-- Precio actual de ADA en el mercado -->
+                                            <th id="inversion" class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
+                                            <th id="diferencia" class="celda opacityOff text-green">100,000 $ | 100%</th>
                                             <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
                                             <th class="celda bMenu">
                                             <?php
@@ -55,76 +54,7 @@
                                     <!-- Fin fila de datos del activo  -->
 
 
-                                    <!-- Fila de datos del activo -->
-                                    <div>
-                                        <tr class="activos">
-                                            <th class="celda opacityOff" scope="row">ETH</th>
-                                            <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
-                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
-                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
-                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
-                                            <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
-                                            <th class="celda bMenu">
-                                            <?php
-                                                include "includes/menufila_portfolio.php";
-                                            ?> 
-                                            </th>
-                                        </tr>
-                                        <tr id="salto"></tr>
-                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
-                                    </div>
-                                    <!-- Fin fila de datos del activo  -->
-
-
-                                    <!-- Fila de datos del activo -->
-                                    <div>
-                                        <tr class="activos">
-                                            <th class="celda opacityOff" scope="row">ETH</th>
-                                            <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
-                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
-                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
-                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
-                                            <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
-                                            <th class="celda bMenu">
-                                            <?php
-                                                include "includes/menufila_portfolio.php";
-                                            ?> 
-                                            </th>
-                                        </tr>
-                                        <tr id="salto"></tr>
-                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
-                                    </div>
-                                    <!-- Fin fila de datos del activo  -->
-
-
-                                    <!-- Fila de datos del activo -->
-                                    <div>
-                                        <tr class="activos">
-                                            <th class="celda opacityOff" scope="row">ETH</th>
-                                            <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
-                                            <th class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
-                                            <th class="celda">500 $</th> <!-- Precio medio de compra -->
-                                            <th class="celda">1500 $</th> <!-- Precio actual de ADA en el mercado -->
-                                            <th class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th class="celda opacityOff text-green">100,000 $ | 100%</th>
-                                            <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
-                                            <th class="celda bMenu">
-                                            <?php
-                                                include "includes/menufila_portfolio.php";
-                                            ?> 
-                                            </th>
-                                        </tr>
-                                        <tr id="salto"></tr>
-                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
-                                    </div>
-                                    <!-- Fin fila de datos del activo  -->
-
-
-
+                                   
 
 
 
