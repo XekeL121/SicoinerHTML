@@ -25,7 +25,7 @@
             ?>
 
             <?php
-                include "includes/content.php";
+                include "includes/portfolios.php";
             ?>                            
 
             <?php
