@@ -12,7 +12,7 @@
                                         <th class="celdaTop col-2" scope="">Ticker</th>
                                         <th class="celdaTop col-1" scope="">Cant.</th>
                                         <th class="celdaTop col-2" scope="">Precio</th> <!-- Precio medio de compra -->
-                                        <th class="celdaTop col-2" scope="">Cotización*</th> <!-- Que solo se actualice con un icono de actualizar -->
+                                        <th class="celdaTop col-2" scope="">Cotización $</th> <!-- Que solo se actualice con un icono de actualizar -->
                                         <th class="celdaTop col-2" scope="">Inversión</th>
                                         <th class="celdaTop col-2" scope="">P&L | %</th>
                                         <!-- Botón configuración Portfolio -->
@@ -50,14 +50,14 @@
 
                                     <!-- Fila TOTALES del portfolio -->
                                     <tr id="total" class="azul2 opacityOff z0">
-                                        <th class="celda nowrap opacityOff" scope="row">Total "1" activos</th>
+                                        <th class="celda nowrap opacityOff" scope="row">Total "3" activos</th>
                                         <!-- Total de activos, o filas, que sería lo mismo -->
                                         <th class="celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class="celda text-orange opacityOff">100,000 $</th>
                                         <!-- Total inversión en el portfolio entero-->
-                                        <th class="celdaPlTotal nowrap opacityOff">100,000 $ | 100%</th>
+                                        <th class="celdaPlTotal nowrap opacityOff">300,000 $ | 300%</th>
                                         <!-- Total ganancias en el portfolio entero -->
                                         <!-- Botón + de añadir nueva fila -->
                                         <th class="bMenu">

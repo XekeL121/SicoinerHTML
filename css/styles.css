@@ -249,7 +249,7 @@ li:hover{
 
 .navPort{    
     margin-top: -20px !important;
-    margin-left: -170px !important; 
+    margin-left: -140px !important; 
 }
 
 .button + .navPort:active, button:focus + .navPort {
@@ -261,7 +261,7 @@ li:hover{
 
 .navfilaPort{
     margin-top: -20px !important;
-    margin-left: -90px !important;    
+    margin-left: -50px !important;    
 }
 
 
@@ -364,7 +364,7 @@ footer{
 
         .navfilaPort{    
         margin-top: -20px !important;
-        margin-left: -100px !important;    
+        margin-left: -70px !important;    
         }
 }
 
@@ -704,12 +704,12 @@ footer{
 
     .navFila{    
         margin-top: -20px !important;
-        margin-left: -190px !important;    
+        margin-left: -170px !important;    
         }
 
     .navPort{    
         margin-top: -20px !important;
-        margin-left: -160px !important;    
+        margin-left: -190px !important;    
         }  
 
     .navHistorial{    
