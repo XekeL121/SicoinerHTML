@@ -163,12 +163,19 @@ hr {
     padding-bottom: 5px !important;
 }
 
+
+/* .activos th{
+    display: column !important;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr !important;
+} */
+
 .activos .celda {   
     padding-top: 3px !important;
     padding-bottom: 3px !important; 
     border-bottom: rgb(32 61 119) solid 0.5px !important;  
     border-top: rgb(32 61 119) solid 0.5px !important;     
 }
+
 
 
 #total {    

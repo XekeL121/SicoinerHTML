@@ -9,14 +9,14 @@
                             <table class="table mt-1 mb-5 of-hidden table-hover table-stripped">
                                 <thead>
                                     <tr>
-                                        <th class="celdaTop" scope="col">Ticker</th>
-                                        <th class="celdaTop" scope="col">Cant.</th>
-                                        <th class="celdaTop" scope="col">Precio</th> <!-- Precio medio de compra -->
-                                        <th class="celdaTop" scope="col">Cotización*</th> <!-- Que solo se actualice con un icono de actualizar -->
-                                        <th class="celdaTop" scope="col">Inversión</th>
-                                        <th class="celdaTop" scope="col">P&L | %</th>
+                                        <th class="celdaTop col-2" scope="">Ticker</th>
+                                        <th class="celdaTop col-1" scope="">Cant.</th>
+                                        <th class="celdaTop col-2" scope="">Precio</th> <!-- Precio medio de compra -->
+                                        <th class="celdaTop col-2" scope="">Cotización*</th> <!-- Que solo se actualice con un icono de actualizar -->
+                                        <th class="celdaTop col-2" scope="">Inversión</th>
+                                        <th class="celdaTop col-2" scope="">P&L | %</th>
                                         <!-- Botón configuración Portfolio -->
-                                        <th class="bMenu mb-5">
+                                        <th class="bMenu mb-5 col-1">
                                             <button class="rounded mb-1 bg-transparent"><img id="portConfig" class="my-auto p-1"
                                                     src="img/tune_white_18dp.svg" alt=""></button>
                                                 <!-- Menú del portfolio -->
@@ -24,7 +24,6 @@
                                                     include "includes/menu_portfolio.php";
                                                 ?>  
                                                 <!-- FIN Menú del portfolio -->
-
                                         </th>
                                     </tr>
                                 </thead>
