@@ -1,4 +1,4 @@
-                        <h4 class="mt-3 mb-2 text-light">Cost Average</h4>
+                        <h4 class="mt-3 mb-2 text-light">Cálculo precio medio de compra:</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
                         <div class="calcRow d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
