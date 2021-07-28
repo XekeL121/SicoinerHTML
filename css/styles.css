@@ -34,6 +34,37 @@ h1{
     font-family: 'Signika', sans-serif;
 }
 
+/* BARRA LATERAL */
+
+/* .lateral{
+    display: block;
+    position: absolute;
+    margin-left: calc(-100% / 1.7) !important;
+    background-color: red;       
+    height: 100%;   
+    transition: all linear 300ms; 
+}
+
+.lateral:hover{
+    
+    margin-left:0px !important;
+}
+
+.navLateral button{
+    display: block;
+    position: static;
+    margin-top: 500px !important; 
+    margin-left: 100px !important;   
+}
+
+.social img{    
+    width: 50px;
+} */
+
+/* Fin barra lateral */
+
+
+
 /* botón menú formato móvil */
 .menuResponsive img {
     width: 35px;
@@ -187,7 +218,7 @@ hr {
     /* color: rgb(31 195 59) !important; */   
     border-bottom: none !important;    
     line-height: 30px;
-    z-index: -1 !important;
+    /* z-index: -1 !important; */
  } 
 
 .bMenu {
@@ -195,7 +226,7 @@ hr {
     border: none !important;    
     color: none !important;
     clear: both !important;
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
 }
 
 .bMenu:hover{
@@ -273,7 +304,7 @@ li:hover{
 
 .navHistorial{   
     margin-top: -20px !important;
-    margin-left: -195px !important;    
+    margin-left: -215px !important;    
 }
 
 
@@ -489,18 +520,14 @@ footer{
 
     .navHistorial{    
     margin-top: -20px !important;
-    margin-left: -210px !important;    
+    margin-left: -220px !important;    
     }
 
     .navPort{    
         margin-top: -20px !important;
         margin-left: -190px !important;    
         }
-
-    .navHistorial{    
-        margin-top: -20px !important;
-        margin-left: -210px !important;    
-        }
+    
 
     .celdaTop, .celdaPlTotal, .celdaPl{  
         border-bottom: none !important;
@@ -535,7 +562,7 @@ footer{
     .navAcount{    
         width: 190px;    
         margin-top: 29px !important;
-        margin-left: 44px !important;       
+        margin-left: 40px !important;       
     }
 
     .noticias {
@@ -640,7 +667,7 @@ footer{
     
     .navAcount{        
         margin-top: 29px !important;
-        margin-left: -70px !important;        
+        margin-left: -80px !important;        
     }
 }
 

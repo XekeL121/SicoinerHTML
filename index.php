@@ -17,7 +17,27 @@
         <link rel="icon" type="image/png" style="height: 100%; width: 100%;" href="img/Sicoiner favicon.png">
         <title>Sicoiner - Portfolio financiero</title>
     </head>
-    <body class="azulFondo"> 
+    <body class="azulFondo">
+
+        <!-- Barra lateral -->                
+        <!-- <div class="lateral z1 col-md-8 col-xs-12 col-8 d-flex">
+            
+            <div class="contenidoLateral bg-primary col-11">
+                Contenido
+            </div>
+            <div class="navLateral bg-warning col-1">                
+            <button class="rounded mb-1 bg-warning"><img id="lateralnav" class="my-auto p-1" src="img/tune_white_18dp.svg" alt=""></button>
+                <div class="social justify-content-center col-1 mx-auto">
+                    <img src="img/Sicoiner favicon.png" alt="" class="twitter bg-primary">
+                    <img src="img/Sicoiner favicon.png" alt="" class="facebook bg-primary">
+                    <img src="img/Sicoiner favicon.png" alt="" class="google bg-primary">
+                </div>
+            </div>
+        </div> -->
+        <!-- Fin barra lateral -->
+
+
+
         <div class="container-full row"> 
 
             <?php

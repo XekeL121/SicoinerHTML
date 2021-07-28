@@ -1,4 +1,4 @@
-                            <ul class="navAcount azulOscuro p-1 rounded opacityOff">
+                            <ul class="navAcount azulOscuro p-1 rounded opacityOff z1">
                                 <li class="px-3 rounded"><a class="h6 text-primary" href="">Guardar</a></li>
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Mi cuenta</a></li>
                                 <li class="px-3 rounded"><a class="h6 text-light op80" href="">Versión Pro</a></li>

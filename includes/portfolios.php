@@ -16,14 +16,12 @@
                                         <th class="celdaTop col-2" scope="">Inversión</th>
                                         <th class="celdaTop col-2" scope="">P&L | %</th>
                                         <!-- Botón configuración Portfolio -->
-                                        <th class="bMenu mb-5 col-1">
-                                            <button class="rounded mb-1 bg-transparent"><img id="portConfig" class="my-auto p-1"
-                                                    src="img/tune_white_18dp.svg" alt=""></button>
-                                                <!-- Menú del portfolio -->
+                                        <th class="bMenu mb-5 col-1">                                            
+                                            <!-- Menú del portfolio -->
                                                 <?php
                                                     include "includes/menu_portfolio.php";
                                                 ?>  
-                                                <!-- FIN Menú del portfolio -->
+                                            <!-- FIN Menú del portfolio -->
                                         </th>
                                     </tr>
                                 </thead>

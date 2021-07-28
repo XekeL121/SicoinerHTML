@@ -1,9 +1,9 @@
-                                                <!-- Botón borrar fila del historial -->
+                                                <!-- Botón fila del historial -->
                                                 <button class=""><img src="img/linear_scale_white_24dp.svg" alt=""></button> 
-                                                <ul class="navFila azulOscuro p-2 rounded">
+                                                <ul class="navFila azulOscuro p-2 rounded z1">
                                                     <li class="px-2 rounded"><a class="text-light" href="">Editar operación*</a></li> <!-- Se editará también el portfolio correspondiente a la operación -->
                                                     <li class="px-2 rounded"><a class="text-light" href="">Compartir operación*</a></li> <!-- Se copiaría un texto en diferentes líneas para poder pegarlo en otra app -->
                                                     <li class="px-2 rounded"><a class="text-red" href="">Eliminar (Afectará al portfolio)</a>
                                                     </li>                                                    
                                                 </ul>                                               
-                                                <!-- Fin botón borrar -->
+                                                <!-- Fin botón  -->
