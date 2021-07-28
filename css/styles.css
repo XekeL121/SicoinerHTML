@@ -328,7 +328,7 @@ li:hover{
 /* Fin estilos tabla */
 
 footer{    
-    position: absolute;
+    position: relative;
    /*  display: grid;    */ 
     height: 155px;
     bottom: 0 !important;
