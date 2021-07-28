@@ -16,6 +16,6 @@
                             <div class="calcCost text-light col-3">
                                 <h5>Inversión</h5>
                                 
-                                <input class="w-75 rounded mb-3 mt-2 text-center text-green azulLogo2 cursor-na text-bold" type="text" value='{{n1*n2}}'>
+                                <input class="w-75 rounded mb-3 mt-2 text-center text-green azulLogo2 cursor-na text-bold" type="number" value='{{n1*n2}}'>
                             </div>
                         </div>

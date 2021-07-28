@@ -30,6 +30,9 @@
                             
                         </ul>
                 </div>
+                <!-- Fin del menú responsive -->
+
+                
                 <nav class="col-md-12 col-lg-12 col-xl-6 p-2 text-center">
                     <ul class="d-flex col-lg-12 justify-content-center">
                         <a href="index.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">

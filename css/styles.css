@@ -878,3 +878,9 @@ footer{
 .letter-space-2{
     letter-spacing: 4px;
 }
+
+.ticker{
+    height: max-content !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}

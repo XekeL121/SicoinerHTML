@@ -54,10 +54,10 @@
                                         <th class="celdaTop">Portfolio<img class="rounded mb-2">
                                         <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Fecha</th>
-                                        <th class="celdaTop" scope="col">Tipo</th>
+                                        <th class="celdaTop" scope="col">Orden</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
                                         <th class="celdaTop" scope="col">Precio C/V</th>
-                                        <th class="celdaTop" scope="col">Capital *</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
+                                        <th class="celdaTop" scope="col">Capital $</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
                                         <img class="icon" src="img/arrow_drop_down_18dp.svg" alt="">
                                         </img>
                                         </th>                                        
