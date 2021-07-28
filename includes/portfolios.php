@@ -55,7 +55,7 @@
                                         <th class="celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->
-                                        <th class="celda text-orange opacityOff">100,000 $</th>
+                                        <th class="celda text-orange opacityOff">300,000 $</th>
                                         <!-- Total inversión en el portfolio entero-->
                                         <th class="celdaPlTotal nowrap opacityOff">300,000 $ | 300%</th>
                                         <!-- Total ganancias en el portfolio entero -->
