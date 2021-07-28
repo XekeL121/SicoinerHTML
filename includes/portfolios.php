@@ -50,7 +50,7 @@
 
                                     <!-- Fila TOTALES del portfolio -->
                                     <tr id="total" class="azul2 opacityOff z0">
-                                        <th class="celda nowrap opacityOff" scope="row">Total "3" activos</th>
+                                        <th class="pl-2 celda nowrap opacityOff" scope="row">Total "3" activos</th>
                                         <!-- Total de activos, o filas, que sería lo mismo -->
                                         <th class="celda"></th> <!-- Vacía -->
                                         <th class=" celda"></th> <!-- Vacía -->

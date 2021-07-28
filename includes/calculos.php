@@ -22,6 +22,14 @@
                             </form>                            
                         </div>
 
+                        <!-- Calculadora Coste de Inversión -->
+                        <?php
+                            include "calc-inversion.php";
+                        ?> 
+                        <!-- Fin Calculadora Coste de Inversión -->
+
+
+                        
                         <!-- Calculadora Cost Average -->
                         <?php
                             include "cost-average.php";
@@ -30,11 +38,6 @@
 
 
 
-                        <!-- Calculadora Coste de Inversión -->
-                        <?php
-                            include "calc-inversion.php";
-                        ?> 
-                        <!-- Fin Calculadora Coste de Inversión -->
 
 
 

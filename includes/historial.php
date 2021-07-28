@@ -51,12 +51,12 @@
                            <table class="table mb-5 of-hidden table-hover">
                                 <thead>
                                     <tr>
-                                        <th class="celdaTop">Portfolio<img class="rounded mb-2">
+                                        <th class="celdaTop col-1">Portfolio<img class="rounded mb-2">
                                         <th class="celdaTop" scope="col">Ticker</th>
                                         <th class="celdaTop" scope="col">Fecha</th>
                                         <th class="celdaTop" scope="col">Orden</th>
                                         <th class="celdaTop" scope="col">Cant.</th>
-                                        <th class="celdaTop" scope="col">Precio C/V</th>
+                                        <th class="celdaTop nowrap" scope="col">Precio C/V</th>
                                         <th class="celdaTop" scope="col">Capital $</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
                                         <img class="icon" src="img/arrow_drop_down_18dp.svg" alt="">
                                         </img>
@@ -107,7 +107,7 @@
                                             <th class="celda opacityOff">Compra</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda text-orange">1000 $</th> 
-                                            <th class="celda opacityOff text-green">-200,000 $</th>
+                                            <th class="celda text-light">-200,000 $</th>
                                             <th class="celda bMenu">
 
                                             <?php
@@ -125,7 +125,7 @@
 
                                 <!-- Fila de totales del portfolio -->
                                 <tr id="total" class="azul2 opacityOff z0">
-                                    <th class="celdaPlTotal nowrap opacityOff" scope="row"></th>
+                                    <th class="celdaPlTotal nowrap opacityOff text-green pl-2" scope="row">Total X operaciones</th>
                                     <!-- Total de activos, o filas, que sería lo mismo -->
                                     <th class="celdaPlTotal"></th> <!-- Vacía -->
                                     <th class="celdaPlTotal"></th> <!-- Vacía -->
@@ -135,7 +135,7 @@
                                     <!-- Total ganancias en el portfolio entero -->
                                     <!-- Botón + de añadir nueva fila -->
                                     <th class="celdaPlTotal nowrap"></th>
-                                    <th class="celdaPlTotal nowrap">+300,000 $</th>
+                                    <th class="celdaPlTotal nowrap text-orange">+300,000 $</th>
                                     <th class="bMenu opacityOff"></th>
                                 </tr>
                                 <!-- Final fila de totales del portfolio -->

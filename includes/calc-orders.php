@@ -1,5 +1,5 @@
                         <h4 class="mt-5 mb-2 text-light">Profit (Falta maquetar)</h4>   
-                        <div class="calcRow d-flex col p-3 azul2 rounded space-between justify-content-center align-items-center op80">
+                        <div class="calcRow d-flex col p-3 bg-marca2 rounded space-between justify-content-center align-items-center op80">
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
                                 <h4 class="op50">Portfolio 1</h4>
