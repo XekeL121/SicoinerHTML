@@ -1,6 +1,6 @@
-                <div class="ofertas p-2 px-5 row text-center justify-content-center overflow-scroll">
+                <div class="ofertas row pt-2 text-center justify-content-center overflow-scroll azulFondo overflow-scroll">
                     <!-- Aquí comienza el portfolio -->
-                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-8 col-md-8 col-8 text-center rounded">
+                    <div class="tarjetas px-2 my-3 col-12 col-xl-8 col-md-10 text-center rounded">
                         <h3 class="mt-3 mb-1 text-light op80">Historial</h3>
                         <hr class=" mx-auto rounded bg-white ">
 
@@ -47,22 +47,22 @@
 
 
 
-                        <div class="tabla text-light">
+                        <div class="tabla text-light d-flex justify-content-center pt-3">
                            <table class="table mb-5 of-hidden table-hover">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop col-1">Portfolio<img class="rounded mb-2">
-                                        <th class="celdaTop" scope="col">Ticker</th>
-                                        <th class="celdaTop" scope="col">Fecha</th>
-                                        <th class="celdaTop" scope="col">Orden</th>
-                                        <th class="celdaTop" scope="col">Cant.</th>
-                                        <th class="celdaTop nowrap" scope="col">Precio C/V</th>
-                                        <th class="celdaTop" scope="col">Capital $</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
+                                        <th class="celdaTop col-1" scope="col">Ticker</th>
+                                        <th class="celdaTop col-1" scope="col">Fecha</th>
+                                        <th class="celdaTop col-1" scope="col">Orden</th>
+                                        <th class="celdaTop col-1" scope="col">Cant.</th>
+                                        <th class="celdaTop col-1 nowrap" scope="col">Precio C/V</th>
+                                        <th class="celdaTop col-1" scope="col">Capital $</th> <!-- Aquí se deberá poder añadir el capital disponible para un resultado 100% justo en el total -->
                                         <img class="icon" src="img/arrow_drop_down_18dp.svg" alt="">
                                         </img>
                                         </th>                                        
                                         <!-- Botón configuración Portfolio -->
-                                        <th class="bMenu mb-5">
+                                        <th class="bMenu mb-5 col-1">
                                             <button class="rounded mb-1 bg-transparent"><img id="portConfig" class="my-auto p-1"
                                                     src="img/date_range_white_18dp.svg" alt=""></button>
                                             <ul class="navHistorial azulOscuro p-2 rounded z1">
@@ -81,7 +81,7 @@
                                         <tr class="activos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                      
                                             <th class="celda bg-marca">ETH</th> 
-                                            <th class="celda opacityOff" scope="row">09/07/2021</th>                                            
+                                            <th class="celda opacityOff" scope="row">09/07/21</th>                                            
                                             <th class="celda opacityOff">Venta</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda text-orange">1500 $</th> 
@@ -103,7 +103,7 @@
                                         <tr class="activos">
                                             <th class="celda textoAzul opacityOff">Portfolio 1</th>                                                                                    
                                             <th class="celda bg-marca">ETH</th> 
-                                            <th class="celda opacityOff" scope="row">06/07/2021</th>                                            
+                                            <th class="celda opacityOff" scope="row">06/07/21</th>                                            
                                             <th class="celda opacityOff">Compra</th> 
                                             <th class="celda">200</th> 
                                             <th class="celda text-orange">1000 $</th> 

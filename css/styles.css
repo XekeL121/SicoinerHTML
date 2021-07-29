@@ -692,37 +692,34 @@ footer{
     }    
 
     .tarjetas{
-        min-width: 350px !important;
+        width: 100% !important;
         height: max-content !important;            
         padding: 0% !important; 
         margin: 0% !important; 
         margin-top: 10px !important;   
     }      
 
-    .tabla{
-        width: 100% !important;         
-    } 
-    
+       
     .table > tr > .celda {        
         line-height: 30px;      
     }
     
     .celdaTop, .celdaPlTotal, .celdaPl{  
         border-bottom: none !important;
-        font-size: 10px !important;        
+        font-size: 9px !important;        
     }
     
     .activos .celda {   
         padding-top: 1px !important;
         padding-bottom: 1px !important; 
-        font-size: 10px !important;        
+        font-size: 9px !important;        
     }
 
-    #total .celda {
+  /*   #total .celda {
         white-space: nowrap;
-        font-size: 10px;
+        font-size: 9px;
 
-    }
+    } */
 
     hr {
         height: 2px !important;

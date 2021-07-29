@@ -1,12 +1,12 @@
-                <div class="ofertas row p-2 px-5 text-center justify-content-center overflow-scroll azulFondo">
+                <div class="ofertas row pt-2 text-center justify-content-center overflow-scroll azulFondo">
                     <!-- Aquí comienza el portfolio -->
-                    <div class="tarjetas px-2 my-3 col col-lg-9 col-xl-10 col-md-11 col-10 text-center">                       
+                    <div class="tarjetas px-2 my-3 col-12 col-xl-8 col-md-10 text-center">                       
                         <h3 class="textoAzul mt-3 mb-1 text-light">Portfolio 1</h3>
                         <hr class="azulLogo text-light mx-auto rounded bg-white">
                         <div class="text-light mt-2 w-100 mx-auto">
 
                             <!-- comienza el PORTFOLIO, que tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
-                            <table class="table mt-1 mb-5 of-hidden table-hover table-stripped">
+                            <table class="table mt-3 mb-5 of-hidden table-hover table-stripped nowrap">
                                 <thead>
                                     <tr>
                                         <th class="celdaTop col-1" scope="">Ticker</th>
