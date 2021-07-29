@@ -43,8 +43,9 @@
                                 </div>                            
                             </div>    
                         
-                            <div class="d-flex row">
-                                <a href="index.php"><button type="button" class="py-2 mt-5 bg-orange rounded text-dark text-bold">Acceder</button></a>
+                            <div class="d-flex row justify-content-center">
+                                <a class="col-3" href="index.php"><button type="button" class="py-1 mt-5 bg-orange rounded text-dark text-bold">Acceder</button></a>
+                                <a class="col-3" href="index.php"><button type="button" class="py-1 mt-5 azulOscuro rounded text-light">Registrarse</button></a>
                             </div>
                        <!--  </div> -->
 
