@@ -3,6 +3,7 @@
                 
                     <div id="logo-log" class="col-12">
                         <img class="mt-5" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
+                        <h6 class="op50 nowrap mt-1">- Tu portfolio financiero digital -</h6>
                         
                     </div>
                     
@@ -14,20 +15,20 @@
                        <!--  <div class=""> -->
                             <div id="form-social">
                                 <div id="icon-log">
-                                    <img  class="azulFondo rounded-circle mb-2 p-2" src="img/person_white_48dp.svg" alt="">
+                                    <img  class="op80 azulFondo rounded-circle mb-4 p-2" src="img/person_white_48dp.svg" alt="">
                                 </div>
                                 <h3 class="text-uppercase">Registro de usuario</h3>
-                                <div class="my-3 w-100 mx-auto">
-                                    <label class="mb-1">Email</label>
+                                <div class="my-3 mx-auto">
+                                    <label class="mb-1">Email:</label>
                                     <div class="mx-auto my-auto d-flex justify-content-center">
-                                        <input type="text" class="mx-auto my-auto px-2 py-1 text-center azulLogo2 rounded text-light border-none" id="inputEmail" value="email@example.com">
+                                        <input type="text" class="w-50 mx-auto my-auto px-2 py-1 text-center azulLogo2 rounded text-light border-none" id="inputEmail" value="email@example.com">
                                     </div>
                                 </div>
 
-                                <div class="mb-3 w-100 mx-auto my-auto">
-                                    <label class="mb-1">Password</label>
+                                <div class="mb-3 mx-auto my-auto">
+                                    <label class="mb-1">Password:</label>
                                     <div class="mx-auto my-auto d-flex justify-content-center">
-                                    <input type="password" class="mx-auto my-auto px-2 py-1 text-center azulLogo2 rounded text-light border-none" id="inputPassword">
+                                    <input type="password" class="w-25 mx-auto my-auto px-2 py-1 text-center azulLogo2 rounded text-light border-none" id="inputPassword">
                                     </div>
                                 </div>
 
@@ -45,7 +46,7 @@
                         
                             <div class="d-flex row justify-content-center">
                                 <a class="col-3" href="index.php"><button type="button" class="py-1 mt-5 bg-orange rounded text-dark text-bold">Acceder</button></a>
-                                <a class="col-3" href="index.php"><button type="button" class="py-1 mt-5 azulOscuro rounded text-light">Registrarse</button></a>
+                                <a class="col-3" href="index.php"><button type="button" class="py-1 mt-5 azulTarjeta rounded text-light">Registrarse</button></a>
                             </div>
                        <!--  </div> -->
 

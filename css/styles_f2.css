@@ -54,32 +54,36 @@ de la web que no esté en:
 #cont-log{
     height: 100vh !important;
     width:100% !important;
-    color: white;
-    
+    color: white;    
 }
 
-#logo-log{
-    /* height: 200px !important; */
+#logo-log h6{
+    letter-spacing: 4px;
 }
 
-#cont-log > div > img{    
-    
+#icon-log img{
+    border-top: var(--color-naranja2) solid 1px;
+    transition: 10s ease;    
 }
+
+#formu-log:hover > #form-social > #icon-log > img{    
+    border-top: var(--azulLogo) solid 1px;      
+    background-color: var(--azul1) !important;
+}
+
 
 #formu-log{
     min-height:40% !important;
-    margin-top:-10px !important;  
+    margin-top:-40px !important;  
     border-top:  var(--color-naranja2) solid 1px !important;
-    border-bottom:  var(--color-naranja2) solid 1px !important;    
-    transition: 10s ease;
+    /* border-bottom:  var(--color-naranja2) transparent 1px !important; */    
+    transition: 5s ease;
 }
 
 #formu-log:hover{    
-    background-color: var(--azulOscuro) !important; 
-    border-top:  var(--color-naranja1) transparent 1px !important;
-    border-bottom:  var(--color-naranja1) transparent 1px !important; 
+    background-color: var(--azulOscuro) !important;    
     border-top:  var(--azulLogo) solid 1px !important;
-    border-bottom:  var(--azulLogo) solid 1px !important; 
+    /* border-bottom:  var(--azulLogo) solid 1px !important;  */
    
 }
 
