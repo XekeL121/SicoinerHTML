@@ -1,0 +1,101 @@
+/* Estos estilos están enfocados al resto
+de la web que no esté en:
+- Portfolios
+- Historial
+- Cálculos
+- Alertas
+
+ Por ejemplo: 
+- Página de login  
+- Modals con inputs
+- overlays etc.
+*/
+
+:root {
+
+    --color-naranja1:#fbb03b;
+
+    --color-naranja2: #ff9d008e;
+
+    --azul1: rgb(8 27 72);
+    
+    --azul2: rgb(1 18 56);
+    
+    --azul3: rgb(11 40 102);
+
+    --azul4: rgb(44 83 178);
+    
+    --navButonOver:rgba(0, 255, 255, 0.096);
+    
+    --azulFondo: #14244a;
+    
+    --azulOscuro: #040c1d;
+    
+    --azulTarjeta: rgb(1 18 56);
+    
+    --azulLogo: rgb(15 155 215);
+    
+    --azulLogo2: #1f3b75;
+    
+    --bg-rojo: rgb(43, 5, 5);
+    
+    --bg-verde: rgb(2, 29, 8);
+}
+
+.borde{
+    border: none;
+    background-color: green !important;
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+#cont-log{
+    height: 100vh !important;
+    width:100% !important;
+    color: white;
+    
+}
+
+#logo-log{
+    /* height: 200px !important; */
+}
+
+#cont-log > div > img{    
+    
+}
+
+#formu-log{
+    min-height:40% !important;
+    margin-top:-10px !important;  
+    border-top:  var(--color-naranja2) solid 1px !important;
+    border-bottom:  var(--color-naranja2) solid 1px !important;    
+    transition: 10s ease;
+}
+
+#formu-log:hover{    
+    background-color: var(--azulOscuro) !important; 
+    border-top:  var(--color-naranja1) transparent 1px !important;
+    border-bottom:  var(--color-naranja1) transparent 1px !important; 
+    border-top:  var(--azulLogo) solid 1px !important;
+    border-bottom:  var(--azulLogo) solid 1px !important; 
+   
+}
+
+#formu-log > div > a > button:hover{
+    transition: 100ms;
+    color: white !important; 
+    background-color: var(--azul4) !important;
+}
+
+
+#formu-log div button{
+    width: 180px;
+ }
+
+ #icon-log img{
+     width: 100px;
+ }
+
+ 

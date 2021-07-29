@@ -1,3 +1,34 @@
+:root {
+
+    --color-naranja1:#fbb03b;
+
+    --color-naranja2: #fbb13b75 !important;
+
+    --azul1: rgb(8 27 72);
+    
+    --azul2: rgb(1 18 56);
+    
+    --azul3: rgb(11 40 102);
+
+    --azul4: rgb(44 83 178);
+    
+    --navButonOver:rgba(0, 255, 255, 0.096);
+    
+    --azulFondo: #14244a;
+    
+    --azulOscuro: #040c1d;
+    
+    --azulTarjeta: rgb(1 18 56);
+    
+    --azulLogo: rgb(15 155 215);
+    
+    --azulLogo2: #1f3b75;
+    
+    --bg-rojo: rgb(43, 5, 5);
+    
+    --bg-verde: rgb(2, 29, 8);
+}
+
 * {
     padding:0% !important;
     margin: 0% !important;
@@ -18,6 +49,9 @@ body{
     min-height: 100vh;
 }
 
+a{
+    color:white;
+}
 
 
 /* html{
@@ -84,7 +118,7 @@ h1{
 }
 
 .navButon:hover {
-    background-color: rgba(0, 255, 255, 0.096); 
+    background-color: var(--navButonOver); 
     border-radius: 5px;
 }
 
@@ -96,7 +130,7 @@ h1{
 
 #nuevoPort:hover,
 .submenu a:hover{   
-    background-color: rgb(44 83 178) !important;  
+    background-color: var(--azul4) !important;  
 }
 
 .avisos{     
@@ -235,14 +269,14 @@ hr {
 
 
 
-/* Modals */
-/* Modals */
-/* Modals */
+/* Submenús */
+/* Submenús */
+/* Submenús */
 
 
 .navFila{    
     margin-top: -20px !important;
-    margin-left: -240px !important;   
+    margin-left: -205px !important;   
 }
 
 .navFila,
@@ -280,7 +314,7 @@ li:hover{
 
 .navPort{    
     margin-top: -20px !important;
-    margin-left: -140px !important; 
+    margin-left: -150px !important; 
 }
 
 .button + .navPort:active, button:focus + .navPort {
@@ -292,7 +326,7 @@ li:hover{
 
 .navfilaPort{
     margin-top: -20px !important;
-    margin-left: -50px !important;    
+    margin-left: -65px !important;    
 }
 
 
@@ -304,7 +338,7 @@ li:hover{
 
 .navHistorial{   
     margin-top: -20px !important;
-    margin-left: -215px !important;    
+    margin-left: -180px !important;    
 }
 
 
@@ -390,7 +424,7 @@ footer{
     
     .navFila{    
         margin-top: -20px !important;
-        margin-left: -250px !important;    
+        margin-left: -220px !important;    
         }
 
         .navfilaPort{    
@@ -685,6 +719,10 @@ footer{
         margin-bottom: -10px !important;
     }
 
+    body{
+        background-color:#14244a !important ;
+    }
+
     footer{    
         width: 100%;        
         bottom: 0 !important;
@@ -837,6 +875,10 @@ footer{
     background: #01091b73 !important;     
 }
 
+.bg-orange{    
+    background-color: #fbb03b !important;
+}
+
 
 
 
@@ -902,4 +944,8 @@ footer{
 
 .pl-2{
     padding-left: 10px !important;
+}
+
+.border-none{
+    border: none !important;
 }
