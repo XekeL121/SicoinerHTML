@@ -17,7 +17,7 @@
                                 <div id="icon-log">
                                     <img  class="op80 azulFondo rounded-circle mb-4 p-2" src="img/person_white_48dp.svg" alt="">
                                 </div>
-                                <h4 class="text-uppercase">Acceso de usuario</h4>
+                                <h5 class="text-uppercase op80">Acceso a tu portfolio</h5>
                                 <div class="my-3 mx-auto">
                                     <label class="mb-1">Email:</label>
                                     <div class="mx-auto my-auto d-flex justify-content-center">
@@ -39,6 +39,10 @@
                                     </div>
                                     <div class="col-6 d-flex nowrap align-items-center justify-content-center text-primary cursor-pointer">Recuperar contraseña</div>
                                 </div>
+                                <div class="d-flex row justify-content-center mt-5">
+                                <a class="col-6 d-flex justify-content-end" href="index.php"><button type="button" class="mr-2 py-1 bg-orange rounded text-dark text-bold">Acceder</button></a>
+                                <a class="col-6 d-flex justify-content-start" href="index.php"><button type="button" class="ml-2 py-1 azul3 rounded text-light">Crear cuenta</button></a>
+                            </div>
 
                                 <hr class="azulLogo mx-auto rounded mt-4 w-75">
 
@@ -59,10 +63,7 @@
                                 </div>                            
                             </div>    
                         
-                            <div class="d-flex row justify-content-center mt-5">
-                                <a class="col-6 d-flex justify-content-end" href="index.php"><button type="button" class="mr-2 py-1 bg-orange rounded text-dark text-bold">Acceder</button></a>
-                                <a class="col-6 d-flex justify-content-start" href="index.php"><button type="button" class="ml-2 py-1 azul3 rounded text-light">Crear cuenta</button></a>
-                            </div>
+                            
                        <!--  </div> -->
 
                         
