@@ -34,16 +34,17 @@
     margin: 0% !important;
     list-style: none; 
     flex-wrap: wrap;        
-    text-decoration: none !important;    
+    text-decoration: none !important;   
+     
 }
 
 button{
     border: none !important;   
 }
 
-.form-select > option{
+/* .form-select > option{
     text-align: center !important;
-}
+} */
 
 body{
     min-height: 100vh;
@@ -68,7 +69,7 @@ h1{
     font-family: 'Signika', sans-serif;
 }
 
-/* BARRA LATERAL */
+/* BARRA LATERAL en index.php*/
 
 /* .lateral{
     display: block;
@@ -124,8 +125,8 @@ h1{
 
 .icon{    
     width: 30px;
-    margin-top: auto;
-    margin-bottom: auto;  
+    /* margin-top: auto;
+    margin-bottom: auto;   */
 }
 
 #nuevoPort:hover,
@@ -157,10 +158,10 @@ h1{
     margin-bottom: 3px !important;       
 }
 
-.subSubMenu {    
+/* .subSubMenu {    
     float: right !important;
     margin: 0px !important;
-}
+} */
 
 
 .subSubMenu a{
@@ -198,8 +199,8 @@ h1{
 /* Estilos tabla */
 
 hr {
-    height: 2px !important;
-    width: 250px !important;    
+    /* height: 2px !important; */
+    width: 350px !important;    
 }
 
 
@@ -314,7 +315,7 @@ li:hover{
 
 .navPort{    
     margin-top: -20px !important;
-    margin-left: -150px !important; 
+    margin-left: -170px !important; 
 }
 
 .button + .navPort:active, button:focus + .navPort {
@@ -441,7 +442,16 @@ footer{
 
     .menuResponsive img{        
         margin-right: -5px !important;        
-    }    
+    }  
+    
+    .navAcount{
+        width:200px !important;
+        margin-top:30px !important;
+    }
+
+    .navPort{
+        margin-left:-180px !important;
+    }
 }
 
 

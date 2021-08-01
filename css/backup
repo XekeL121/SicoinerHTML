@@ -1,3 +1,9 @@
+Este documento son los estilos que se han limpiado
+del código, se dejan de momento por si acaso.
+
+
+
+
 @media (max-width: 1120px) {
     .calcRow input{
         max-width: 130px !important;
