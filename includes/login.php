@@ -33,20 +33,32 @@
                                 </div>
 
                                 <div class="d-flex row">
-                                    <div class="col-6">Recordarme</div>
-                                    <div class="col-6">Recuperar contraseña</div>
+                                    <div class="remember col-6 d-flex nowrap align-items-center justify-content-end">
+                                        <input type="checkbox" id="" name="" value="check">
+                                        <div class="ml-2">Recordarme</div>
+                                    </div>
+                                    <div class="col-6 d-flex nowrap align-items-center justify-content-center">Recuperar contraseña</div>
                                 </div>
-                                <h6>Inciar sesión con:</h6>
+                                <h6 class="mt-5 mb-4">Inciar sesión con:</h6>
                                 <div class="d-flex row justify-content-center">
-                                    <div class="col-2">Google</div>
-                                    <div class="col-2">Facebook</div>
-                                    <div class="col-2">Twitter</div>
+                                    <div class="d-flex justify-content-center col-3">
+                                        <img class="icon-social" src="img/google.svg" alt="">
+                                        <p>Google</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center col-3">
+                                        <img class="icon-social" src="img/facebook.svg" alt="">
+                                        <p>Facebook</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center col-3">
+                                        <img class="icon-social" src="img/twitter.svg" alt="">
+                                        <p>Twitter</p>
+                                    </div>
                                 </div>                            
                             </div>    
                         
-                            <div class="d-flex row justify-content-center">
-                                <a class="col-3" href="index.php"><button type="button" class="py-1 mt-5 bg-orange rounded text-dark text-bold">Acceder</button></a>
-                                <a class="col-3" href="index.php"><button type="button" class="py-1 mt-5 azulTarjeta rounded text-light">Registrarse</button></a>
+                            <div class="d-flex row justify-content-center mt-5">
+                                <a class="col-6 d-flex justify-content-end" href="index.php"><button type="button" class="mr-2 py-1 bg-orange rounded text-dark text-bold">Acceder</button></a>
+                                <a class="col-6 d-flex justify-content-start" href="index.php"><button type="button" class="ml-2 py-1 azul3 rounded text-light">Registrarse</button></a>
                             </div>
                        <!--  </div> -->
 

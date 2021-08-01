@@ -77,8 +77,9 @@ de la web que no esté en:
     margin-top:-60px !important;  
     border-top:  var(--color-naranja2) solid 1px !important;
     /* border-bottom:  var(--color-naranja2) transparent 1px !important; */    
-    transition: 3s ease;
+    transition: all 3s ;
 }
+
 
 #formu-log:hover{    
     /* background-color: var(--azulOscuro) !important;  */   
@@ -100,6 +101,12 @@ de la web que no esté en:
 
  #icon-log img{
      width: 100px;
+ }
+
+ .icon-social{
+     width:25px;
+     justify-content: center;
+     margin-right: 5px !important;
  }
 
  
