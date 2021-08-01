@@ -3,7 +3,7 @@
                     <div class="tarjetas px-2 my-3 col-12 col-xl-8 col-md-10 text-center">                       
                         <h3 class="textoAzul mt-3 mb-1 text-light">Portfolio 1</h3>
                         <hr class="azulLogo text-light mx-auto rounded bg-white">
-                        <div class="text-light mt-2 w-100 mx-auto">
+                        <div class="text-light mt-2 d-flex justify-content-center mx-auto mx-auto">
 
                             <!-- comienza el PORTFOLIO, que tendrá máximo 10 filas , la versión Pro tendrá infinitas y además se podrán crear más portfolios-->
                             <table class="table mt-3 mb-5 of-hidden table-hover table-stripped nowrap">

@@ -1,7 +1,7 @@
             
             <div id="cont-log" class="d-flex row justify-content-center text-center align-items-start">
                 
-                    <div id="logo-log" class="col-12">
+                    <div id="logo-log" class="col-12 mt-2">
                         <img class="mt-5" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
                         <h6 class="op50 nowrap mt-1">- Tu portfolio financiero digital -</h6>
                         
@@ -17,7 +17,7 @@
                                 <div id="icon-log">
                                     <img  class="op80 azulFondo rounded-circle mb-4 p-2" src="img/person_white_48dp.svg" alt="">
                                 </div>
-                                <h3 class="text-uppercase">Registro de usuario</h3>
+                                <h4 class="text-uppercase">Registro de usuario</h4>
                                 <div class="my-3 mx-auto">
                                     <label class="mb-1">Email:</label>
                                     <div class="mx-auto my-auto d-flex justify-content-center">

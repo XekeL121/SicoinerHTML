@@ -36,15 +36,15 @@
                 <nav class="col-md-12 col-lg-12 col-xl-6 p-2 text-center">
                     <ul class="d-flex col-lg-12 justify-content-center">
                         <a href="index.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">
-                            <li>
+                            <li class="d-flex row align-items-center">
                                 <img class="icon align-middle" src="img/app_registration_white_24dp.svg" alt="">
-                                Portfolios
+                                <div class="col-2 w-auto ml-2">Portfolios</div> 
                             </li>
                         </a>
                         <a href="historial.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">
-                            <li>
+                            <li class="d-flex row align-items-center">
                                 <img class="icon" src="img/insights_white_24dp.svg" alt="">
-                                Historial
+                                <div class="col-2 w-auto ml-2">Historial</div> 
                             </li>
                         </a>
                         <div class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center cursor-pointer nowrap">

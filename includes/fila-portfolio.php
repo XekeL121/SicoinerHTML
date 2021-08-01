@@ -1,7 +1,7 @@
                                     <!-- Fila de datos del activo -->
                                     <div>
                                         <tr class="activos">
-                                            <th id="ticker" class="celda opacityOff letter-space-1 bg-marca2" scope="row">ETH</th>
+                                            <th id="ticker" class="celda opacityOff letter-space-1 bg-marca2">ETH</th>
                                             <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
                                             <th id="cantidad" class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
                                             <th id="breakEven" class="celda">500 $</th> <!-- Precio medio de compra -->
