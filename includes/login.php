@@ -33,16 +33,18 @@
                                 </div>
 
                                 <div class="d-flex row">
-                                    <div class="remember col-6 d-flex nowrap align-items-center justify-content-end">
+                                    <div class="remember col-12 d-flex nowrap align-items-center justify-content-center">
                                         <input type="checkbox" id="" name="" value="check">
                                         <div class="ml-2">Recordarme</div>
-                                    </div>
-                                    <div class="col-6 d-flex nowrap align-items-center justify-content-center text-primary cursor-pointer">Recuperar contraseña</div>
+                                    </div>                                    
                                 </div>
+
                                 <div class="d-flex row justify-content-center mt-5">
-                                <a class="col-6 d-flex justify-content-end" href="index.php"><button type="button" class="mr-2 py-1 bg-orange rounded text-dark text-bold">Acceder</button></a>
-                                <a class="col-6 d-flex justify-content-start" href="index.php"><button type="button" class="ml-2 py-1 azul3 rounded text-light">Crear cuenta</button></a>
-                            </div>
+                                    <a class="col-6 d-flex justify-content-end" href="index.php"><button type="button" class="mr-2 py-1 bg-orange rounded text-dark text-bold">Acceder</button></a>
+                                    <a class="col-6 d-flex justify-content-start" href="index.php"><button type="button" class="ml-2 py-1 azul3 rounded text-light">Crear cuenta</button></a>
+                                </div>
+
+                                <div class="col-12 d-flex nowrap align-items-center justify-content-center text-primary cursor-pointer mt-3">Recuperar contraseña</div>
 
                                 <hr class="azulLogo mx-auto rounded mt-4 w-75">
 
