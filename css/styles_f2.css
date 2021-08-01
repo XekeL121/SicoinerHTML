@@ -61,6 +61,13 @@ de la web que no esté en:
     letter-spacing: 4px;
 }
 
+@media (max-width: 768px) {
+    #logo-log img{
+        width:300px !important;
+        margin-top: 20px !important;
+    }
+}
+
 #icon-log img{
     border-top: var(--color-naranja2) solid 1px;
     transition: 3s ease;    
@@ -104,9 +111,11 @@ de la web que no esté en:
  }
 
  .icon-social{
-     width:25px;
+     width:23px;
      justify-content: center;
      margin-right: 5px !important;
  }
+
+
 
  
