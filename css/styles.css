@@ -109,6 +109,14 @@ h1{
 /* Fin botón menú formato móvil */
 
 
+.divLogo p{
+    font-size:12px;
+}
+
+.divLogo a img{
+    width:250px !important;
+}
+
 .navButon{
     font-size: 20px;      
     font-family: 'Rubik', sans-serif;    
@@ -450,6 +458,8 @@ footer{
     .navPort{
         margin-left:-180px !important;
     }
+
+  
 }
 
 
@@ -506,6 +516,9 @@ footer{
     #total .celda {
         white-space: nowrap;
         font-size: 9px;
+    }
+    .divLogo p{
+        font-size:10px;
     }
     
 }

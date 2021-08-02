@@ -1,6 +1,7 @@
             <header class="row justify-content-center azul1 py-2">
-                <div class="divLogo col-xl-3 col-sm-8 col-12 p-2 text-center my-auto">
+                <div class="divLogo col-12 col-xl-3 col-md-8 p-2 text-center my-auto">
                     <a href="index.php"> <img class="text-center w-50 cursor-pointer" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner"></a>
+                    <p class="op50 d-flex nowrap mt-1 text-uppercase letter-spacing-3 text-light op80 mx-auto justify-content-center text-center">- Tu portfolio digital -</p>
                 </div>
 
                 <!-- Menú responsive que aparece a partir de --> 
@@ -33,8 +34,8 @@
                 <!-- Fin del menú responsive -->
 
                 
-                <nav class="col-md-12 col-lg-12 col-xl-6 p-2 text-center">
-                    <ul class="d-flex col-lg-12 justify-content-center">
+                <nav class="col-md-12 col-lg-12 col-xl-6 pt-2 text-center">
+                    <ul class="d-flex col-lg-12 justify-content-center align-items-center">
                         <a href="index.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">
                             <li class="d-flex row align-items-center justify-content-center">
                                 <img class="icon align-middle" src="img/app_registration_white_24dp.svg" alt="">
