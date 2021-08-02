@@ -93,7 +93,7 @@
                                             ?> 
                                             </th>
                                         </tr>
-                                        <tr id="salto"></tr> <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                        <tr class="salto1"></tr> <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
                                     
                                 </tbody>
                                 <!-- Fin fila de datos del activo  -->  
@@ -117,7 +117,7 @@
 
                                             </th>
                                         </tr>
-                                        <tr id="salto"></tr> <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
+                                        <tr class="salto1"></tr> <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
                                     </div>
                                 </tbody>
                                 <!-- Fin fila de datos del activo  -->                             

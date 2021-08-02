@@ -369,9 +369,14 @@ li:hover{
 
 /* Fin menu portfolio */
 
-#salto{
+.salto1{
     height: 5px;
 }
+
+.salto2{
+    height: 35px;
+}
+
 
 #nuevoPort img {
     width: 30px !important;

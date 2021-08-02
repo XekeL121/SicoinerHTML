@@ -39,19 +39,19 @@
                         <a href="index.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">
                             <li class="d-flex row align-items-center justify-content-center">
                                 <img class="icon align-middle" src="img/app_registration_white_24dp.svg" alt="">
-                                <div class="col-2 w-auto ml-2">Portfolios</div> 
+                                <div class="col-2 w-auto ml-2 op80">Portfolios</div> 
                             </li>
                         </a>
                         <a href="historial.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">
                             <li class="d-flex row align-items-center justify-content-center">
                                 <img class="icon" src="img/insights_white_24dp.svg" alt="">
-                                <div class="col-2 w-auto ml-2">Historial</div> 
+                                <div class="col-2 w-auto ml-2 op80">Historial</div> 
                             </li>
                         </a>
                         <div class="navButon d-block col-12 col-md-2 p-2 mt-2 text-light text-center cursor-pointer nowrap">
                             
                             <!-- Menú desplegable de botón usuario -->
-                            <button class="bg-transparent">                                
+                            <button class="bg-transparent op80">                                
                                 <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
                                 <img class="icon" src="img/arrow_drop_down_white_18dp.svg" alt="">
                             </button>
@@ -95,10 +95,10 @@
                 <div class="modal-dialog d-flex justify-content-center mx-auto hidden">
                     <div class="modal-content">
                         <div id="modal-calc" class=" d-flex justify-content-center">
-                            <div class="mt-5 calculos d-flex justify-content-center col-12 col-xl-8 mx-auto row z1 p-2 azul1 rounded text-center p-5">
+                            <div class="mt-5 calculos d-flex justify-content-center col-12 col-xl-8 mx-auto row z1 azul1 rounded text-center px-5">
                                 <div class="d-flex justify-content-end my-3">
                                     <a target="_blank" href="calculos.php" class="col-xl-2 col-12 text-right text-primary nowrap">Abrir en nueva pestaña</a>
-                                </div>
+                                </div>                                
 
                                 <!-- Calculadora Coste de Inversión -->
                                 <?php
@@ -106,7 +106,7 @@
                                 ?> 
                                 <!-- Fin Calculadora Coste de Inversión -->
 
-
+                                <div class="salto2"></div>
                                 
                                 <!-- Calculadora Cost Average -->
                                 <?php

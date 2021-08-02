@@ -16,7 +16,11 @@
 
             <?php
                 include "includes/calculos.php";
-            ?>                            
+            ?>                     
+            
+            <?php
+                include "includes/footer.php";
+            ?> 
 
             
 

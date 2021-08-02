@@ -15,7 +15,7 @@
                                             ?> 
                                             </th>
                                         </tr>
-                                        <tr id="salto"></tr>
+                                        <tr class="salto1"></tr>
                                         <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
                                     </div>
                                     <!-- Fin fila de datos del activo  -->                  
