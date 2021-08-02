@@ -7,7 +7,7 @@
     <body class="azulFondo">
 
         <!-- Barra lateral -->                
-        <!-- <div class="lateral z1 col-md-8 col-xs-12 col-8 d-flex">
+        <!-- <div class="lateral z1 d-flex">
             
             <div class="contenidoLateral bg-primary col-11">
                 Contenido

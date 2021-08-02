@@ -92,34 +92,34 @@
 
                 <!-- Modal -->
                 <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog d-flex justify-content-center mx-auto hidden">
-                    <div class="modal-content">
-                        <div id="modal-calc" class=" d-flex justify-content-center">
-                            <div class="mt-5 calculos d-flex justify-content-center col-12 col-xl-8 mx-auto row z1 azul1 rounded text-center px-5">
-                                <div class="d-flex justify-content-end my-3">
-                                    <a target="_blank" href="calculos.php" class="col-xl-2 col-12 text-right text-primary nowrap">Abrir en nueva pestaña</a>
-                                </div>                                
+                    <div class="modal-dialog d-flex justify-content-center mx-auto">
+                        <div class="modal-content">
+                            <div id="modal-calc" class=" d-flex justify-content-center">
+                                <div class="mt-5 calculos d-flex justify-content-center col-11 col-xl-8 mx-auto row z1 azul1 rounded text-center px-5">
+                                    <div class="d-flex justify-content-end my-3">
+                                        <a target="_blank" href="calculos.php" class="col-xl-2 col-12 text-right text-primary nowrap">¿Abrir en nueva pestaña?</a>
+                                    </div>                                
 
-                                <!-- Calculadora Coste de Inversión -->
-                                <?php
-                                    include "calc-inversion.php";
-                                ?> 
-                                <!-- Fin Calculadora Coste de Inversión -->
+                                    <!-- Calculadora Coste de Inversión -->
+                                    <?php
+                                        include "calc-inversion.php";
+                                    ?> 
+                                    <!-- Fin Calculadora Coste de Inversión -->
 
-                                <div class="salto2"></div>
-                                
-                                <!-- Calculadora Cost Average -->
-                                <?php
-                                    include "cost-average.php";
-                                ?> 
-                                <!-- Fin Calculadora Cost Average -->
+                                    <div class="salto2"></div>
+                                    
+                                    <!-- Calculadora Cost Average -->
+                                    <?php
+                                        include "cost-average.php";
+                                    ?> 
+                                    <!-- Fin Calculadora Cost Average -->
 
 
-                                
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
            

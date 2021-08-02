@@ -9,6 +9,7 @@
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Historial</a>
                                                     </li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Alerta</a></li>
+                                                    <li class="px-2 rounded op70"><a class="text-light" href="">Nota</a></li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Editar</a></li>
                                                     <li class="px-2 rounded op70"><a class="text-light" href="">Mover a..</a></li>
                                                     <li class="px-2 rounded op70"><a class="text-warning" href="">Eliminar*</a> <!-- Popup pregunta si borrar operaciones del historial -->
