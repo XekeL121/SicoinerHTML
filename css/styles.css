@@ -197,9 +197,9 @@ h1{
     height: auto !important; 
 }
 
-.tarjetas{
-    /* height: max-content !important; */
-    position: unset;       
+.tarjetas > div{
+/*     height: max-content !important;
+ */    position: unset;       
 }
 
 /* Estilos tabla */
@@ -389,7 +389,8 @@ li:hover{
 
 
 .calcCost input{
-    border: none !important;    
+    border: none !important; 
+    margin-bottom:5px !important;   
 }
 
 
@@ -728,6 +729,6 @@ footer{
     letter-spacing: 6px !important;
 }
 
-.transition-1 {
-    transition: all 2s;
+.h-full{
+    height:100vh !important;
 }

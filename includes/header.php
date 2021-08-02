@@ -76,7 +76,7 @@
                         <img class="" src="img/data_usage_white_24dp.svg" alt="">
                         <span class="subsub text-light">Cálculos</span>
                     </a>
-                    <a href="alertas.php" class="p-1 col-xl-6 col-sm-6 col-6 text-center">
+                    <a href="estadisticas.php" class="p-1 col-xl-6 col-sm-6 col-6 text-center">
                         <img class="" src="img/notifications_white_24dp.svg" alt="">
                         <span class="subsub text-light align-center">Estadísticas</span>
                     </a>
@@ -91,11 +91,14 @@
                 </button> -->
 
                 <!-- Modal -->
-                <div class="modal mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog d-flex justify-content-center mx-auto hidden mt-5">
+                <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog d-flex justify-content-center mx-auto hidden">
                     <div class="modal-content">
                         <div id="modal-calc" class=" d-flex justify-content-center">
                             <div class="mt-5 calculos d-flex justify-content-center col-12 col-xl-8 mx-auto row z1 p-2 azul1 rounded text-center p-5">
+                                <div class="d-flex justify-content-end my-3">
+                                    <a target="_blank" href="calculos.php" class="col-xl-2 col-12 text-right text-primary nowrap">Abrir en nueva pestaña</a>
+                                </div>
 
                                 <!-- Calculadora Coste de Inversión -->
                                 <?php

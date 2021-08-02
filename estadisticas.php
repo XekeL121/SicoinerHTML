@@ -12,7 +12,7 @@
             ?>
 
             <?php
-                include "includes/alertas.php";
+                include "includes/estadisticas.php";
             ?>                            
 
             <?php

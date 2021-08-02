@@ -1,7 +1,9 @@
-                        <h4 class="mt-5 mb-2 text-light">Cálculo precio promedio:</h4>
+                        
+                    <div> 
+                        <h4 class="mt-5 mb-3 text-light op80">Cálculo precio promedio:</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
-                        <div class="mb-5 calcRow d-flex col p-3 bg-marca2 rounded space-between justify-content-center align-items-center op80">
+                        <div class="mb-5 calcRow d-flex col p-2 py-5 bg-marca2 rounded space-between justify-content-center align-items-center op80">
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
                                 <h4 class="op50">Portfolio 1</h4>
@@ -27,4 +29,5 @@
                                 <p class="mt-2 nowrap">Total inversión</p>
                                 <input class="rounded text-orange azulLogo2 text-center w-75 cursor-na" type="submit"  value="110,000 $">
                             </div>
-                        </div>
+                        </div> +ç
+                    </div>
