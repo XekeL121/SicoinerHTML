@@ -24,27 +24,7 @@
 
                         <h1 class="text-light">alertas</h1>
 
-                        <!-- Calculadora Cost Average -->
-                        <?php
-                            include "cost-average.php";
-                        ?> 
-                        <!-- Fin Calculadora Cost Average -->
-
-
-
-                        <!-- Calculadora Coste de Inversión -->
-                        <?php
-                            include "calc-inversion.php";
-                        ?> 
-                        <!-- Fin Calculadora Coste de Inversión -->
-
-
-
-                        <!-- Calculadora Colocación de órdenes -->
-                        <?php
-                            include "calc-orders.php";
-                        ?> 
-                        <!-- Fin Calculadora Colocación de órdenes -->      
+                        
                             
                     </div>
                     <!-- Aquí termina el portfolio -->

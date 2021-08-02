@@ -62,24 +62,6 @@ de la web que no esté en:
     margin-bottom: -40px !important;
 } 
 
-@media (max-width: 1640px) {    
-
-    #logo-log h6{        
-        margin-bottom: 20px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    #logo-log img{
-        width:300px !important;
-        margin-top: 20px !important;
-    }
-
-    #logo-log h6{        
-        margin-bottom: 20px !important;
-    }
-}
-
 #icon-log img{
     border-top: var(--color-naranja2) solid 1px;
     transition: 3s ease;    
@@ -129,4 +111,39 @@ de la web que no esté en:
 
 
 
- 
+ /* MODALS IMPORTANTES */
+
+ #modal-calc > div{
+     position:fixed;
+     border:1px solid var(--azulLogo);
+     border-left: none;
+     border-right: none;
+     /* background-color: var(--color-naranja1); */
+ }
+
+
+ @media (max-width: 1640px) {    
+
+    #logo-log h6{        
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo-log img{
+        width:300px !important;
+        margin-top: 20px !important;
+    }
+
+    #logo-log h6{        
+        margin-bottom: 20px !important;
+    }
+
+    #modal-calc > div{
+        padding:0px !important;
+    }
+}
+
+.subSubMenu > *{
+    transition: all 3s !important;
+}

@@ -1,8 +1,8 @@
             
             <div id="cont-log" class="d-flex row justify-content-center text-center align-items-start">
                 
-                    <div id="logo-log" class="col-12 mt-2">
-                        <img class="mt-5" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
+                    <div id="logo-log" class="col-12 mt-4">
+                        <img class="" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
                         <h6 class="op50 nowrap mt-1 text-uppercase letter-spacing-3">- Tu portfolio digital -</h6>
                         
                     </div>

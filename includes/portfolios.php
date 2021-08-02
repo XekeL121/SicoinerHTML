@@ -11,7 +11,7 @@
                                     <tr>
                                         <th class="celdaTop col-1" scope="">Ticker</th>
                                         <th class="celdaTop col-2" scope="">Cant.</th>
-                                        <th class="celdaTop col-2" scope="">Precio</th> <!-- Precio medio de compra -->
+                                        <th class="celdaTop col-2" scope="">Break even</th> <!-- Precio medio de compra -->
                                         <th class="celdaTop col-2" scope="">Cotización $</th> <!-- Que solo se actualice con un icono de actualizar -->
                                         <th class="celdaTop col-2" scope="">Inversión</th>
                                         <th class="celdaTop col-2" scope="">P&L | %</th>

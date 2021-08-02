@@ -72,15 +72,51 @@
                     </div>
                 </div>
                 <ul class="subSubMenu d-flex col-12 col-xl-2 col-sm-4 row azulLogo2 nowrap">
-                    <a href="calculos.php" class="p-1 col-xl-6 col-sm-6 col-6 text-center text-light cursor-pointer">
+                    <a class="p-1 col-xl-6 col-sm-6 col-6 text-center text-light cursor-pointer"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img class="" src="img/data_usage_white_24dp.svg" alt="">
                         <span class="subsub text-light">Cálculos</span>
                     </a>
                     <a href="alertas.php" class="p-1 col-xl-6 col-sm-6 col-6 text-center">
                         <img class="" src="img/notifications_white_24dp.svg" alt="">
-                        <span class="subsub text-light align-center">Alertas</span>
+                        <span class="subsub text-light align-center">Estadísticas</span>
                     </a>
                 </ul>
             </div>
+
+            
+
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+                </button> -->
+
+                <!-- Modal -->
+                <div class="modal mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog d-flex justify-content-center mx-auto hidden mt-5">
+                    <div class="modal-content">
+                        <div id="modal-calc" class=" d-flex justify-content-center">
+                            <div class="mt-5 calculos d-flex justify-content-center col-12 col-xl-8 mx-auto row z1 p-2 azul1 rounded text-center p-5">
+
+                                <!-- Calculadora Coste de Inversión -->
+                                <?php
+                                    include "calc-inversion.php";
+                                ?> 
+                                <!-- Fin Calculadora Coste de Inversión -->
+
+
+                                
+                                <!-- Calculadora Cost Average -->
+                                <?php
+                                    include "cost-average.php";
+                                ?> 
+                                <!-- Fin Calculadora Cost Average -->
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
 
            

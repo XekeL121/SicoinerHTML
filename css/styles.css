@@ -435,6 +435,29 @@ footer{
         white-space: nowrap;
         font-size: 12px;
     }
+    .calcRow input{
+        max-width: 100px !important;
+    }
+
+    .calcRow h5{
+        font-size: 15px !important;
+    }
+
+    .calcRow h2{
+        font-size: 20px !important;
+    }
+
+    .calcRow h4{
+        font-size: 15px !important;
+    }
+
+    .calcCost p{
+        font-size: 12px !important;
+    } 
+
+    .calcRow input{
+        max-width: 130px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -457,6 +480,15 @@ footer{
 
     .navPort{
         margin-left:-180px !important;
+    }
+
+    .calcRow input{
+        max-width: 80px !important;
+        font-size: 10px !important;
+    }
+
+    .calcCost h5, .calcCost p{
+        font-size: 12px !important;
     }
 
   
@@ -497,6 +529,10 @@ footer{
     #portConfig{
         width: 20px !important;
     }
+
+    .calcCost h5, .calcCost p{
+        font-size: 10px !important;
+    } 
     
 }
 
@@ -690,4 +726,8 @@ footer{
 
 .letter-spacing-3 {
     letter-spacing: 6px !important;
+}
+
+.transition-1 {
+    transition: all 2s;
 }
