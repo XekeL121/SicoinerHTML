@@ -746,3 +746,11 @@ footer{
 .scroll{
     position: scroll !important;
 }
+
+.transition-800 > *{
+    transition: all 800ms !important;
+}
+
+.transition-500 > *{
+    transition: all 500ms !important;
+}

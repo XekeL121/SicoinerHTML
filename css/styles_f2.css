@@ -115,10 +115,10 @@ de la web que no esté en:
 
  #modal-calc > div{
     position:fixed;
-     border:1px solid var(--azulLogo);
-     border-left: none;
-     border-right: none;
-    
+    border:1px solid var(--azulLogo);
+    border-left: none;
+    border-right: none;
+
      /* background-color: var(--color-naranja1); */
  }
 
@@ -152,6 +152,3 @@ de la web que no esté en:
     }
 }
 
-.subSubMenu > *{
-    transition: all 3s !important;
-}

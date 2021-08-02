@@ -13,7 +13,7 @@
                         
                         <!-- Calculadora Cost Average -->
                         <?php
-                            include "cost-average.php";
+                            include "calc-average.php";
                         ?> 
                         <!-- Fin Calculadora Cost Average -->  
 

@@ -1,30 +1,30 @@
                         
                     <div> 
                         
-                        <h4 class="text-light op80">Cálculo precio promedio:</h4>
+                        <h4 class="text-light op80 mb-3">Cálculo precio promedio:</h4>
                         <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
-                        <div id="selectCalc" class="mb-3">                            
-                                    <form class="d-flex justify-content-center op80">
-                                        <fieldset class="row">                                    
-                                            <div class="col p-3 mb-2">
-                                                <label for="disabledSelect" class="form-label text-light col">Portfolio:</label>
-                                                <select id="disabledSelect" class="form-select col pl-2">
-                                                    <option>Seleccionar...</option>
-                                                    <option>Portfolio 1</option>
-                                                </select>
-                                            </div>
-                                            <div class="col p-3 mb-2">
-                                                <label for="disabledSelect" class="form-label text-light col">Ticker:</label>
-                                                <select id="disabledSelect" class="form-select col pl-2">
-                                                    <option>Seleccionar...</option>
-                                                    <option>ETH</option>
-                                                </select>
-                                            </div>
-                                        </fieldset>
-                                    </form>                            
-                                </div>
-
-                        <div class="mb-5 calcRow d-flex col p-2 py-5 bg-marca2 rounded space-between justify-content-center align-items-center op80">
+                        
+                        <div class="mb-5 row calcRow d-flex col p-2 pb-5 bg-marca2 rounded space-between justify-content-center align-items-center">
+                            <div id="selectCalc" class="mb-3">                            
+                                <form class="d-flex justify-content-center op80">
+                                    <fieldset class="row">                                    
+                                        <div class="col p-3 mb-2">
+                                            <label for="disabledSelect" class="form-label text-light col opacityOff">Portfolio:</label>
+                                            <select id="disabledSelect" class="form-select col pl-2">
+                                                <option>Seleccionar...</option>
+                                                <option>Portfolio 1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col p-3 mb-2">
+                                            <label for="disabledSelect" class="form-label text-light col opacityOff">Ticker:</label>
+                                            <select id="disabledSelect" class="form-select col pl-2">
+                                                <option>Seleccionar...</option>
+                                                <option>ETH</option>
+                                            </select>
+                                        </div>
+                                    </fieldset>
+                                </form>                            
+                            </div>
                             <div class="ticker text-light col-3">
                                 <h2 class="">ETH</h2>
                                 <h4 class="op50">Portfolio 1</h4>

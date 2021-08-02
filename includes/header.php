@@ -35,16 +35,16 @@
 
                 
                 <nav class="col-md-12 col-lg-12 col-xl-6 pt-2 text-center">
-                    <ul class="d-flex col-lg-12 justify-content-center align-items-center">
+                    <ul class="d-flex col-lg-12 justify-content-center align-items-center transition-500">
                         <a href="index.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">
                             <li class="d-flex row align-items-center justify-content-center">
-                                <img class="icon align-middle" src="img/app_registration_white_24dp.svg" alt="">
+                                <img class="icon align-middle  op80" src="img/app_registration_white_24dp.svg" alt="">
                                 <div class="col-2 w-auto ml-2 op80">Portfolios</div> 
                             </li>
                         </a>
                         <a href="historial.php" class="navButon d-block col-12 col-md-4 p-2 mt-2 text-light text-center cursor-pointer nowrap">
                             <li class="d-flex row align-items-center justify-content-center">
-                                <img class="icon" src="img/insights_white_24dp.svg" alt="">
+                                <img class="icon  op80" src="img/insights_white_24dp.svg" alt="">
                                 <div class="col-2 w-auto ml-2 op80">Historial</div> 
                             </li>
                         </a>
@@ -64,20 +64,22 @@
             </header>
             <div class="submenu d-flex azul2 my-auto nowrap">
                 <div class="avisos col-12 col-xl-10 col-sm-8 my-auto p-2 align-middle op80 text-orange nowrap of-hidden">
-                    <div class="my-auto noticias nowrap ">
-                        <!-- <img id="info" class="icon my-auto align-middle" src="img/info_naranja.svg" alt=""> -->
-                        <span class="loop">Esto podría ser una barra informativa, pero no debe ser molesta y que no se reinicie cada vez que se cambia de página, deberían ir los principales índices mundiales? faltaría concretar su función BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% |
-                        BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | BTC 31,500 $ +0.8% | ADA 1.18 $ +10% | XXXXX
-                        </span>
-                    </div>
+                    
+                    <?php
+                        include "includes/noticias.php";
+                    ?> 
+
+
                 </div>
-                <ul class="subSubMenu d-flex col-12 col-xl-2 col-sm-4 row azulLogo2 nowrap">
+
+
+                <ul class="subSubMenu d-flex col-12 col-xl-2 col-sm-4 row azulLogo2 nowrap transition-800">
                     <a class="p-1 col-xl-6 col-sm-6 col-6 text-center text-light cursor-pointer"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img class="" src="img/data_usage_white_24dp.svg" alt="">
+                        <img class="" src="img/track_changes_white_24dp.svg" alt="">
                         <span class="subsub text-light">Cálculos</span>
                     </a>
                     <a href="estadisticas.php" class="p-1 col-xl-6 col-sm-6 col-6 text-center">
-                        <img class="" src="img/notifications_white_24dp.svg" alt="">
+                        <img class="" src="img/data_usage_white_24dp.svg" alt="">
                         <span class="subsub text-light align-center">Estadísticas</span>
                     </a>
                 </ul>
@@ -91,13 +93,15 @@
                 </button> -->
 
                 <!-- Modal -->
+
+                <!-- El modal necesita ajuste de scroll en tamaño tablet -->
                 <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog d-flex justify-content-center mx-auto ">
                         <div class="modal-content">
                             <div id="modal-calc" class=" d-flex justify-content-center">
                                 <div class="mt-5 calculos d-flex justify-content-center col-11 col-xl-8 mx-auto row z1 azul1 rounded text-center px-5">
                                     <div class="d-flex justify-content-end my-3">
-                                        <a target="_blank" href="calculos.php" class="col-xl-2 col-12 text-right text-primary nowrap">¿Abrir en nueva pestaña?</a>
+                                        <a target="_blank" href="calculos.php" class="col-xl-2 col-12 text-right text-primary nowrap">¿Abrir en una nueva pestaña?</a>
                                     </div>                                
 
                                     <!-- Calculadora Coste de Inversión -->
@@ -110,9 +114,11 @@
                                     
                                     <!-- Calculadora Cost Average -->
                                     <?php
-                                        include "cost-average.php";
+                                        include "calc-average.php";
                                     ?> 
                                     <!-- Fin Calculadora Cost Average -->
+
+                                    <button class="mb-5 col-2 btn bg-orange" data-bs-dismiss="modal">Cerrar</button>
 
 
                                     
