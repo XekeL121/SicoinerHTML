@@ -114,11 +114,11 @@ de la web que no esté en:
  /* MODALS IMPORTANTES */
 
  #modal-calc > div{
-     position:fixed;
+    position:fixed;
      border:1px solid var(--azulLogo);
      border-left: none;
      border-right: none;
-     overflow-x: scroll !important;
+    
      /* background-color: var(--color-naranja1); */
  }
 
@@ -128,6 +128,8 @@ de la web que no esté en:
     #logo-log h6{        
         margin-bottom: 20px !important;
     }
+
+    
 }
 
 @media (max-width: 768px) {
@@ -136,7 +138,7 @@ de la web que no esté en:
         margin-top: 20px !important;
     }
 
-    #modal-calc > div{
+    #modal-calc > div{      
         position:absolute !important;        
     }
 

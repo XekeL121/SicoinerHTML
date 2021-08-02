@@ -92,7 +92,7 @@
 
                 <!-- Modal -->
                 <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog d-flex justify-content-center mx-auto">
+                    <div class="modal-dialog d-flex justify-content-center mx-auto ">
                         <div class="modal-content">
                             <div id="modal-calc" class=" d-flex justify-content-center">
                                 <div class="mt-5 calculos d-flex justify-content-center col-11 col-xl-8 mx-auto row z1 azul1 rounded text-center px-5">

@@ -742,3 +742,7 @@ footer{
 .h-full{
     height:100vh !important;
 }
+
+.scroll{
+    position: scroll !important;
+}
