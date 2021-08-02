@@ -42,9 +42,9 @@
 
 
                         <!-- Calculadora Colocación de órdenes -->
-                        <?php
-                            include "calc-orders.php";
-                        ?> 
+                        
+                       <!-- Aquí iría calc-orders-php -->
+
                         <!-- Fin Calculadora Colocación de órdenes -->      
                             
                     </div>

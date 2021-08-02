@@ -17,6 +17,7 @@
                                             <option>Semestral</option>
                                             <option>Año en curso</option>
                                             <option>Año anterior</option>
+                                            <option>Personalizar..</option>
                                         </select>
                                     </div>
                                     <div class="selector col-xl-3 col-6 p-3">

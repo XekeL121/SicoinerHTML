@@ -58,7 +58,7 @@ de la web que no esté en:
 }
 
 #logo-log h6{
-    letter-spacing: 6px;
+    /* letter-spacing: 6px; */
     margin-bottom: -40px !important;
 } 
 

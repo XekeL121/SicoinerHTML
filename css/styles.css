@@ -666,3 +666,15 @@ footer{
 .ml-2{
     margin-left: 8px !important;
 }
+
+.letter-spacing-1 {
+    letter-spacing: 2px !important;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 4px !important;
+}
+
+.letter-spacing-3 {
+    letter-spacing: 6px !important;
+}

@@ -3,7 +3,7 @@
                 
                     <div id="logo-log" class="col-12 mt-2">
                         <img class="mt-5" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
-                        <h6 class="op50 nowrap mt-1 text-uppercase">- Tu portfolio digital -</h6>
+                        <h6 class="op50 nowrap mt-1 text-uppercase letter-spacing-3">- Tu portfolio digital -</h6>
                         
                     </div>
                     
@@ -17,7 +17,7 @@
                                 <div id="icon-log">
                                     <img  class="op80 azulFondo rounded-circle mb-4 p-2" src="img/person_white_48dp.svg" alt="">
                                 </div>
-                                <h5 class="text-uppercase op80">Acceso a tu portfolio</h5>
+                                <h5 class="text-uppercase op80 letter-spacing-1">Acceso a tu portfolio</h5>
                                 <div class="my-3 mx-auto">
                                     <label class="mb-1">Email:</label>
                                     <div class="mx-auto my-auto d-flex justify-content-center">
@@ -48,7 +48,7 @@
 
                                 <hr class="azulLogo mx-auto rounded mt-4 w-75">
 
-                                <h5 class="mt-4 mb-4">Inciar sesión con:</h5>
+                                <h5 class="mt-4 mb-4">Iniciar sesión con:</h5>
                                 <div class="d-flex row justify-content-center">
                                     <div class="d-flex justify-content-center col-xl-3 col-4 nowrap cursor-pointer">
                                         <img class="icon-social" src="img/google.svg" alt="">
