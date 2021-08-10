@@ -2,7 +2,7 @@
             <div id="cont-log" class="d-flex row justify-content-center text-center align-items-start">
                 
                     <div id="logo-log" class="col-12 mt-4">
-                        <img class="" src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
+                        <img class="" src="images/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
                         <h6 class="op50 nowrap mt-1 text-uppercase letter-spacing-3">- Tu portfolio digital -</h6>
                         
                     </div>
@@ -12,10 +12,10 @@
 
 
                     <div id="formu-log" class="op80 azul1 d-flex col-12 col-md-8 col-xl-5 rounded row align-items-center pb-5 pt-4 nowrap">
-                       <!--  <div class=""> -->
+                      
                             <div id="form-social">
                                 <div id="icon-log">
-                                    <img  class="op80 azulFondo rounded-circle mb-4 p-2" src="img/person_white_48dp.svg" alt="">
+                                    <img  class="op80 azulFondo rounded-circle mb-4 p-2" src="images/person_white_48dp.svg" alt="">
                                 </div>
                                 <h5 class="text-uppercase op80 letter-spacing-1">Acceso a tu portfolio</h5>
                                 <div class="my-3 mx-auto">
@@ -51,22 +51,22 @@
                                 <h5 class="mt-4 mb-4">Iniciar sesión con:</h5>
                                 <div class="d-flex row justify-content-center">
                                     <div class="d-flex justify-content-center col-xl-3 col-4 nowrap cursor-pointer">
-                                        <img class="icon-social" src="img/google.svg" alt="">
+                                        <img class="icon-social" src="images/google.svg" alt="">
                                         <p>Google</p>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center col-xl-3 col-4 nowrap cursor-pointer">
-                                        <img class="icon-social" src="img/facebook.svg" alt="">
+                                        <img class="icon-social" src="images/facebook.svg" alt="">
                                         <p>Facebook</p>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center col-xl-3 col-4 nowrap cursor-pointer">
-                                        <img class="icon-social" src="img/twitter.svg" alt="">
+                                        <img class="icon-social" src="images/twitter.svg" alt="">
                                         <p>Twitter</p>
                                     </div>
                                 </div>                            
                             </div>    
                         
                             
-                       <!--  </div> -->
+                      
 
                         
                         

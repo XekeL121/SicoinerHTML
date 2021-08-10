@@ -27,130 +27,57 @@
     --bg-verde: rgb(2, 29, 8);
 }
 
-* {
-    padding:0% !important;
-    margin: 0% !important;
-    list-style: none; 
-    flex-wrap: wrap;        
-    text-decoration: none !important;   
-     
-}
-
-button{
-    border: none !important;   
-}
-
-/* .form-select > option{
-    text-align: center !important;
-} */
-
-body{
-    min-height: 100vh;
-}
-
-a{
-    color:white;
-}
-
-
-/* html{
-    scroll-behavior: auto;
-} */
-
 ::-webkit-scrollbar {
     display: none;
 }
 
-/* Fuentes */
-
-h1{   
-    font-family: 'Signika', sans-serif;
-}
-
-/* BARRA LATERAL en index.php*/
-
-/* .lateral{
-    width:80%;
-    display: block;
-    position: fixed;
-    margin-left: -78% !important;
-    background-color: red;       
-    height: 100%;   
-    transition: all linear 300ms; 
-}
-
-.lateral:hover{
-    position: absolute;    
-    margin-left:0px !important;
-}
-
-.navLateral button{
-    display: block;
-    position: static;
-    margin-top: 500px !important; 
-    margin-left: 100px !important;   
-}
-
-.social img{    
-    width: 50px;
+/* .vPro{
+    display: none !important;
 } */
 
-/* Fin barra lateral */
-
-
-
-/* botón menú formato móvil */
-.menuResponsive img {
-    width: 35px;
-}
-
-.menuResponsive img:hover {
-    opacity: 100%; 
-}
-/* Fin botón menú formato móvil */
-
-
-.divLogo p{
-    font-size:12px;
-}
-
-.divLogo a img{
-    width:250px !important;
-}
-
-.navButon{
-    font-size: 20px;      
-    font-family: 'Rubik', sans-serif;    
-    margin-right: 15px;
-    margin-left: 15px;           
-}
-
-.navButon:hover {
-    background-color: var(--navButonOver); 
-    border-radius: 5px;
-}
-
-.icon{    
-    width: 30px;
-    /* margin-top: auto;
-    margin-bottom: auto;   */
-}
-
-#nuevoPort:hover,
-.submenu a:hover{   
-    background-color: var(--azul4) !important;  
-}
-
-.avisos{     
-    /* max-height: 400px; */
-    border-top: 0.1px rgb(137, 116, 230) inset !important;
-    border-bottom: 0.1px rgb(86, 68, 168) inset !important;
+*{
+    margin: 0% !important;
+    padding: 0% !important;
+    list-style: none !important; 
+    flex-wrap: wrap !important;        
+    text-decoration: none !important;  
+    /* font-family: 'Mukta', sans-serif; */
+    font-family: 'Signika', sans-serif;
+    /* border: 1px solid red; */
 }
 
 
-/* Falta maquetar */
-.noticias {
-    /* white-space: nowrap; */
+/* HEADER */
+.logo img,
+.logo p{   
+    max-width: 250px;  
+    font-size: 13px !important;  
+}
+
+.menu{   
+    height: 100px !important;
+    line-height:100px;
+}
+
+.iconNav{
+    width: 35px !important;
+}
+
+.navButton:hover{
+    background-color: var(--azul3) !important;
+    opacity: 1 !important;
+}
+
+.noticias{
+    border-top: 1px rgb(108 97 189) inset !important; 
+    border-bottom: 1px rgb(70 62 128) inset !important; 
+    padding-top: 7px !important;
+    padding-bottom: 3px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;    
+}
+
+.noticias p{
     animation: loop 100s linear infinite !important;
 }
 
@@ -160,472 +87,278 @@ h1{
     0% {transform: translateX(60%);}
 }
 
-.subSubMenu a img{   
-    width: 25px !important;
-    margin-bottom: 3px !important;       
-}
-
-/* .subSubMenu {    
-    float: right !important;
-    margin: 0px !important;
-} */
-
-
-.subSubMenu a{
-    margin: 0 auto !important;
-    line-height: 33px !important;
-    font-size: 16px !important; 
-    border: 1px solid var(--azulFondo);    
-    height: 100% !important;
-}
-
-.subsub{   
-    line-height: 25px !important;
-    margin-left: 5px !important;
-}
-
-/* Fin Cabecera */
-
-/* Tablón de Ofertas */
-.ofertas{    
-    min-height: 657px !important;    
-    height: 100%;   
-    padding-bottom: 50px !important;  
-}
-
-.login{    
-    width: 100% !important;
-    height: auto !important; 
-}
-
-.tarjetas > div{
-/*     height: max-content !important;
- */    position: unset;       
-}
-
-/* Estilos tabla */
-
-hr {
-    /* height: 2px !important; */
-    width: 350px !important;    
-}
-
-
-.table > thead > tr > th{
-    opacity: 90%;
-    color: white;
-    text-align: center;
-}
-
-.table > tbody > tr > th{
-    opacity: 70%;
-    color: white;    
-}
-
-.table > tr, 
-#total > .celda{
-    border-bottom: none !important;
-    border-top: none !important;   
-    vertical-align: middle !important;   
-    line-height: 30px;      
-}
-
-.celdaTop{  
-    font-size: 16px !important;
-    border-bottom: none !important;
-    padding-bottom: 5px !important;
-}
-
-
-/* .activos th{
-    display: column !important;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr !important;
-} */
-
-.activos .celda {   
-    padding-top: 3px !important;
-    padding-bottom: 3px !important; 
-    border-bottom: rgb(32 61 119) solid 0.5px !important;  
-    border-top: rgb(32 61 119) solid 0.5px !important;     
-}
-
-
-
-#total {    
-   border-top: rgb(31 59 117) solid 2px !important;
-   border-bottom: none !important;
-} 
-
-#total .celdaPlTotal {    
-    /* color: rgb(31 195 59) !important; */   
-    border-bottom: none !important;    
-    line-height: 30px;
-    /* z-index: -1 !important; */
- } 
-
-.bMenu {
-    background-color: none !important;
-    border: none !important;    
-    color: none !important;
-    clear: both !important;
-    /* z-index: 1 !important; */
-}
-
-.bMenu:hover{
-    opacity: 100% !important;    
-}
-
-
-
-/* Submenús */
-/* Submenús */
-/* Submenús */
-
-
-.navFila{    
-    margin-top: -20px !important;
-    margin-left: -205px !important;   
-}
-
-.navFila,
-.navPort,
-.navfilaPort,
-.navHistorial,
-.navAcount >
-li:hover{
-    background-color: var(--azul1) !important;    
-    visibility: visible;    
-}
-
-.navFila,
-.navPort,
-.navfilaPort,
-.navHistorial,
-.navAcount{
-    position: absolute;
-    float: left !important;
-    text-decoration: none;    
-    z-index: 1 !important;
-    opacity: 100% !important;
-    visibility: hidden; 
-    text-align: left;
-}
-
-
-.button + .navFila:active, button:focus + .navFila {
-    position: absolute;
-    visibility: visible;    
-    opacity: 100% !important;   
-    display: block;    
-}
-
-
-.navPort{    
-    margin-top: -20px !important;
-    margin-left: -170px !important; 
-}
-
-.button + .navPort:active, button:focus + .navPort {
-    position: absolute;
-    visibility: visible;    
-    opacity: 100% !important;   
-}
-
-
-.navfilaPort{
-    margin-top: -20px !important;
-    margin-left: -65px !important;    
-}
-
-
-.button + .navfilaPort:active, button:focus + .navfilaPort {
-    position: absolute;
-    visibility: visible;    
-    opacity: 100% !important;   
-}
-
-.navHistorial{   
-    margin-top: -20px !important;
-    margin-left: -180px !important;    
-}
-
-
-.button + .navHistorial:active, button:focus + .navHistorial {
-    position: absolute;
-    visibility: visible;    
-    opacity: 100% !important;   
-}
-
-.navAcount{   
-    margin-top: -18px !important;
-    margin-left: -100px !important;    
-}
-
-
-.button + .navAcount:active, button:focus + .navAcount {
-    position: absolute;
-    visibility: visible;    
-    opacity: 100% !important;   
-}
-
-/* Fin menu portfolio */
-
-.salto1{
-    height: 5px;
-}
-
-.salto2{
-    height: 35px;
-}
-
-
-#nuevoPort img {
-    width: 30px !important;
+.subMenu a{   
+    border: 1px solid var(--azulFondo) !important;
     line-height: 30px !important;
 }
 
+.nav2 .subMenu a:hover{
+   filter: brightness(120%);    
+}
 
+.subMenu a img{
+    max-width: 23px !important;
+}
 
-/* Calculos styles */
-
-#selectCalc form fieldset {
-    width: 600px !important;
-    font-size: 18px !important;
+.subMenu a p{
+    margin-top: 3px !important;
 }
 
 
-.calcCost input{
-    border: none !important; 
-    margin-bottom:5px !important;   
+/* FIN HEADER */
+
+/* CONTENIDO */
+
+.contenedor{
+    min-height: 680px;
+    width: 100% !important;
 }
 
+/* FIN CONTENIDO */
+
+
+/* PORTFOLIO */
+
+.navButton,
+td, 
+.totalPorta th, 
+.titPorta th,
+.subMenu > a{    
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+th, 
+td {
+    height: 34px !important;    
+    border: none !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+td{
+    border-bottom: rgb(32 61 119) solid 0.5px !important;  
+    border-top: rgb(32 61 119) solid 0.5px !important;  
+}
+
+th{
+    font-size:16px !important;
+}
+
+tr > td > img{
+    width:20px !important;
+}
+
+#coti{
+   width: 150px !important;
+}
+
+/* FIN PORTFOLIO */
+
+/* HISTORIAL */
 
 #selectHist form fieldset {
     width: 600px !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     margin-bottom: -20px !important;
 }
 
-#selectHist form .selector >{    
-    margin-top: -10px !important;
+.menuHistorial{    
+    margin-top: 100px !important;  
+    margin-left: -100px !important;
 }
 
+/* FIN HISTORIAL */
 
-/* Fin estilos tabla */
+
+/* MODAL CÁLCULOS */
+
+.ticker{
+    height: max-content !important;
+    /* padding-top: 20px !important; */
+    padding-bottom: 20px !important;
+}
+
+.modal-xl,
+.modal-content,
+.modal-body{
+    width:auto !important;
+    justify-content: center !important;
+}
+
+/* FIN MODAL CÁLCULOS */
+
+
+/* FOOTER */
 
 footer{        
-    height: 155px;
-    bottom: 0 !important;
-    left: 0 !important;  
+    height: 118px; 
+}
+
+/* FIN FOOTER */
+
+/* MEDIA QUIERIS */
+
+@media (max-width:1500px){
+    .subMenu a p{
+        font-size: 14px !important;    
+        margin-top: 0px !important;    
+    }   
+    
+    .subMenu a img{
+        width: 18px !important;        
+    }   
+
+    .modal-xl,
+.modal-content,
+.modal-body{
+    width:auto !important;
+    justify-content: center !important;
+    }
+
+    .calculo h5,
+    .calculo input,
+    .calculo p,
+    .form-select {
+        font-size:16px !important;
+    }
 }
 
 
 
+@media (max-width:1200px){
 
+    .menu{
+        height: 70px !important;
+        line-height:70px !important;  
+        padding-left: 0px !important;      
+    }
 
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
+    .logo{
+        justify-content: center !important;       
+        padding-top: 15px !important;
+        width: 100% !important;
+    }
 
-@media (max-width: 980px) {
-
-    .celdaTop, .celdaPlTotal, .celdaPl{  
-        border-bottom: none !important;
-        font-size: 12px !important;        
+    .calculo h5,
+    .calculo input,
+    .calculo p,
+    .form-select  {
+        font-size:14px !important;
     }
     
-    .activos .celda {           
-        font-size: 12px !important;        
+}
+
+@media (max-width:680px){
+      th{
+        font-size:8px !important;
     }
 
-    #total .celda {
-        white-space: nowrap;
-        font-size: 12px;
-    }
-    .calcRow input{
-        max-width: 100px !important;
-    }
-
-    .calcRow h5{
-        font-size: 15px !important;
-    }
-
-    .calcRow h2{
-        font-size: 20px !important;
-    }
-
-    .calcRow h4{
-        font-size: 15px !important;
-    }
-
-    .calcCost p{
-        font-size: 10px !important;
-    } 
-
-    .calcRow input{
-        max-width: 130px !important;
+    .ticker{
+        display: none !important;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width:575px){
     nav{
+        width: 70% !important;
+    }
+
+    nav .menu h5{
         display: none !important;
     }
 
-    .menuResponsive {
-        position: relative !important;            
+    .navButton{
+        width: 33% !important;
     }
 
-    .menuResponsive img{        
-        margin-right: -5px !important;        
-    }  
+    .logo img{   
+        max-width: 200px;
+        line-height: 100px;
+    }
+
+    .iconNav{
+        width:30px !important
+    }
+
+    .subMenu a p{
+        font-size: 16px !important;    
+        /* margin-top: 3px !important;  */   
+    }   
     
-    .navAcount{
-        width:200px !important;
-        margin-top:30px !important;
+    .subMenu a img{
+        width: 23px !important;        
+    }   
+
+    .filaPorta td,
+    .filaHisto td{
+        font-size: 8px !important;
     }
 
-    .navPort{
-        margin-left:-180px !important;
+    .filaHisto td img,
+    .filaPorta td img,
+    th img {
+        width: 15px !important;
     }
 
-    .calcRow input{
-        max-width: 80px !important;
-        font-size: 10px !important;
+    #coti{
+        width:40px !important;
+        padding: 3px !important;
     }
 
-    .calcCost h5, .calcCost p{
-        font-size: 12px !important;
-    }
-
-    .form-control{
-        font-size: 10px !important;
+    .calculo h5,
+    .calculo input,
+    .calculo p,
+    .form-select  {
+        font-size:12px !important;
     }
 
   
 }
 
 
-/* Este media querie es de "MIN-width" */
-@media (min-width: 768px) {  
-    .menuResponsive {  
-        display: none;       
-    }     
-}
-/* Fin */
-
-@media (max-width: 461px) {  
-    
-    .menuResponsive img {
-        width: 30px;
-    }    
-
-    .celdaTop, .celdaPlTotal{  
-        border-bottom: none !important;
-        font-size: 9px !important;        
-    }
-
-    .bMenu img{
-        width:15px !important;
-    }
-
-    .tarjetas{
-        width: 500px !important;
-        height: max-content !important;            
-        padding: 0% !important; 
-        margin: 0% !important; 
-        margin-top: 10px !important;   
-    }    
-    
-    #portConfig{
-        width: 20px !important;
-    }
-
-    .calcCost h5, .calcCost p{
-        font-size: 9px !important;
-    } 
-    
-}
-
-@media (max-width: 427px) {  
-
-    .menuResponsive img {
-        margin-right: -8px !important;
-        width: 30px;
-        margin-top: -10px !important;
-        margin-bottom: -10px !important;
-    }
-
-    .activos .celda {           
-        font-size: 9px !important;        
-    }
-
-    #total .celda {
-        white-space: nowrap;
-        font-size: 9px;
-    }
-    .divLogo p{
-        font-size:10px;
-    }
-    
-}
 
 
 
+/* COLORES personalizados */
 
-
-/* Colores personalizados */
-
-/* Textos */
-
-.textoAzul {
-    color: rgb(15 155 215) !important;
-}
-.textoAzul2 {
-    color: #2c53b2 !important;
-}
-.text-orange{    
-    color: #fbb03b !important;
-}
-.text-orange2{    
-    color: #f3cf96 !important;
-}
-.text-green {
-    color: rgb(31 195 59) !important;
-}
-.text-red {
-    color: rgb(184, 0, 0) !important;
-}
-
-
-/* Fondos */
+/* fondos */
 
 .azul1 {
     background-color: rgb(8 27 72) !important;
 }
 
 .azul2 {
-    background-color: rgb(1 18 56) !important;
+    background-color: #2c53b2 !important;
 }
 
 .azul3 {
-    background-color: rgb(11 40 102) !important;
+    background-color: #1f3b75 !important;
+}
+
+.azul4 {
+    background-color: #081b48 !important;
+}
+
+.azul5 {
+    background-color: #040c1d !important;
+}
+
+.azulNoticias{
+    background-color: rgb(1 18 56) !important;
 }
 
 .azulFondo {
     background-color: #14244a !important;
 }
 
-.azulOscuro {
-    background-color: #040c1d !important;
+.naranja {
+    background-color: #faaf3b !important;
 }
 
-.azulLogo {
-    background-color: rgb(15 155 215) !important;
-}
-
-.azulLogo2 {
-    background-color: #1f3b75 !important;
+.azulLab {
+    background-color: #93ecd0 !important;
 }
 
 .bg-rojo {
@@ -636,121 +369,148 @@ footer{
     background-color: rgb(2, 29, 8) !important;
 }
 
-.bg-marca{
-    background: #00000094 !important;     
-}
-
-.bg-marca2{
-    background: #01091b73 !important;     
-}
-
-.bg-orange{    
-    background-color: #fbb03b !important;
+.verdeLab{
+    background-color: #063815 !important;
 }
 
 
+/* Textos */
 
-
-/* Estilos personalizados */
-
-.nowrap{
-    white-space: nowrap !important;
+.t-azul1 {
+    color: #0f9bd7 !important;
 }
 
-.opacityOff {
-    opacity: 100 !important;
+.t-azul2 {
+    color: #2c53b2 !important;
 }
 
-.op80 {
-    opacity: 80% !important;
+.t-azul3 {
+    color: #1f3b75 !important;
 }
 
-.op50 {
-    opacity: 50% !important;
+.t-azul4 {
+    color: #081b48 !important;
 }
 
-.op70 {
-    opacity: 70% !important;
+.t-azul5 {
+    color: #040c1d !important;
 }
 
-.z1{
-    z-index: 1 !important;
+.t-naranja {
+    color: #faaf3b !important;
 }
 
-.z0 {
-    z-index: 0 !important;
+
+/* BORDER */
+
+.border-naranja{
+    
+       border:1px solid #faaf3b4d !important;
+    
 }
 
-.cursor-na {
-    cursor: not-allowed !important;
+.border-azul{
+    border:1px solid #1e479c !important;
+ }
+
+
+
+
+
+/* CSS short code */
+
+.ml-2{
+    margin-left: 5px !important;
 }
 
-.cursor-pointer {
-    cursor: pointer !important;
+.mr-2{
+    margin-right:5px !important;
 }
 
-.of-hidden {
-    overflow: hidden !important;
+.mr-1{
+    margin-right:3px !important;
 }
 
-.text-bold{
-    font-weight: bold !important;
-}
-
-.letter-space-1{
-    letter-spacing: 2px;
-}
-
-.letter-space-2{
-    letter-spacing: 4px;
-}
-
-.ticker{
-    height: max-content !important;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+.pl-1{
+    padding-left:4px !important;
 }
 
 .pl-2{
-    padding-left: 10px !important;
+    padding-left:5px !important;
 }
 
-.border-none{
-    border: none !important;
-}
-
-.ml-1{
-    margin-left: 4px !important;
-}
-
-.ml-2{
-    margin-left: 8px !important;
-}
-
-.letter-spacing-1 {
-    letter-spacing: 2px !important;
+.px-5{
+    padding-left:15px !important;
+    padding-right:15px !important;
 }
 
 .letter-spacing-2 {
-    letter-spacing: 4px !important;
+    letter-spacing: 3px !important;
 }
 
 .letter-spacing-3 {
     letter-spacing: 6px !important;
 }
 
-.h-full{
-    height:100vh !important;
+.op90{
+    opacity: 90% !important;
 }
 
-.scroll{
-    position: scroll !important;
+.op80{
+    opacity: 80% !important;
 }
 
-.transition-800 > *{
-    transition: all 800ms !important;
+.op50{
+    opacity: 50% !important;
 }
 
-.transition-500 > *{
-    transition: all 500ms !important;
+.nowrap{
+    flex-wrap: nowrap !important;  
 }
+
+.w-s{
+    white-space: nowrap !important;
+}
+
+.cursor{
+    cursor: pointer !important;
+}
+
+.of-hidden{
+    overflow: hidden !important;
+}
+
+
+.salto1{
+    height: 3px !important;
+}
+
+.bg-marca2{
+    background: #01091b73 !important;     
+}
+
+.border-none{
+    border: none !important;
+}
+
+.position-absolute{
+    display: block !important;
+    position: absolute !important;
+}
+
+.bor{
+    border: 1px red solid !important;
+}
+
+.br-none{
+    border-right: none !important;
+}
+
+.bl-none{
+    border-left: none !important;
+}
+
+.f-w{
+    font-weight: 100px !important;
+}
+

@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <?php
+    include "includes/head.php";
+    ?> 
+  </head>
+  <body class="container-full azulFondo"> 
 
-            <?php
-                include "includes/head.php";
-            ?>
-    <body class="azulFondo">
-
-        <!-- Barra lateral -->                
-        <!-- <div class="lateral z1 d-flex">
-            
-            <div class="contenidoLateral bg-primary col-11">
-                Contenido
-            </div>
-            <div class="navLateral bg-warning col-1">                
-            <button class="rounded mb-1 bg-warning"><img id="lateralnav" class="my-auto p-1" src="img/tune_white_18dp.svg" alt=""></button>
-                <div class="social justify-content-center col-1 mx-auto">
-                    <img src="img/Sicoiner favicon.png" alt="" class="twitter bg-primary">
-                    <img src="img/Sicoiner favicon.png" alt="" class="facebook bg-primary">
-                    <img src="img/Sicoiner favicon.png" alt="" class="google bg-primary">
-                </div>
-            </div>
-        </div> -->
-        <!-- Fin barra lateral -->
+    <?php
+    include "includes/header.php";
+    ?>
+    
+      <div class="contenedor p-2 of-hidden">
 
 
+        <!-- INICIO PORTFOLIO -->
+        
+        <div class="portfolio text-light text-center d-flex justify-content-center mt-4 col-xl-8 col-12 mx-auto">
 
-        <div class="container-full row"> 
+          <h4 class="text-light col-12 nowrap t-azul1">Portfolio 1</h4>
+          <hr class="azulLogo text-light mx-auto rounded bg-white azul2 mb-2 col-6">
 
-            <?php
-                include "includes/header.php";
-            ?>
+          <table class="table text-light table-hover mx-auto rounded nowrap text-center">
 
-            <?php
-                include "includes/portfolios.php";
-            ?>                            
+            <thead>
+              
+              <tr class="titPorta d-flex text-center nowrap">
+                <th class="col w-s text-light">Ticker</th>
+                <th class="col w-s text-light">Posición</th>
+                <th class="col w-s text-light">Break even</th>
+                <th class="col w-s text-light">Cotización</th>
+                <th class="col w-s text-light">Inversión</th>
+                <th class="col w-s text-light">P&L | %</th>
+                <th class="col w-s text-light cursor"><img id="portConfig" class="my-auto p-1" src="images/tune_white_24dp.svg" alt=""></th> 
+              </tr>
+            </thead>
 
-            <?php
-                include "includes/footer.php";
-            ?>    
+            <tbody class="d-flex row">
+              <!-- Filas de portofolio -->
+              <?php
+              include "includes/fila-portfolio.php";
+              ?>
 
+              <?php
+              include "includes/fila-portfolio.php";
+              ?>
+
+              <?php
+              include "includes/fila-portfolio.php";
+              ?>
+
+              <!-- Fin Filas de portofolio -->
+
+              <tr class="totalPorta azul5 d-flex text-center nowrap">
+                <th class="col w-s text-light">Total 3 Activos</th>
+                <th class="col w-s text-light"></th>
+                <th class="col w-s text-light"></th>
+                <th class="col w-s text-light"></th>
+                <th class="col w-s text-light">300,000</th>
+                <th class="col w-s text-light">300,000 | 300%</th>
+                <th class="col w-s text-light cursor"><img src="images/add_box_white_24dp.svg" alt=""></th> 
+              </tr>            
+            </tbody>
+          </table>
         </div>
+        <!-- FIN PORTFOLIO -->
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>  
        
-    </body>
 
+        
+        
+      </div>
+
+      <?php
+      include "includes/footer.php";
+      ?> 
+    
+  </body>
 </html>

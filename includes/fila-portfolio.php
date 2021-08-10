@@ -1,21 +1,12 @@
-                                    <!-- Fila de datos del activo -->
-                                    <div>
-                                        <tr class="activos">
-                                            <th id="ticker" class="celda opacityOff letter-space-1 bg-marca2">ETH</th>
-                                            <!-- IMPORTANTE - El ticker no puede estar repetido en el mismo portfolio -->
-                                            <th id="cantidad" class="celda opacityOff">200</th> <!-- Cantidad de ADA en portfolio -->
-                                            <th id="breakEven" class="celda">500 $</th> <!-- Precio medio de compra -->
-                                            <th class="celda"><input id="coti" class="opacityOff text-bold coti text-white text-center border-0 cursor-pointer rounded azulLogo2 h-75 p-1 col-8" type="number" value="1500"></th> <!-- Precio actual de ADA en el mercado -->
-                                            <th id="inversion" class="celda text-orange">100,000 $</th> <!-- Capital total invertido en ADA -->
-                                            <th id="diferencia" class="celda opacityOff text-green">100,000 $ | 100%</th>
-                                            <!-- Ganancias | Porcentaje de ganancias en ADA ahora-->
-                                            <th class="celda bMenu">
-                                            <?php
-                                                include "includes/menufila_portfolio.php";
-                                            ?> 
-                                            </th>
-                                        </tr>
-                                        <tr class="salto1"></tr>
-                                        <!-- Este parámetro está por pulir, pero permite el margen inferior de 5px en cada fila -->
-                                    </div>
-                                    <!-- Fin fila de datos del activo  -->                  
+            <!-- fila del activo ETH por ejemplo -->
+            <tr class="filaPorta azul4 d-flex row align-items-center text-center nowrap rounded">
+              <td class="col w-s text-light bg-marca2">ETH</td>
+              <td class="col w-s text-light">200</td>
+              <td class="col w-s text-light">500</td>
+              <td class="col w-s text-light d-grid"><input id="coti" class=" azul3 border-none text-light text-center rounded d-flex align-items-center" type="number" value="1500"></td>
+              <td class="col w-s text-light">100,000</td>
+              <td class="col w-s text-light">100,000 | 100%</td>
+              <td class="col w-s text-light cursor"><img src="images/linear_scale_white_24dp.svg" alt=""></td> 
+            </tr>
+            <tr class="salto1"></tr>
+            <!-- FIN fila del activo ETH por ejemplo -->

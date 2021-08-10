@@ -1,24 +1,25 @@
-                        
-                        <div> 
-                            <h4 class="text-light mt-4 mb-3 op80">Cálculo de inversión simple:</h4>
-                            <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
+        <!--  CALCULADORA SIMPLE -->
+        
+            <h4 class="text-light text-center mb-3 ">Cálculo Simple:</h4>
+            <!-- <hr class="text-light mx-auto rounded bg-white opacityOff"> -->
 
-                            <div ng-app="" class="d-flex col-12 col-md-10 p-2 py-5 azul2 rounded space-between justify-content-center align-items-center op80 mx-auto">
-                                
-                                <div class="calcCost text-light col-3 d-flex justify-content-center">
-                                    <h5 class="text-center">Cantidad</h5>
-                                    
-                                    <input class="form-control w-75 rounded mb-3 mt-2 text-center cursor-pointer text-bold" type="number" ng-model="n1">
-                                </div>
-                                <div class="calcCost text-light col-3 d-flex justify-content-center">
-                                    <h5 class="nowrap text-center">Precio Compra</h5>
-                                    
-                                    <input class="form-control w-75 azulLogo2 text-light rounded mb-3 mt-2 text-center cursor-pointer" type="number" ng-model="n2">
-                                </div>
-                                <div class="calcCost text-light col-3 d-flex justify-content-center">
-                                    <h5 class="nowrap text-center">Total Inversión</h5>
-                                    
-                                    <input class="form-control w-75 rounded mb-3 mt-2 text-center text-green azulLogo2 text-bold cursor-pointer" type="number" value='{{n1*n2}}'>
-                                </div>
-                            </div>
-                        </div>
+            <div class="calculo d-flex col-xl-8 col-md-10 col-11 justify-content-center text-light text-center mx-auto azulNoticias rounded p-5">
+                
+                <div class=" col-sm-4 col-12 my-2 d-flex justify-content-center px-2">
+                    <h5 class="mb-1 col-12 nowrap w-s">Posición</h5>                    
+                    <input class="azul4 border-azul text-light rounded p-1 col-12 text-center" type="number" value='2'>
+                </div>
+
+                <div class="col-sm-4 col-12 my-2 d-flex justify-content-center px-2">
+                    <h5 class="mb-1 col-12 nowrap w-s">Precio Compra $</h5>                    
+                    <input class="azul4 border-azul text-light rounded p-1 col-12 text-center" type="number" value='1000'>
+                </div>
+
+                <div class=" col-sm-4 col-12 my-2 d-flex justify-content-center px-2">
+                    <h5 class="mb-1 col-12 nowrap w-s">Total Inversión $</h5>                    
+                    <input class="azul4 border-azul text-light rounded p-1 col-12 text-center" type="number" value='2000'>
+                </div>
+
+            </div>
+        
+        <!--  FIN CALCULADORA SIMPLE -->

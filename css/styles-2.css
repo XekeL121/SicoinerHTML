@@ -1,0 +1,66 @@
+.borde{
+    border: none;
+    background-color: green !important;
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+#cont-log{
+    height: 100vh !important;
+    width:100% !important;
+    color: white;    
+}
+
+#logo-log h6{
+    /* letter-spacing: 6px; */
+    margin-bottom: -40px !important;
+} 
+
+#icon-log img{
+    border-top: var(--color-naranja2) solid 1px;
+    transition: 3s ease;    
+}
+
+#formu-log:hover > #form-social > #icon-log > img{    
+    border-top: var(--azulLogo) solid 1px;      
+    /* background-color: var(--azul1) !important; */
+}
+
+
+#formu-log{
+    min-height:40% !important; 
+    border-top:  var(--color-naranja2) solid 1px !important;
+    /* border-bottom:  var(--color-naranja2) transparent 1px !important; */    
+    transition: all 3s ;
+}
+
+
+#formu-log:hover{    
+    /* background-color: var(--azulOscuro) !important;  */   
+    border-top:  var(--azulLogo) solid 1px !important;
+    /* border-bottom:  var(--azulLogo) solid 1px !important;  */
+   
+}
+
+#form-social button:hover{
+   /*  transition: 5s; */
+    color: white !important; 
+    background-color: var(--azul4) !important;
+}
+
+
+#formu-log div button{
+    width: 180px;
+ }
+
+ #icon-log img{
+     width: 100px;
+ }
+
+ .icon-social{
+     width:23px;
+     justify-content: center;
+     margin-right: 5px !important;
+ }
