@@ -17,7 +17,7 @@
         <h3 class="mt-3 mb-1 text-light op80">Historial</h3>
         <hr class=" mx-auto rounded bg-white col-3">
 
-        <div id="selectHist">                            
+        <div id="selectHist" class="vPro">                            
             <form class="mb-3 d-flex justify-content-center op80 w-100">
                 <fieldset class="row">                                    
                     <div class="selector col-xl-3 col-6 p-3">
@@ -70,15 +70,15 @@
 
             <thead>
               
-              <tr class="titPorta d-flex text-center nowrap">
+              <tr class="titHisto d-flex text-center nowrap">
                 <th class="col w-s text-light">Portfolio</th>
                 <th class="col w-s text-light">Ticker</th>
                 <th class="col w-s text-light">Fecha</th>
                 <th class="col w-s text-light">Orden</th>
-                <th class="col w-s text-light">Posición</th>
+                <th class="col w-s text-light">Posiciones</th>
                 <th class="col w-s text-light">Precio C/V</th>
                 <th class="col w-s text-light">Capital $</th>
-                <th class="col w-s text-light cursor"><img id="portConfig" class="my-auto p-1" src="images/tune_white_24dp.svg" alt="">
+                <th class="col w-s text-light cursor vPro"><img id="portConfig" class="my-auto p-1" src="images/tune_white_24dp.svg" alt="">
                     <!-- <div class="menuHistorial position-absolute">
                         <div>hola</div>
                         <div>blanco</div>
@@ -97,15 +97,15 @@
                 ?> 
                
 
-                <tr class="totalPorta azulNoticias d-flex text-center nowrap">
+                <tr class="totalHisto azulNoticias d-flex text-center nowrap">
                     <th class="col w-s text-light">Total 2 Operaciones</th>
                     <th class="col w-s text-light"></th>
                     <th class="col w-s text-light"></th>
                     <th class="col w-s text-light"></th>
                     <th class="col w-s text-light"></th>
                     <th class="col w-s text-light"></th>
-                    <th class="col w-s text-light">200,000 $</th>
-                    <th class="col w-s text-light"></th> 
+                    <th class="col w-s text-light">&nbsp;200,000</th>
+                    <th class="col w-s text-light vPro"></th> 
                 </tr>            
             </tbody>
           </table>

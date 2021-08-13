@@ -3,7 +3,7 @@
                 
                     <div id="logo-log" class="col-12 mt-4">
                         <img class="" src="images/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner">
-                        <h6 class="op50 nowrap mt-1 text-uppercase letter-spacing-3">- Tu portfolio digital -</h6>
+                        <h6 class="op50 nowrap mt-1 text-uppercase letter-spacing-3">- Portfolio digital -</h6>
                         
                     </div>
                     
@@ -21,7 +21,7 @@
                                 <div class="my-3 mx-auto">
                                     <label class="mb-1">Email:</label>
                                     <div class="mx-auto my-auto d-flex justify-content-center">
-                                        <input type="text" class="w-50 mx-auto my-auto px-2 py-1 text-center azulLogo2 rounded text-light border-none" id="inputEmail" value="email@example.com">
+                                        <input type="text" class="col-5 mx-auto my-auto px-2 py-1 text-center azulLogo2 rounded text-light border-none" id="inputEmail" value="email@example.com">
                                     </div>
                                 </div>
 
@@ -40,8 +40,8 @@
                                 </div>
 
                                 <div class="d-flex row justify-content-center mt-5">
-                                    <a class="col-6 d-flex justify-content-end" href="index.php"><button type="button" class="mr-2 py-1 bg-orange rounded text-dark text-bold">Acceder</button></a>
-                                    <a class="col-6 d-flex justify-content-start" href="index.php"><button type="button" class="ml-2 py-1 azul3 rounded text-light">Crear cuenta</button></a>
+                                    <a class="col-6 d-flex justify-content-end" href="index.php"><button type="button" class="mr-2 py-1 naranja rounded text-dark text-bold border-none">Acceder</button></a>
+                                    <a class="col-6 d-flex justify-content-start" href="index.php"><button type="button" class="ml-2 py-1 azul3 rounded text-light border-none">Crear cuenta</button></a>
                                 </div>
 
                                 <div class="col-12 d-flex nowrap align-items-center justify-content-center text-primary cursor-pointer mt-3">Recuperar contraseña</div>
@@ -54,11 +54,11 @@
                                         <img class="icon-social" src="images/google.svg" alt="">
                                         <p>Google</p>
                                     </div>
-                                    <div class="d-flex justify-content-center align-items-center col-xl-3 col-4 nowrap cursor-pointer">
+                                    <div class="dflex col-xl-3 col-4 nowrap cursor-pointer">
                                         <img class="icon-social" src="images/facebook.svg" alt="">
                                         <p>Facebook</p>
                                     </div>
-                                    <div class="d-flex justify-content-center align-items-center col-xl-3 col-4 nowrap cursor-pointer">
+                                    <div class="dflex col-xl-3 col-4 nowrap cursor-pointer">
                                         <img class="icon-social" src="images/twitter.svg" alt="">
                                         <p>Twitter</p>
                                     </div>

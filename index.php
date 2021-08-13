@@ -29,10 +29,10 @@
                 <th class="col w-s text-light">Ticker</th>
                 <th class="col w-s text-light">Posición</th>
                 <th class="col w-s text-light">Break even</th>
-                <th class="col w-s text-light">Cotización</th>
                 <th class="col w-s text-light">Inversión</th>
+                <th class="col w-s text-light">Cotización</th>
                 <th class="col w-s text-light">P&L | %</th>
-                <th class="col w-s text-light cursor"><img id="portConfig" class="my-auto p-1" src="images/tune_white_24dp.svg" alt=""></th> 
+                <th class="col w-s text-light cursor"><img id="portConfig" class="my-auto p-1 vPro" src="images/tune_white_24dp.svg" alt=""></th> 
               </tr>
             </thead>
 
@@ -56,9 +56,9 @@
                 <th class="col w-s text-light">Total 3 Activos</th>
                 <th class="col w-s text-light"></th>
                 <th class="col w-s text-light"></th>
+                <th class="col w-s text-light"> &nbsp300,000 </th>
                 <th class="col w-s text-light"></th>
-                <th class="col w-s text-light">300,000</th>
-                <th class="col w-s text-light">300,000 | 300%</th>
+                <th class="col w-s text-light"> &nbsp300,000 | 300%</th>
                 <th class="col w-s text-light cursor"><img src="images/add_box_white_24dp.svg" alt=""></th> 
               </tr>            
             </tbody>

@@ -1,4 +1,4 @@
-    <header class="cabecera row azul4 d-flex justify-content-center">
+    <header class="cabecera azul4 d-flex justify-content-center">
 
       <a href="index.php" class="logo d-grid col-xl-4 col-md-4 col-12 my-auto text-center justify-content-end">
         <img class="col-12 mx-auto" src="images/Isotipo Sicoiner v1.png" alt="">
@@ -7,22 +7,57 @@
       
       <nav class="col-xl-8 col-md-9 col-12 d-flex justify-content-center">
 
-        <div class="menu row col-xl-7 col-12 d-flex justify-content-center align-items-center">
+        <div class="menu row col-xl-7 col-12 dflex">
 
-          <a href="index.php" class="navButton col-4 row justify-content-center align-items-center rounded py-2 op90">
+          <a href="index.php" class="navButton dflex col-4 row rounded py-2 op90">
             <img class="iconNav op90 col-6" src="images/auto_stories_white_24dp.svg" alt="">
             <h5 class="text-light col-6 ml-2 pl-1">Portfolios</h5>
           </a>
           
-          <a href="historial.php" class="navButton col-4 row align-items-center justify-content-center rounded py-2 op90">
+          <a href="historial.php" class="navButton dflex col-4 row rounded py-2 op90">
             <img class="iconNav op90 col-6" src="images/insights_white_24dp.svg" alt="">
             <h5 class="text-light col-6 ml-2">Historial</h5>
           </a>
           
-          <a href="login.php" class="navButton col-3 row align-items-center justify-content-center rounded nowrap py-2 op90 cursor">
-            <img class="iconNav col-6" src="images/account_circle_white_24dp.svg" alt="">
-            <img class="iconNav col-6" src="images/arrow_drop_down_white_18dp.svg" alt="">
-          </a>
+          
+            
+          <div class="dropdown col-3 dflex rounded">
+            <button class="btn dropdown-toggle py-1 col-12" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="iconNav col-6" src="images/account_circle_white_24dp.svg" alt="">
+              <img class="iconNav col-6" src="images/arrow_drop_down_white_18dp.svg" alt="">
+            </button>
+            <ul class="dropdown-menu menu-acount azul5 d-flex row py-2" aria-labelledby="dropdownMenu2">
+
+              
+              <li class="dropdown-item rounded nowrap"><a class="px-5 text-primary" href="">Guardar</a></li>
+              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Mi cuenta</a></li>
+              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Cartera</a></li>
+              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Versión Pro</a></li>
+              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Invitar a amigo</a></li>
+              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Ayuda</a></li>
+              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Acerca de..</a></li>
+              <li class="dropdown-item rounded nowrap"><a href="login.php" class="text-red px-5">Cerrar sesión</a></li>
+              
+            </ul>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
 
         </div>
         
@@ -50,7 +85,7 @@
 
     <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" -->
 
-    <div class="modal justify-content-center mx-auto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal mx-auto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl d-flex justify-content-center mx-auto rounded mt-5">
           <div class=" pt-3 modal-content azul1 mx-auto border-azul rounded br-none bl-none">
 

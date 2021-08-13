@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
         <!-- Fin Google fonts -->
-        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/styles-2.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/png" style="height: 100%; width: 100%;" href="images/Sicoiner favicon.png">
         <title>Sicoiner V2</title>
