@@ -23,20 +23,20 @@
                 <!--   Inpunts del activo -->                
                 <div class=" d-flex justify-content-center col p-2">                    
                     <div>
-                        <div id="newBroker" class="">Bróker</div>
-                        <input class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="text">
+                        <div class="">Bróker</div>
+                        <input id="newBroker" class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="text">
                     </div>
                     <div>
-                        <div id="newTicker" class="">Nombre</div>
-                        <input class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="text">
+                        <div class="">Nombre</div>
+                        <input id="newTicker" class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="text">
                     </div>
                     <div>
-                        <div id="newCantidad" class="">Cantidad</div>
-                        <input class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="number">
+                        <div class="">Cantidad</div>
+                        <input id="newCantidad" class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="number">
                     </div>
                     <div>
-                        <div id="newPrecioMedio" class="">Precio medio</div>
-                        <input class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="number">
+                        <div class="">Precio medio</div>
+                        <input id="newPrecioMedio" class="azulLab rounded mx-2 text-dark text-center font-weight-bold p-2 border-azul" type="number">
                     </div>                                     
                 </div>
                 <!--   Fin Inpunts del activo -->  
