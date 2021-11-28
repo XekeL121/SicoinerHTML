@@ -17,48 +17,25 @@
           <a href="historial.php" class="navButton dflex col-4 row rounded py-2 op90">
             <img class="iconNav op90 col-6" src="images/insights_white_24dp.svg" alt="">
             <h5 class="text-light col-6 ml-2">Historial</h5>
-          </a>
-          
-          
-            
-          <div class="dropdown col-3 dflex rounded">
-            <button class="btn dropdown-toggle py-1 col-12" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </a>      
+
+          <div id="account" class="navButton col-3 dflex rounded">
+            <button class="btn py-1 col-12">
               <img class="iconNav col-6" src="images/account_circle_white_24dp.svg" alt="">
               <img class="iconNav col-6" src="images/arrow_drop_down_white_18dp.svg" alt="">
+           
             </button>
-            <ul class="dropdown-menu menu-acount azul5 d-flex row py-2" aria-labelledby="dropdownMenu2">
-
-              
-              <li class="dropdown-item rounded nowrap"><a class="px-5 text-primary" href="">Guardar</a></li>
-              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Mi cuenta</a></li>
-              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Cartera</a></li>
-              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Versión Pro</a></li>
-              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Invitar a amigo</a></li>
-              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Ayuda</a></li>
-              <li class="dropdown-item rounded nowrap"><a class="px-5 text-light op80" href="">Acerca de..</a></li>
-              <li class="dropdown-item rounded nowrap"><a href="login.php" class="text-red px-5">Cerrar sesión</a></li>
-              
-            </ul>
-
-            
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- MENÚ DESPLEGABLE DE CUENTA DE USUARIO -->
+              <?php
+              include "includes/menu-account.php";
+              ?> 
+            <!-- FIN MENÚ DESPLEGABLE DE CUENTA DE USUARIO -->
           </div>
 
 
-
+          
         </div>
         
       </nav>      

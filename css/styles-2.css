@@ -7,6 +7,9 @@
     border: 1px solid red;
 } */
 
+
+/* PÁGINA LOGIN */
+
 #cont-log{
     height: 100vh !important;
     width:100% !important;
@@ -65,59 +68,81 @@
      margin-right: 5px !important;
  }
 
+ /* FIN ESTILOS PÁGINA LOGIN */
+
 
 
  /* MENÚS DEL HEADER */
 
 
+ 
+#menu-account{
+     display: none !important;
+     position: absolute !important;
+     min-width:200px !important;
+     line-height: 30px !important;   
+     top: 20px !important;
+     right: 100px !important;   
+     z-index: 1 !important;         
+}  
 
- .menu-acount{
-    /* display: block;
-    position: absolute; */
-    min-width:200px !important;
-    padding: 0;
-    margin: 0;
-    top: 25px;
-    right: 95px;
-   /*  opacity: 100% !important; */
-    /* z-index: 1 !important;  */
-     /* visibility: hidden; */ 
- }
+#menu-account li:hover{
+    background-color: var(--azul1);      
+}  
 
- .dropdown-toggle::after {
-     content: "";
-    display: none;
-    /* margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent; */
+
+/* FIN MENÚS DEL HEADER */
+
+
+/* MODAL DE NUEVO PORTFOLIO */
+
+#newPortContainer {
+    /* //display on off */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;   
 }
 
-
-.dropdown-item{
-    line-height: 30px !important;
-}
-
-.dropdown:hover{
-    background-color: var(--azul3) !important;             
-}
+/* MODAL DE NUEVO PORTFOLIO */
 
 
 
- /* .menu-acount li{
-    line-height: 30px;
- }
- */
-
- /* FIN MENÚS DEL HEADER */
+/* MENÚS DE LAS FILAS PORTFOLIO E HISTORIAL */
 
 
- @media (max-width:1500px){
+.menuFilaPort{   
+    position: absolute !important;
+    min-width:160px !important;
+    line-height: 30px !important;   
+    top: 80px !important;
+    right: 95px !important;   
+    z-index: 1 !important;      
+ 
+}  
 
-    .menu-acount{      
-        right: 50px !important;  
-     }
- }
+.menuFilaPort li:hover{
+    background-color: var(--azul1);      
+}  
+
+.menuFilaPort li:hover a,
+.menuFilaPort li a:hover {
+    opacity: 100% !important; 
+ } 
+
+ .on{
+    display: block !important;
+    z-index: 2 !important;
+}  
+
+.off{
+    display: none !important;
+}  
+
+
+
+
+

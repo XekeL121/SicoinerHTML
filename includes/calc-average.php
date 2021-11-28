@@ -32,10 +32,10 @@
                     <h4 class="w-s nowrap ml-2">Portfolio 1</h4>
                 </div> -->
                 <div class="col-sm-3 col-4 dflex text-center text-light">
-                    <h5 class="w-s nowrap">Posición</h5>
+                    <h5 class="w-s nowrap">Cantidad</h5>
                     <input class="col-10 my-2 text-center verdeLab text-light rounded border-naranja p-1 px-2 " type="submit" value="200">
                     <input class="col-10 my-2 text-center azul4 border-azul text-light rounded p-1 px-2 " type="text" value="10">
-                    <p class="col-12 text-center w-s nowrap mt-2">Posición total</p>
+                    <p class="col-12 text-center w-s nowrap mt-2">Cantidad total</p>
                     <input class="col-10 mb-4 mt-1 text-center azulLab text-dark f-w rounded border-none p-1 px-2 " type="submit"  value="210">
                 </div>
                 <div class="col-sm-3 col-4 dflex text-center text-light">

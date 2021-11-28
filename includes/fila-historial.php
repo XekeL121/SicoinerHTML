@@ -1,5 +1,5 @@
             <!-- fila del activo ETH por ejemplo -->
-            <tr class="filaPorta bg-rojo d-flex row align-items-center text-center nowrap rounded">
+            <tr class="filaPort bg-rojo d-flex row align-items-center text-center nowrap rounded">
             <td class="col w-s text-light">Portfolio 1</td>
             <td class="col w-s text-light bg-marca2">ETH</td>
             <td class="col w-s text-light">05/10/21</td>
@@ -13,7 +13,7 @@
             <!-- FIN fila del activo ETH por ejemplo -->
 
             <!-- fila del activo ETH por ejemplo -->
-            <tr class="filaPorta bg-verde d-flex row align-items-center text-center nowrap rounded">
+            <tr class="filaPort bg-verde d-flex row align-items-center text-center nowrap rounded">
                 <td class="col w-s text-light">Portfolio 1</td>
                 <td class="col w-s text-light bg-marca2">ETH</td>
                 <td class="col w-s text-light">25/08/21</td>
