@@ -12,9 +12,10 @@
         <div class="azul">Azul</div>
         <div class="azul">Azul</div>
 </div> -->
-      <footer class="text-center text-light my-auto justify-content-center p-5 azul5 text-orange">
+      <footer class="d-flex row text-center text-light my-auto my-auto align-items-center justify-content-center py-2 azul5 text-orange">
         <p class="t-naranja">Sicoiner | 2021</p>   
         <p class="text-light op50"> v1.1 Pro</p>
+        <p class="text-light op50"></p>
       </footer>
 
 

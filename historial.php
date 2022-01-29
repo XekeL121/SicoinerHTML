@@ -11,7 +11,7 @@
     include "includes/header.php";
     ?>
     
-    <div class="contenedor p-2 of-hidden text-center">
+    <div id="contHistorial" class="contenedor p-2 of-hidden text-center">
 
 
         <h3 class="mt-3 mb-1 text-light op80">Historial</h3>
@@ -62,7 +62,7 @@
 
         <!-- INICIO HISTORIAL -->
         
-        <div class="historial text-light text-center d-flex justify-content-center mt-4 col-xl-8 col-12 mx-auto">
+        <div id="historial" class="historial text-light text-center d-flex justify-content-center mt-4 col-xl-8 col-12 mx-auto">
 
       
 

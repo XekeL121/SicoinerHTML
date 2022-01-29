@@ -1,53 +1,8 @@
 
-//   *****   VARIABLES MODAL PRIMER PORTFOLIO **** //
-
-//BOTÓN DE NUEVO PORTFOLIO "+"
-const botonNewPort = document.getElementById('btnNewPort');
-
-//CONTAINER QUE OCUPA TODA LA PANTALLA
-const newPortContainer = document.getElementById('newPortContainer');
-
-//BOTÓN DE CERRAR
-const cerrarNewPort = document.getElementById('cerrarNewPort');
-
-//BOTÓN ACEPTAR
-const aceptarNewPort = document.getElementById('aceptarNewPort')
-
-//BOTÓN DE CANCELAR
-const cerrarNewPort2 = document.getElementById('cerrarNewPort2');
-
-//   *****   FIN VARIABLES MODAL PRIMER PORTFOLIO **** //
-
-//****************************************************************************************** */
-
-//   *****   VARIABLES INSERCIÓN DE DATOS EN EL MODAL PRIMER PORTFOLIO **** //
-
-const newNombre = document.getElementById('newNombre');
-
-const newBroker = document.getElementById('newBroker');
-
-const newTicker = document.getElementById('newTicker');
-
-const newCantidad = document.getElementById('newCantidad');
-
-const newPrecioMedio = document.getElementById('newPrecioMedio');
-
-
 
 
 //   *****   FIN INSERCIÓN DE DATOS EN EL PRIMER PORTFOLIO **** //
 
-
-
-
-//CLIC EN BOTÓN NUEVO PORTFOLIO
-botonNewPort.addEventListener('click', abrirContainer);
-
-//CLIC EN X DE CERRAR VENTANA
-cerrarNewPort.addEventListener('click', cerrarContainer);
-
-//CLIC EN CANCELAR
-cerrarNewPort2.addEventListener('click', cerrarContainer);
 
 //CLIC EN NUEVO NOMBRE
 newNombre.addEventListener('click', inNewNombre);
@@ -70,36 +25,10 @@ aceptarNewPort.addEventListener('click', inAceptar);
 
 //FUNCIONES >>
 //FUNCIONES >>
-//FUNCIONES >>
-//FUNCIONES >>
-//FUNCIONES >>
 
 
-//ABRIR CERRAR EL MODAL DE NUEVO PORTFOLIO
-function abrirContainer(){
-    if (newPortContainer.classList.contains('off')) {
-        newPortContainer.classList.remove('off');
-        newPortContainer.classList.add('on');
-        newPortContainer.classList.add('bg-shadow');
-    } 
-}
 
-function cerrarContainer(){         
-    if (newPortContainer.classList.contains('on')) {     
-     newPortContainer.classList.remove('on');
-     newPortContainer.classList.add ('off');
-     newPortContainer.classList.remove('bg-shadow');
-    } 
-}
-
-
-//Clic en botón aceptar
-/* aceptarNewPort.addEventListener('click', () => {
-    console.log('aceptar');
-});
- */
-
-
+//Estas líneas son para que la consola muestre si está funcionando al hacer clic 
 //CLIC EN Nombre del Portfolio
 function inNewNombre(){
     console.log('clic nuevo nombre')
@@ -132,21 +61,3 @@ function inNewPrecioMedio(){
 function inAceptar(){
     console.log('clic aceptar')
 }
-
-
-
-
-
-
-
-
-//Probando arrow function 
-
-/* cerrarNewPort.addEventListener('click', () => {
-    console.log('object')
-    newPortContainer.classList.remove('on');
-    newPortContainer.classList.add('off');
-    newPortContainer.classList.remove('bg-shadow');
-}); */
-
-

@@ -1,8 +1,11 @@
+//MOSTRAR Y OCULTAR EL MENÚ DE LA FILA DEL PORTFOLIO
+
 let btnMenuFilaPort = document.querySelector('.btnMenuFilaPort');
-let menuFilaPort = document.querySelector('#menuFilaPort');
+/* let menuFilaPort = document.getElementById('menuFilaPort'); */
 
 //Acción de activar el menú
 btnMenuFilaPort.addEventListener('click', mostrarOcultarMenu);
+
 
 
 function mostrarOcultarMenu() {
@@ -15,21 +18,55 @@ function mostrarOcultarMenu() {
 
     } else {
         console.log('else')
-        /* menuFilaPort.classList.remove('on'); 
-        menuFilaPort.classList.add('off');   */ 
-        ocultarMenu()         
+        menuFilaPort.classList.remove('on'); 
+        menuFilaPort.classList.add('off');   
+       /*  ocultarMenu1()  */        
         this.classList.remove('op50');             
     }
 }
 
 
-document.body.addEventListener('click', ocultarMenu, true);
+//Acción click fuera del menú NECESITA SOLUCIÓN NO FUNCIONA DE MOMENTO
+/* document.menuFilaPort.addEventListener('click', mostrarOcultarMenu, false); */
+
+//Acción click fuera del menú NECESITA SOLUCIÓN NO FUNCIONA DE MOMENTO
+/* document.menuFilaPort.addEventListener('click', ocultarMenu1, false); */
+
+
+
+
+
+//Acción click fuera del menú NECESITA SOLUCIÓN NO FUNCIONA DE MOMENTO
+/* menuFilaPort.addEventListener('click', ocultarMenu1); */
+
+/* function ocultarMenu1() {
+    if(menuFilaPort.clickOutsideThisElement) {
+        console.log('else')
+        mostrarOcultarMenu()   
+    }
+}
+ */
+
+
+
+/* $(document).on("click",function(e) {
+                    
+    let container = menuFilaPort;
+                       
+       if (!container.is(e.target) && container.has(e.target).length === 0) { 
+          alert("¡Pulsaste fuera!");               
+       }
+}); */
+
+//PARA QUE EL MENÚ SE OCULTE AL HACER CLIC FUERA (Quizá se necesite mejorar esta parte ya que cada clic registra esta función en la página portfolios)
+/* document.body.addEventListener('click', ocultarMenu, true);
 
 function ocultarMenu() {    
-    console.log('click en Ocultar menu fila port')
+    console.log('click en Ocultar menu fila port');
     menuFilaPort.classList.remove('on'); 
     menuFilaPort.classList.add('off');   
-}
+    btnMenuFilaPort.classList.remove('op50');
+} */
 
 
 
