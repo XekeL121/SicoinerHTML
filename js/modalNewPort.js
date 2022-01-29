@@ -56,7 +56,6 @@ function mostrarModal() {
     }     
 }
 
-
 //Ocultar la bienvenida cuando se crea el primer modal
 function ocultarBienvenida(){
   const bienvenida = document.querySelector('#bienvenida');
@@ -79,21 +78,17 @@ function validar() {
 
   if(nombre.value !== '' && broker.value !== '' && ticker.value !== '' && cantidad.value !== '' && precioMedio.value !== '' ) {
     btnAceptarEnabled()
-   }
-   
+   }   
 }
-
-
 
 //Al hacer clic en aceptar
 function aceptarModal() {      
   ocultarBienvenida();  
   ocultarModal();     
 
+  HTMLport(); /* 
   setTimeout(()=> {
-      HTMLport(); 
-    }, 250);
-
+    }, 250); */
 }
 
 // Cerrar con botones 'cancelar y X '
@@ -129,7 +124,7 @@ function HTMLport() {
 
   
   const newPortfolio = document.createElement('div')
-  newPortfolio.classList.add('portfolio', 'text-light', 'text-center', 'd-flex', 'justify-content-center', 'mt-2', 'col-xl-8', 'col-12', 'mx-auto')
+  newPortfolio.classList.add('portfolio', 'text-light', 'text-center', 'd-flex', 'justify-content-center', 'mt-2', 'col-xl-8', 'col-12', 'mx-auto', 'op50')
   newPortfolio.setAttribute('id', '1')
   newPortfolio.innerHTML = `
   
@@ -195,8 +190,7 @@ function HTMLport() {
   `;
     contIndex.insertBefore(newPortfolio, document.querySelector('.final'));
 
-    /* setTimeout(()=> {
-      newPortfolio.classList.remove('bg-filaMenuOn');
-      newPortfolio.classList.add('bg-filaMenuOff')
-    }, 500); */
+    setTimeout(()=> {
+      newPortfolio.classList.remove('op50');
+    }, 500);
   }

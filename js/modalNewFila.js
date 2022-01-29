@@ -57,7 +57,7 @@ function HTMLfila() {
   }
   
   const newFila = document.createElement('tr')
-  newFila.classList.add('filaPort', 'bg-filaMenuOn', 'd-flex', 'row', 'align-items-center', 'text-center', 'nowrap', 'rounded', 'mb-1')
+  newFila.classList.add('filaPort', 'bg-filaMenuOff', 'd-flex', 'row', 'align-items-center', 'text-center', 'nowrap', 'rounded', 'mb-1', 'op50', 'bg-verde')
   newFila.setAttribute('id', '01 =+ 1 ')
   newFila.innerHTML = `      
       <!-- Filas de portofolio -->    
@@ -86,9 +86,8 @@ function HTMLfila() {
   `;
 
   bodyPortfolio.insertBefore(newFila, totalPorta);
-  
+
   setTimeout(()=> {
-    newFila.classList.remove('bg-filaMenuOn');
-    newFila.classList.add('bg-filaMenuOff')
+    newFila.classList.remove('op50', 'bg-verde');    
   }, 500);
   }

@@ -13,7 +13,7 @@
 
                     <div class="col-sm-6 col-12">
                         <h5 class="p-2 nowrap w-s t-naranja">Nombre del Portfolio:</h5>
-                        <input id="newNombre" class="vacio azul3 border-azul rounded text-center text-light text-capitalize p-2 w-100" type="text" value="">
+                        <input id="newNombre" class="vacio azul3 border-azul rounded text-center text-light text-capitalize p-2 w-100" type="text">
                     </div>
 
                     <div class="d-flex col-sm-3 col-12 mt-3">

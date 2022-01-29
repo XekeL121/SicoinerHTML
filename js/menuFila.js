@@ -49,7 +49,7 @@ function removeFila(e) {
     eliminarFila = e.target.parentElement.classList.contains('eliminar');
     filaPadre = e.target.parentElement.parentElement.parentElement.parentElement;
     if(eliminarFila) { 
-        filaPadre.classList.add('bg-filaMenuRemove')   
+        filaPadre.classList.add('bg-filaMenuRemove', 'op70')   
         setTimeout(() => {
             filaPadre.remove();
         }, 500);    
