@@ -428,7 +428,15 @@ footer{
 .bg-filaMenuOn {
     /* box-shadow: 5px 10px #012070 !important; */
     background-color: #012070 !important;
+    border:4px solid #142d6e !important;
 } 
+
+.bg-filaMenuRemove {
+    background-color: #3b0b0b !important;  
+    border: 4px solid #561919 !important;  
+}
+
+
 
 .bg-filaMenuOff {
     background-color: #081b48 !important;
@@ -523,10 +531,10 @@ footer{
     border:1px solid #1e479c !important;
  }
 
- .border-filaMenuOn{
+/*  .border-filaMenuOn{
     border:4px solid #142d6e !important;
  }
-
+ */
 
 
 

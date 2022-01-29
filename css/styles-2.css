@@ -97,7 +97,7 @@
 /* MODAL DE NUEVO PORTFOLIO */
 
 #newPortContainer,
-#newFilaModal {
+#modalNewFila {
     /* //display on off */
     position: fixed;
     width: 100%;

@@ -12,17 +12,17 @@
     ?>
     <!-- Container index -->
     <div id="contIndex" class="contIndex contenedor p-2 of-hidden">   
-      <!-- Aquí comienza el portafolio -->
       
+      <!-- //Futura ventana para acciones del menú de la fila
       <div id="contMenuFila">
         <div id="MenuFila">
-          <div id="tituloMenuFila"></div>
-          <div id="herramientasMenuFila"></div>
-          <div id="btnMenuFila"></div>
-
+          <div id="tituloMenuFila">a</div>
+          <div id="herramientasMenuFila">a</div>
+          <div id="btnMenuFila">a</div>
         </div>
-      </div>
+      </div> -->
       
+      <!-- Aquí comienza el portafolio -->
       
       
       <!-- Aquí terminaría el portfolio -->      
@@ -44,19 +44,20 @@
     <!-- BOTÓN ABRIR PRIMER PORTFOLIO -->
     <!-- Modal para Nuevo portafolio -->
     <?php
-    include "includes/modalNewPortfolio.php";
+    include "includes/modalNewPortfolio.php";    
+    include "includes/modalNewFila.php";
     ?>
+    
     
     <!-- Footer -->
     <?php
     include "includes/footer.php";
     ?>    
     <!-- Scripts -->
-    <script src="js/portfolio.js"></script> 
-    <!-- <script src="js/menuFilaPort.js"></script> -->
-    <!-- <script src="js/newPortfolio.js"></script>  -->
     <script src="js/modalNewPort.js"></script>
-    <script src="js/navsPort.js"></script>
+    <script src="js/modalNewFila.js"></script>
+    <script src="js/menuFila.js"></script>
+    <!-- <script src="js/addTicker.js"></script> -->
 
     <!-- Scripts de prueba -->
     <!-- <script src="js/listadocurso copy.js"></script>  -->
