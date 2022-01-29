@@ -27,7 +27,6 @@ function newFila(e){
   }  
 }
 
-
 //Btn Aceptar
 function aceptarFila() {
   if(aceptarFila){
@@ -36,12 +35,10 @@ function aceptarFila() {
   }
 }
 
-
 function ocultarModalFila() {    
   modalNewFila.classList.add('off');
   /* btnAceptarDisabled(); */          
 }
-
 
 // HTML del btnAddActivo
 function HTMLfila() {
@@ -55,9 +52,11 @@ function HTMLfila() {
       valorMercado: cantidadFila.value * valorActual,
       profit: (cantidadFila.value * valorActual) - (cantidadFila.value * precioMedioFila.value),  // todo <<< Falta que calcule al cambiar el valor manualmente en el input...
   }
+
+  
   
   const newFila = document.createElement('tr')
-  newFila.classList.add('filaPort', 'bg-filaMenuOff', 'd-flex', 'row', 'align-items-center', 'text-center', 'nowrap', 'rounded', 'mb-1', 'op50', 'bg-verde')
+  newFila.classList.add('filaPort', 'bg-filaMenuOff', 'd-flex', 'row', 'align-items-center', 'text-center', 'nowrap', 'rounded', 'mb-1', 'bg-verde', 'op80')
   newFila.setAttribute('id', '01 =+ 1 ')
   newFila.innerHTML = `      
       <!-- Filas de portofolio -->    
@@ -67,7 +66,7 @@ function HTMLfila() {
         <td id="precioMedio" class="col w-s text-light">${inputsModalFila.precio} $</td>
         <td id="inversion" class="col w-s text-light">${inputsModalFila.inversion} $</td>
         <td id="coti" class="col w-s text-light d-grid"><input id="valorActual" class="valorActual coti azul3 border-none text-light text-center rounded d-flex align-items-center nowrap" type="number" value="${inputsModalFila.cotizacion}"></td>
-        <td id="diferencia" class="col w-s t-verde">${inputsModalFila.profit} $</td>
+        <td id="diferencia" class="diferencia col w-s t-verde">${inputsModalFila.profit} $</td>
         <td id="btnMenuFilaPort" class=" col w-s text-light cursor">
         <img class="btnMenuFilaPort" src="images/linear_scale_white_24dp.svg" alt="">   
           <ul id="IDmenuFilaPort" class="menuClic menuFilaPort d-flex justify-content-center azul5 d-flex col p-2 rounded z2 d-none">
@@ -81,13 +80,33 @@ function HTMLfila() {
        
           </td>          
       </tr>   
-      <tr class="salto1"></tr>  
-         
+      <tr class="salto1"></tr>           
+  `;
+
+  //Este código maqueta un nuevo total al portofolio para contabilizar el número de filas
+  const filasNum = bodyPortfolio.getElementsByClassName('filaPort');
+  const filasTotal = filasNum.length + 1;
+
+  const newFilasTotal = document.createElement('tr');
+  newFilasTotal.classList.add('totalPorta', 'azul5', 'd-flex', 'text-center', 'nowrap');
+  newFilasTotal.innerHTML = `
+  
+    <th id="" class="col w-s text-light nowrap"></th>
+    <th id="" class="totalActivos col w-s text-light nowrap">${filasTotal} Activos</th>
+    <th id="" class="col w-s text-light nowrap"></th>
+    <th id="" class="col w-s text-light nowrap"></th>
+    <th id="" class="totalInvertido col w-s text-light nowrap">&nbsp300,000 </th>
+    <th id="" class="col w-s text-light nowrap"></th>
+    <th id="" class="totalProfit col w-s nowrap text-light"> &nbsp300,000 | 300%</th>
+    <th id="" class="col w-s text-light cursor"><img class="newTicker" src="images/add_box_white_24dp.svg" alt=""></th>
   `;
 
   bodyPortfolio.insertBefore(newFila, totalPorta);
+  totalPorta.remove()
+  bodyPortfolio.appendChild(newFilasTotal);
 
   setTimeout(()=> {
-    newFila.classList.remove('op50', 'bg-verde');    
+    newFila.classList.remove('bg-verde', 'op80');    
   }, 500);
-  }
+}
+  

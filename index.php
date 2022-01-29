@@ -57,7 +57,7 @@
     <script src="js/modalNewPort.js"></script>
     <script src="js/modalNewFila.js"></script>
     <script src="js/menuFila.js"></script>
-    <!-- <script src="js/addTicker.js"></script> -->
+    <script src="js/portfolio.js"></script>
 
     <!-- Scripts de prueba -->
     <!-- <script src="js/listadocurso copy.js"></script>  -->
