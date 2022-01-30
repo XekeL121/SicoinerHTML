@@ -52,7 +52,7 @@ function cargarEventListeners(){
 function mostrarModal() {
     if( newPortContainer.classList.contains('off') ) {        
         newPortContainer.classList.remove('off');       
-        /* btnAceptarDisabled(); */   
+        /* btnAceptarDisabled();    */
     }     
 }
 
@@ -120,7 +120,7 @@ function HTMLport() {
   console.log(Object.values(inputsModal));
 
   const newPortfolio = document.createElement('div')
-  newPortfolio.classList.add('portfolio', 'text-light', 'text-center', 'd-flex', 'justify-content-center', 'mt-2', 'col-xl-7', 'col-12', 'mx-auto', 'op50')
+  newPortfolio.classList.add('portfolio', 'text-light', 'text-center', 'd-flex', 'justify-content-center', 'mt-2', 'col-xl-7', 'col-12', 'col-md-8', 'mx-auto', 'op50')
   newPortfolio.setAttribute('id', '1')
   newPortfolio.innerHTML = `
   
@@ -142,11 +142,11 @@ function HTMLport() {
     <tbody id="bodyPortfolio" class="bodyPortfolio portBody d-flex row">        
     <!-- Filas de portofolio -->
       <tr id="f01" class="filaPort bg-filaMenuOff d-flex row align-items-center text-center nowrap rounded">
-      <td id="ticker" class="col w-s text-light text-uppercase">${inputsModal.broker}</td>
+      <td id="broker" class="col w-s text-light text-uppercase">${inputsModal.broker}</td>
       <td id="ticker" class="col w-s t-naranja text-uppercase bg-marca2">${inputsModal.ticker}</td>
       <td id="cantidad" class="col w-s text-light">${inputsModal.cantidad}</td>
       <td id="precioMedio" class="col w-s text-light">${inputsModal.precio} $</td>
-      <td id="inversion" class="col w-s text-light">${inputsModal.inversion} $</td>
+      <td id="inversion" class="inversion col w-s text-light">${inputsModal.inversion} $</td>
       <td id="coti" class="col w-s text-light d-grid"><input id="valorActual" class="valorActual coti azul3 border-none text-light text-center rounded d-flex align-items-center nowrap" type="number" value="${valorActual}"></td>
       <td id="diferencia" class="col w-s t-verde">${inputsModal.profit} $</td>
       <td id="btnMenuFilaPort" class=" col w-s text-light cursor">
@@ -171,10 +171,10 @@ function HTMLport() {
       <!-- TOTALES -->
       <tr class="totalPorta azul5 d-flex text-center nowrap">
         <th id="" class="col w-s text-light nowrap"></th>
-        <th id="" class="totalActivos col w-s text-light nowrap">1 Activos</th>
+        <th id="" class="totalActivos col w-s text-light nowrap">1 Activo</th>
         <th id="" class="col w-s text-light nowrap"></th>
         <th id="" class="col w-s text-light nowrap"></th>
-        <th id="" class="totalInvertido col w-s text-light nowrap">&nbsp300,000 </th>
+        <th id="" class="totalInvertido col w-s text-light nowrap">${inputsModal.inversion}&nbsp</th>
         <th id="" class="col w-s text-light nowrap"></th>
         <th id="" class="totalProfit col w-s nowrap text-light"> &nbsp300,000 | 300%</th>
         <th id="" class="col w-s text-light cursor"><img class="newTicker" src="images/add_box_white_24dp.svg" alt=""></th> 

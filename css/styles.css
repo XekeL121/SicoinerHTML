@@ -166,8 +166,9 @@ tr > td > img{
 }
 
 
-.totalPorta :nth-child(5):before,
-.totalPorta :nth-child(7):before{
+
+.totalPorta :nth-child(7):before,
+.totalPorta :nth-child(5):after{
     content: '$';
     color: white;
 }

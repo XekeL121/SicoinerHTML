@@ -14,14 +14,20 @@ contIndex.addEventListener('click', newFila)
 btnNewFila.addEventListener('click', aceptarFila)
 btnCancelNewFila.addEventListener('click', ocultarModalFila)
 cerrarNewFila.addEventListener('click', ocultarModalFila)
+//Validar que los campos estén llenos para aceptar  
+brokerFila.addEventListener('blur', validarFila);
+tickerFila.addEventListener('blur', validarFila);
+cantidadFila.addEventListener('blur', validarFila);
+precioMedioFila.addEventListener('blur', validarFila);
 
 //FUNCIONES***************************************************************************
 
-//Botón del portofolio para abrir el modal
+//Función para abrir el modal de nueva fila al pulsar el botón
 function newFila(e){
   btnNewTicker = e.target.classList.contains('newTicker');
   bodyPortfolio = e.target.parentElement.parentElement.parentElement;
   totalPorta = e.target.parentElement.parentElement;
+  btnAceptarFilaDisabled()
   if(btnNewTicker) {   
     modalNewFila.classList.remove('off')
   }  
@@ -34,6 +40,25 @@ function aceptarFila() {
     ocultarModalFila();
   }
 }
+
+function validarFila() { 
+
+  if(brokerFila.value !== '' && tickerFila.value !== '' && cantidadFila.value !== '' && precioMedioFila.value !== '' ) {
+    btnAceptarFilaEnabled()
+   }   
+}
+
+//Mantener el botón aceptar deshabilitado hasta completar los inputs
+function btnAceptarFilaDisabled() {
+  btnNewFila.disabled = true;
+  btnNewFila.classList.add('op50', 'not-allowed');
+}
+
+function btnAceptarFilaEnabled() {
+  btnNewFila.disabled = false;
+  btnNewFila.classList.remove('op50', 'not-allowed');
+}
+
 
 function ocultarModalFila() {    
   modalNewFila.classList.add('off');
@@ -60,11 +85,11 @@ function HTMLfila() {
   newFila.setAttribute('id', '01 =+ 1 ')
   newFila.innerHTML = `      
       <!-- Filas de portofolio -->    
-        <td id="ticker" class="col w-s text-light text-uppercase">${inputsModalFila.broker}</td>
+        <td id="broker" class="col w-s text-light text-uppercase">${inputsModalFila.broker}</td>
         <td id="ticker" class="col w-s t-naranja text-uppercase bg-marca2">${inputsModalFila.ticker}</td>
         <td id="cantidad" class="col w-s text-light">${inputsModalFila.cantidad}</td>
         <td id="precioMedio" class="col w-s text-light">${inputsModalFila.precio} $</td>
-        <td id="inversion" class="col w-s text-light">${inputsModalFila.inversion} $</td>
+        <td id="inversion" class="inversion col w-s text-light">${inputsModalFila.inversion} $</td>
         <td id="coti" class="col w-s text-light d-grid"><input id="valorActual" class="valorActual coti azul3 border-none text-light text-center rounded d-flex align-items-center nowrap" type="number" value="${inputsModalFila.cotizacion}"></td>
         <td id="diferencia" class="diferencia col w-s t-verde">${inputsModalFila.profit} $</td>
         <td id="btnMenuFilaPort" class=" col w-s text-light cursor">
@@ -90,12 +115,12 @@ function HTMLfila() {
   const newFilasTotal = document.createElement('tr');
   newFilasTotal.classList.add('totalPorta', 'azul5', 'd-flex', 'text-center', 'nowrap');
   newFilasTotal.innerHTML = `
-  
+
     <th id="" class="col w-s text-light nowrap"></th>
     <th id="" class="totalActivos col w-s text-light nowrap">${filasTotal} Activos</th>
     <th id="" class="col w-s text-light nowrap"></th>
     <th id="" class="col w-s text-light nowrap"></th>
-    <th id="" class="totalInvertido col w-s text-light nowrap">&nbsp300,000 </th>
+    <th id="" class="totalInvertido col w-s text-light nowrap">&nbsp </th>
     <th id="" class="col w-s text-light nowrap"></th>
     <th id="" class="totalProfit col w-s nowrap text-light"> &nbsp300,000 | 300%</th>
     <th id="" class="col w-s text-light cursor"><img class="newTicker" src="images/add_box_white_24dp.svg" alt=""></th>

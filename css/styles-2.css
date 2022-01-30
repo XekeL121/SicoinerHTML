@@ -97,7 +97,8 @@
 /* MODAL DE NUEVO PORTFOLIO */
 
 #newPortContainer,
-#modalNewFila {
+#modalNewFila,
+.faqRemove {
     /* //display on off */
     position: fixed;
     width: 100%;

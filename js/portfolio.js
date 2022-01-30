@@ -10,6 +10,23 @@
 // *********************************************
 // *********************************************
 
+//Para actualizar el número de filas en el portfolio
+/* contIndex.addEventListener('click', totalUpdate);
+
+function totalUpdate(e) {
+    const totalDiv = e.target.classList.contains('totalActivos');
+    const filas = e.target.parentElement.parentElement.querySelectorAll('.filaPort')
+    const totalFilas = filas.length
+    console.log(totalFilas)
+
+    totalDiv.textContent = `${totalFilas} Activos`;
+    
+    const totalActivos = e.target.classList.contains('totalActivos');
+    const activosNum = totalActivos.textContent;
+    
+    console.log(totalActivos)
+} */
+
 
 
 
