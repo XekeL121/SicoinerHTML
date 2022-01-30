@@ -156,30 +156,17 @@ function HTMLport() {
         <ul id="IDmenuFilaPort" class="menuClic menuFilaPort d-flex justify-content-center azul5 d-flex col p-2 rounded z2 d-none">
           <h6 id="" class="t-naranja text-uppercase">${inputsModal.ticker}</h6>
           <div class="nombreSub mx-auto rounded azul3 my-1 op-50"></div>
-            <li id="editar" class="editar w-100 px-5 text-left row rounded nowrap"><a class="w-100 text-primary" href="#">Editar</a></li>
-            <li id="newOperacion" class="newOperacion w-100 px-5 text-left row rounded nowrap"><a class="w-100 text-primary" href="#">Nueva Operación</a></li>
-            <li id="promediar" class="promediar w-100 px-5 text-left row rounded nowrap"><a class="w-100 text-primary" href="#">Promediar con...</a></li>
-            <li id="eliminar" class="eliminar w-100 px-5 text-left row rounded nowrap"><a class="w-100 text-danger" href="#">Eliminar fila</a></li>              
+            <li id="editar" class="editar w-100 px-5 text-left row rounded nowrap z2"><a class="w-100 text-primary" href="#">Editar</a></li>
+            <li id="newOperacion" class="newOperacion w-100 px-5 text-left row rounded nowrap z2"><a class="w-100 text-primary" href="#">Nueva Operación</a></li>
+            <li id="promediar" class="promediar w-100 px-5 text-left row rounded nowrap z2"><a class="w-100 text-primary" href="#">Promediar con...</a></li>
+            <li id="eliminar" class="eliminar w-100 px-5 text-left row rounded nowrap z2"><a class="w-100 text-danger" href="#">Eliminar fila</a></li>              
             
         </ul>
             
         </td>
         <!-- FIN MENÚ DESPLEGABLE DE FILA PORTFOLIO --> 
 
-        <!-- MODAL ELIMINAR -->         
-        <div class="faqRemove bg-shadow d-flex row 'w-100 h-100 justify-content-center align-items-center mx-auto position-fixed z2 off">
-            <div class="azul3 col-6 rounded p-5 border-azul">
-              <div class="d-flex justify-content-center">
-                  <h3 class="text-light text-center">¿Eliminar fila de <span class="text-uppercase t-naranja">${inputsModal.ticker}</span>?</h3>
-              </div>
-              <div class="d-flex justify-content-center m-2">
-                  <button type="" id="aceptar" class="m-2 p-2 btn btn-success">Aceptar</button>
-                  <button type="" id="cancelar" class="m-2 p-2 btn btn-danger">Cancelar</button>
-              </div>
-            </div>
-        </div>
-        <!-- FIN MODAL ELIMINAR --> 
-
+        
       </tr>   
           <tr class="salto1"></tr>
           <!-- Fin Filas -->  
