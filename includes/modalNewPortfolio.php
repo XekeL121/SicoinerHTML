@@ -77,15 +77,15 @@
 
     
 
-<!-- 
-<div class="faqRemove bg-shadow d-flex row w-100 h-100 justify-content-center align-items-center mx-auto position-fixed border">
+
+<div class="faqRemove bg-shadow d-flex row 'w-100 h-100 justify-content-center align-items-center mx-auto position-fixed off">
     <div class="azul3 col-6 rounded p-5 border-azul">
         <div class="d-flex justify-content-center">
-            <p class="text-light text-center">¿Eliminar fila?</p>
+            <h3 class="text-light text-center">¿Eliminar fila de <span class="text-uppercase t-naranja">${tickerName}</span>?</h3>
         </div>
         <div class="d-flex justify-content-center m-2">
-            <button class="m-2 p-2 btn btn-success">Aceptar</button>
-            <button class="m-2 p-2 btn btn-danger">Cancelar</button>
+            <button type="" id="aceptar" class="m-2 p-2 btn btn-success">Aceptar</button>
+            <button type="" id="cancelar" class="m-2 p-2 btn btn-danger">Cancelar</button>
         </div>
     </div>
-</div> -->
+</div>
