@@ -47,10 +47,11 @@ function abrirMenu(filaSeleccionada) {
     
 
     function eliminar(e) {
-
+        e.preventDefault();
+        
         const btnEliminar = e.target.parentElement.classList.contains('eliminar')
 
-        if(btnEliminar) {
+        if(btnEliminar) {            
             menu.classList.add('d-none')  
             menu.classList.remove('on')
             let filaPadre = menu.parentElement.parentElement;
@@ -79,6 +80,7 @@ function abrirMenu(filaSeleccionada) {
         /* cancelar.addEventListener('click', cerrarRemove); */
 
         function remove(){
+            
             const faqRemove = document.querySelector('.faqRemove')
             faqRemove.remove()
             let filaPadre = menu.parentElement.parentElement;
