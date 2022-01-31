@@ -135,7 +135,8 @@ function HTMLport() {
           <th class="col w-s text-light">Break even</th>
           <th class="col w-s text-light">Inversión</th>
           <th class="col w-s text-light">Cotización</th>
-          <th class="col w-s text-light">P&L | %</th>
+          <th class="col w-s text-light">P&L</th>
+          <th class="col w-s text-light">%</th>
           <th class="col w-s text-light cursor"><img id="portConfig" class="my-auto p-1 vPro" src="images/tune_white_24dp.svg" alt=""></th> 
           </tr>
           </thead>    
@@ -149,6 +150,7 @@ function HTMLport() {
         <td id="inversion" class="inversion col w-s text-light">${inputsModal.inversion} $</td>
         <td id="coti" class="col w-s text-light d-grid"><input id="valorActual" class="valorActual coti azul3 border-none text-light text-center rounded d-flex align-items-center nowrap" type="number" value="${valorActual}"></td>
         <td id="diferencia" class="col w-s t-verde">${inputsModal.profit} $</td>
+        <td id="porcentaje" class="porcentaje col w-s t-verde">+20</td>
         <td id="btnMenuFilaPort" class=" col w-s text-light cursor">
         <img class="btnMenuFilaPort" src="images/linear_scale_white_24dp.svg" alt="">
         <!-- MENÚ DESPLEGABLE DE FILA PORTFOLIO -->
@@ -179,7 +181,8 @@ function HTMLport() {
         <th id="" class="col w-s text-light nowrap"></th>
         <th id="" class="totalInvertido col w-s text-light nowrap">${inputsModal.inversion}&nbsp</th>
         <th id="" class="col w-s text-light nowrap"></th>
-        <th id="" class="totalProfit col w-s nowrap text-light"> &nbsp300,000 | 300%</th>
+        <th id="" class="totalProfit col w-s wrap text-light"> &nbsp300,000</th>
+        <th id="" class="totalPercent col w-s wrap text-light">300%</th>
         <th id="" class="col w-s text-light cursor"><img class="newTicker" src="images/add_box_white_24dp.svg" alt=""></th> 
         </tr>            
         </tbody>

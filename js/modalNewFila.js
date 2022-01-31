@@ -92,6 +92,7 @@ function HTMLfila() {
         <td id="inversion" class="inversion col w-s text-light">${inputsModalFila.inversion} $</td>
         <td id="coti" class="col w-s text-light d-grid"><input id="valorActual" class="valorActual coti azul3 border-none text-light text-center rounded d-flex align-items-center nowrap" type="number" value="${inputsModalFila.cotizacion}"></td>
         <td id="diferencia" class="diferencia col w-s t-verde">${inputsModalFila.profit} $</td>
+        <td id="porcentaje" class="porcentaje col w-s t-verde">2+0</td>
         <td id="btnMenuFilaPort" class=" col w-s text-light cursor">
         <img class="btnMenuFilaPort" src="images/linear_scale_white_24dp.svg" alt="">   
           <ul id="IDmenuFilaPort" class="menuClic menuFilaPort d-flex justify-content-center azul5 d-flex col p-2 rounded z2 d-none">
@@ -122,7 +123,8 @@ function HTMLfila() {
     <th id="" class="col w-s text-light nowrap"></th>
     <th id="" class="totalInvertido col w-s text-light nowrap">&nbsp${inputsModalFila.inversion}</th>
     <th id="" class="col w-s text-light nowrap"></th>
-    <th id="" class="totalProfit col w-s nowrap text-light"> &nbsp300,000 | 300%</th>
+    <th id="" class="totalProfit col w-s nowrap text-light"> &nbsp300,000</th>
+    <th id="" class="totalPercent col w-s nowrap text-light">300%</th>
     <th id="" class="col w-s text-light cursor"><img class="newTicker" src="images/add_box_white_24dp.svg" alt=""></th>
   `;
 

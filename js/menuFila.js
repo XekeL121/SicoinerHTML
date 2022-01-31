@@ -123,7 +123,7 @@ function abrirMenu(filaSeleccionada) {
             <th id="" class="col w-s text-light nowrap"></th>
             <th id="" class="totalInvertido col w-s text-light nowrap">&nbsp </th>
             <th id="" class="col w-s text-light nowrap"></th>
-            <th id="" class="totalProfit col w-s nowrap text-light"> &nbsp300,000 | 300%</th>
+            <th id="" class="totalProfit col w-s text-light"> &nbsp300,000 | 300%</th>
             <th id="" class="col w-s text-light cursor"><img class="newTicker" src="images/add_box_white_24dp.svg" alt=""></th>
             `;
             
