@@ -132,6 +132,6 @@ function HTMLfila() {
 
   setTimeout(()=> {
     newFila.classList.remove('bg-verde', 'op80');    
-  }, 500);
+  }, 2000);
 }
   

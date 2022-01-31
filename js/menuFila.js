@@ -9,6 +9,7 @@ const promediar = document.getElementById('promediar');
 
 portafolioLista.addEventListener('click', menuFila)
 
+
 function menuFila(e) {
     btnMenuFila = e.target.classList.contains('btnMenuFilaPort');
     
@@ -48,10 +49,10 @@ function abrirMenu(filaSeleccionada) {
 
     function eliminar(e) {
         e.preventDefault();
-        
         const btnEliminar = e.target.parentElement.classList.contains('eliminar')
-
+        
         if(btnEliminar) {            
+            limpiarHTML();
             menu.classList.add('d-none')  
             menu.classList.remove('on')
             let filaPadre = menu.parentElement.parentElement;
@@ -74,17 +75,38 @@ function abrirMenu(filaSeleccionada) {
             contIndex.appendChild(faqRemove);
         }
 
+        //Este código evita que al abrir el faqRemove, éste se duplique la próxima vez debido al appendChild
+        /* const portafolioLista = document.querySelector('#contIndex') */
+       /*  portafolioLista.addEventListener('click', limpiarHTML) */
+
+        function limpiarHTML() {      
+            const faqRemove = document.getElementsByClassName('faqRemove');
+            while(faqRemove.length > 0) {   
+                             
+            const faqRemove = document.querySelector('.faqRemove')
+            faqRemove.remove()          
+            return;
+        }   
+            // Tras pulsar cancelar en eliminar, restaura el estilo de la fila
+            setTimeout(()=> {
+                const filaUp = document.querySelector('.bg-filaMenuOn')
+                filaUp.classList.remove('bg-filaMenuOn');
+                filaUp.classList.add('bg-filaMenuOff');
+            }, 500);  
+            
+        }
         const aceptar = document.querySelector('#aceptar');
         aceptar.addEventListener('click', remove);
         const cancelar = document.querySelector('#cancelar');
-        /* cancelar.addEventListener('click', cerrarRemove); */
+        cancelar.addEventListener('click', cerrarRemove);
+        
 
         function remove(){
             
             const faqRemove = document.querySelector('.faqRemove')
             faqRemove.remove()
             let filaPadre = menu.parentElement.parentElement;
-            filaPadre.classList.add('bg-filaMenuRemove', 'op70');            
+            filaPadre.classList.add('op70', 'bg-rojo');            
 
             //Elimina la fila tras unos milisegundos para dar sensación mecánica
             setTimeout(() => {
@@ -124,17 +146,18 @@ function abrirMenu(filaSeleccionada) {
                 
             }, 500);                
         }
+        function cerrarRemove() {
+            const faqRemove = document.querySelector('.faqRemove')
+            faqRemove.remove()
+            limpiarHTML();
+            /* let filaOn = document.getElementsByClassName('bg-filaMenuOn')
+            filaPadre.classList.remove('bg-filaMenuOn')
+            filaPadre.classList.add('bg-filaMenuOff') */
+            
+        }
     }        
 }
 
-        /* function cerrarRemove() {
-            const faqRemove = document.querySelector('.faqRemove')
-            faqRemove.remove()
-            let filaOn = document.getElementsByClassName('bg-filaMenuOn')
-            filaPadre.classList.remove('bg-filaMenuOn')
-            filaPadre.classList.add('bg-filaMenuOff')
-            
-        } */
     
    /*  function eliminar(e){
         //AL HACER CLIC SE CIERRA EL MENÚ
