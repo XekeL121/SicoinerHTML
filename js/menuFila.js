@@ -134,41 +134,20 @@ function abrirMenu(filaSeleccionada) {
             
             bodyPort.appendChild(newFilasTotal);
                 
-            }, 1000);                
+            }, 1000);                          
         }
 
         //Cerrar la ventana faqRemove
         function cerrarRemove() {
-            const faqRemove = document.querySelector('.faqRemove')
-            faqRemove.remove()
+            const faqRemove = document.querySelector('.faqRemove');
+            faqRemove.remove();            
             limpiarHTML();
             setTimeout(()=> {
-                const filaUp = document.querySelector('.bg-filaMenuOn')
+                const filaUp = document.querySelector('.bg-filaMenuOn');
                 filaUp.classList.remove('bg-filaMenuOn');
                 filaUp.classList.add('bg-filaMenuOff');
             }, 1000);  
-            /* let filaOn = document.getElementsByClassName('bg-filaMenuOn')
-            filaPadre.classList.remove('bg-filaMenuOn')
-            filaPadre.classList.add('bg-filaMenuOff') */
-            
-        }
+                    }
     }        
 }
 
-
- //Contabilzando inversión Total
-/* portafolioLista.addEventListener('click', invertidoTotal)
-function invertidoTotal(e){
-    const totalBar = e.target.classList.contains('totalInvertido ');
-    const bodyPortfolio = e.target.parentElement.parentElement;
-    const filasPort = bodyPortfolio.querySelectorAll('.filaPort')
-    console.log(filasPort)
-} */
-
-
-function totales(){
-    const totales = document.getElementsByClassName('.totalInvertido')
-
-    console.log(totales)
-}
-totales();

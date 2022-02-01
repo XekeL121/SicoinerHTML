@@ -1,6 +1,8 @@
 //   *****   VARIABLES INPUTS EN EL MODAL NUEVO PORTFOLIO ***************************
 //DIV Contenedor de portafolios
 const contIndex = document.querySelector('#contIndex');
+let mainPorts = [];
+let filaPorts = [];
 
 //DIV Modal
 const modal = document.getElementById('modalNewPort');
@@ -41,11 +43,11 @@ function cargarEventListeners(){
   btnCerrarNewPort.addEventListener('click', ocultarModal);
   newPortContainer.addEventListener('click', cerrarModal);   //<<< para clic fuera del modal
   //Validar que los campos estén llenos para aceptar  
-  nombre.addEventListener('blur', validar);
-  broker.addEventListener('blur', validar);
-  ticker.addEventListener('blur', validar);
-  cantidad.addEventListener('blur', validar);
-  precioMedio.addEventListener('blur', validar);
+  nombre.addEventListener('input', validar);
+  broker.addEventListener('input', validar);
+  ticker.addEventListener('input', validar);
+  cantidad.addEventListener('input', validar);
+  precioMedio.addEventListener('input', validar);
 }
 
 //Mostrar y ocultar modal de nuevo Portafolio
@@ -84,9 +86,8 @@ function validar() {
 //Al hacer clic en aceptar
 function aceptarModal() {      
   ocultarBienvenida();  
-  ocultarModal();     
-
-  HTMLport();   
+  ocultarModal(); 
+  HTMLport();     
 }
 
 // Cerrar con botones 'cancelar y X '
@@ -124,7 +125,7 @@ function HTMLport() {
   newPortfolio.setAttribute('id', '1')
   newPortfolio.innerHTML = `
   
-  <h4 id="titPortfolio" class="titPortfolio text-light col-12 nowrap t-azul1 text-capitalize" value="">${inputsModal.nombre}</h4>
+  <h4 id="titPortfolio" class="titPortfolio text-light col-12 nowrap t-azul1 text-capitalize">${inputsModal.nombre}</h4>
   <div class="nombreSub mx-auto rounded azul3 mb-4 col-8"></div>
   <table class="table text-light table-hover mx-auto rounded nowrap text-center mb-5">
     <thead>      
@@ -196,4 +197,7 @@ function HTMLport() {
   setTimeout(()=> {
     newPortfolio.classList.remove('op50');
   }, 500);
+
+  mainPorts = [...mainPorts, inputsModal.nombre, filaPorts = [...filaPorts, inputsModal], ];
+  console.log(mainPorts)
 }

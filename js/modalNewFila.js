@@ -1,24 +1,26 @@
+let newfilaPorts = [];
 //Btn abrir modal
-modalNewFila = document.getElementById('modalNewFila');
+modalNewFila = document.querySelector('#modalNewFila');
 //inputs modal newfila
 btnNewFila = document.getElementById('aceptarNewFila');
 brokerFila = document.getElementById('brokerFila');
-tickerFila = dbrokerFila = document.getElementById('tickerFila');
-cantidadFila = dbrokerFila = document.getElementById('cantidadFila');
-precioMedioFila = dbrokerFila = document.getElementById('precioMedioFila');
-btnCancelNewFila = dbrokerFila = document.getElementById('btnCancelNewFila');
-cerrarNewFila = dbrokerFila = document.getElementById('cerrarNewFila');
+tickerFila = document.getElementById('tickerFila');
+cantidadFila = document.getElementById('cantidadFila');
+precioMedioFila = document.getElementById('precioMedioFila');
+btnCancelNewFila = document.getElementById('btnCancelNewFila');
+cerrarNewFila = document.getElementById('cerrarNewFila');
 
 //Add Events listeners
 contIndex.addEventListener('click', newFila)
+contIndex.addEventListener('click', leerTitulo)
 btnNewFila.addEventListener('click', aceptarFila)
 btnCancelNewFila.addEventListener('click', ocultarModalFila)
 cerrarNewFila.addEventListener('click', ocultarModalFila)
 //Validar que los campos estén llenos para aceptar  
-brokerFila.addEventListener('blur', validarFila);
-tickerFila.addEventListener('blur', validarFila);
-cantidadFila.addEventListener('blur', validarFila);
-precioMedioFila.addEventListener('blur', validarFila);
+brokerFila.addEventListener('input', validarFila);
+tickerFila.addEventListener('input', validarFila);
+cantidadFila.addEventListener('input', validarFila);
+precioMedioFila.addEventListener('input', validarFila);
 
 //FUNCIONES***************************************************************************
 
@@ -28,17 +30,21 @@ function newFila(e){
   bodyPortfolio = e.target.parentElement.parentElement.parentElement;
   totalPorta = e.target.parentElement.parentElement;
   btnAceptarFilaDisabled()
-  if(btnNewTicker) {   
+  if(btnNewTicker) {       
     modalNewFila.classList.remove('off')
   }  
 }
 
 //Btn Aceptar
 function aceptarFila() {
+  /* const formularioFila = document.querySelector('formularioFila'); */
   if(aceptarFila){
     HTMLfila()
     ocultarModalFila();
+    /* modalNewFila.reset(); */ //! Al reiniciar el formulario nueva fila, da error (solucionar)
   }
+
+  
 }
 
 function validarFila() { 
@@ -61,13 +67,24 @@ function btnAceptarFilaEnabled() {
 
 
 function ocultarModalFila() {    
+  
   modalNewFila.classList.add('off');
+
   /* btnAceptarDisabled(); */          
 }
 
-// HTML del btnAddActivo
+//Este código permite leer el nombre del portfolio padre cuando se crea un "inputsModalfila", de manera que se registre en el arreglo de filas
+function leerTitulo(e){
+  portUp = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+  porTit = portUp.children[0].innerText;   
+  
+}
 function HTMLfila() {
-    const inputsModalFila = {          
+    
+// HTML del btnAddActivo
+    
+    const inputsModalFila = {  
+      nombre: porTit,        
       broker: brokerFila.value,
       ticker: tickerFila.value,
       cantidad: parseFloat(cantidadFila.value),
@@ -108,6 +125,10 @@ function HTMLfila() {
       </tr>   
       <tr class="salto1"></tr>           
   `;
+  //Arreglo de nuevas filas
+  newFilaPorts = [...newfilaPorts, inputsModalFila]
+  
+  console.log(newFilaPorts)
 
   //Este código maqueta un nuevo total al portofolio para contabilizar el número de filas
   const filasNum = bodyPortfolio.getElementsByClassName('filaPort');
@@ -131,9 +152,14 @@ function HTMLfila() {
   bodyPortfolio.insertBefore(newFila, totalPorta);
   totalPorta.remove()
   bodyPortfolio.appendChild(newFilasTotal);
-
+  
   setTimeout(()=> {
     newFila.classList.remove('bg-verde', 'op80');    
   }, 2000);
-}
+
+ 
   
+}
+
+  
+

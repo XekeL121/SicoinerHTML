@@ -10,7 +10,7 @@
             <div class="d-flex row justify-content-center w-100">
 
                 <!--   Inpunts del activo -->                
-                <div class="d-flex justify-content-center col p-2 w-75">                    
+                <div id="formularioFila" class="d-flex justify-content-center col p-2 w-75">                    
                     <div class="m-2">
                         <h5 class="t-naranja">Bróker</h5>
                         <input id="brokerFila" class="vacio h-4 py-1 col-12 col-md-11 border-naranja azul2 rounded mx-2 text-light text-center text-uppercase" type="text">
