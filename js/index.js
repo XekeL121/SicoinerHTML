@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
             const btnNewPortButton = document.querySelector('.btn__newPort__button');
-            const closeModalButton = document.querySelector('.close-modal');
-            const acceptModalButton = document.querySelector('.accept-modal');
+            const closeModalButton = document.querySelector('#closeModal');
+            const acceptModalButton = document.querySelector('#accept-modal');
             const modal = document.querySelector('.modal');
             const modalOverlay = document.querySelector('.modal-overlay');
         
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         
             acceptModalButton.addEventListener('click', () => {
-                const portfolioName = document.querySelector('#portfolio-name').value;
+                const portfolioName = document.querySelector('#portfolioName').value;
                 const broker = document.querySelector('#broker').value;
                 const ticker = document.querySelector('#ticker').value;
                 const quantity = document.querySelector('#quantity').value;
