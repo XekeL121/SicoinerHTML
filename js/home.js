@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th class="">Valor</th>
                                     <th class="">P&L</th>
                                     <th class="">%</th>
-                                    <th class="border-radius-right-top cursor"><img id="" class="size-min op-50" src="images/settings_white_18dp.svg" alt=""></th> 
+                                    <th class="border-radius-right-top cursor"><img id="" class="size-min op-50" src="img/settings_white_18dp.svg" alt=""></th> 
                                 </tr>
                             </thead>    
                             <tbody id="" class="">
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <td id="valorActual" class="py-05"><input id="cotiTH" class="" type="number" inputmode="numeric" value=""></td>
                                     <td id="diferencia" class="">100,000</td>
                                     <td id="diferencia" class="">100%</td>
-                                    <td id="btnMenuFilaPort" class="cursor"><img class="size-min op-50" src="images/linear_scale_white_24dp.svg" alt=""></td>
+                                    <td id="btnMenuFilaPort" class="cursor"><img class="size-min op-50" src="img/linear_scale_white_24dp.svg" alt=""></td>
                                 </tr>
                                 <tr class="salto1"></tr>
                             </tbody>

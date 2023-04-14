@@ -350,7 +350,7 @@ input.login__form__check {
 .login__right {      
     display: flex column; 
     align-items: center;
-    background-image: url(../images/bg-login.png);
+    background-image: url(../img/bg-login.png);
     min-height: 100%;
     background-size: cover;
     /* background-repeat: no-repeat;   */ 

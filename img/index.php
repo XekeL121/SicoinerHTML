@@ -10,25 +10,25 @@
     <header class="cabecera row azul4">
 
       <div class="logo d-grid col-md-4 col-12 my-auto text-center justify-content-end">
-        <img class="col-12 mx-auto" src="images/Isotipo Sicoiner v1.png" alt="">
+        <img class="col-12 mx-auto" src="img/Isotipo Sicoiner v1.png" alt="">
         <p class="col-12 op50 d-flex mt-1 text-uppercase letter-spacing-3 text-light op80 mx-auto justify-content-center w-s">- Tu portfolio digital -</p>
       </div>       
       
       <nav class="col-sm-8 col-12 pt-2">
         <div class="menu row d-flex align-items-center">
           <a href="home.html" class="col-sm row align-items-center justify-content-end">
-            <img class="icon op80 col-6" src="images/app_registration_white_24dp.svg" alt="">
+            <img class="icon op80 col-6" src="img/app_registration_white_24dp.svg" alt="">
             <h4 class="text-light col-6 ml-2">Portfolios</h4>
           </a>
           
           <a href="historial.html" class="col-sm row align-items-center justify-content-center">
-            <img class="icon op80 col-6" src="images/insights_white_24dp.svg" alt="">
+            <img class="icon op80 col-6" src="img/insights_white_24dp.svg" alt="">
             <h4 class="text-light col-6 ml-2">Historial</h4>
           </a>
           
           <div class="col-sm row align-items-center justify-content-start">
-            <img class="icon col-6" src="images/account_circle_white_24dp.svg" alt="">
-            <img class="icon col-6" src="images/arrow_drop_down_white_18dp.svg" alt="">
+            <img class="icon col-6" src="img/account_circle_white_24dp.svg" alt="">
+            <img class="icon col-6" src="img/arrow_drop_down_white_18dp.svg" alt="">
           </div>
         </div>
       </nav>
@@ -36,14 +36,14 @@
       <!-- Menú Responsive -->
       <div class="menuResponsive row col-12 align-items-center mx-auto justify-content-center mb-3">     
           <div class="col-3 d-flex justify-content-center">
-            <img class="icon" src="images/app_registration_white_24dp.svg" alt="">
+            <img class="icon" src="img/app_registration_white_24dp.svg" alt="">
           </div>
           <div class="col-3 d-flex justify-content-center">
-            <img class="icon" src="images/insights_white_24dp.svg" alt="">
+            <img class="icon" src="img/insights_white_24dp.svg" alt="">
           </div>
           <div class="col-3 d-flex justify-content-center row nowrap">
-            <img class="icon" src="images/account_circle_white_24dp.svg" alt="">
-            <img class="icon" src="images/arrow_drop_down_white_18dp.svg" alt="">
+            <img class="icon" src="img/account_circle_white_24dp.svg" alt="">
+            <img class="icon" src="img/arrow_drop_down_white_18dp.svg" alt="">
           </div>
       </div>
       <!-- Fin Menú Responsive -->
