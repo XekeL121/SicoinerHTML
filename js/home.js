@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <td id="inversion" class="">${(quantity * price).toFixed(2)}</td>
                   <td id="valorActual" class="py-05"><input id="cotiTH" class="" type="number" step="0.01" value=""></td>
                   <td id="diferencia" class=""></td>
-                  <td id="diferenciaPercent" class="">100%</td>
+                  <td id="diferenciaPercent" class=""></td>
                   <td id="btnMenuFilaPort" class="cursor"><img class="size-min op-50" src="img/linear_scale_white_24dp.svg" alt=""></td>
                 </tr>
                 <tr class="salto1"></tr>
