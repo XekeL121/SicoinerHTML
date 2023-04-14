@@ -260,7 +260,10 @@ a {
     justify-content: center;
     text-align: center;
     height: calc(100% - 5rem);
-}
+    max-width: 100%;
+  }
+  
+  
 
 /* CSS Modal */
 
@@ -310,10 +313,10 @@ a {
 .contenedor-portafolio {  
     display: flex;
     flex-direction: column;  
-    max-width: 90%;
+    max-width: 100%;
     justify-content: center;
-    margin: 2rem auto 4rem auto;
-    font-size: 1.7rem;
+    margin: 5rem auto 0rem auto;
+    font-size: 1.5rem;
 }
 
 @media (max-width:999px) {
@@ -366,11 +369,13 @@ a {
     margin: auto;
     color: var(--textoPort);
     border-spacing: 0;
+    height: auto;
 }
 @media (min-width:640px) {
     .portafolio-table {        
         border-spacing: 0 0.2rem;
-        width: 60%;        
+        width: 60%;     
+        height: auto;   
     }    
 }
 
@@ -465,7 +470,7 @@ a {
 /* Botón nuevo portafolio */
 
 .btn__newPort__container {
-    padding: 2rem 0;
+    padding: 4rem 0rem 8rem 0rem;
 }
 
 .btn__newPort__Bienvenida {

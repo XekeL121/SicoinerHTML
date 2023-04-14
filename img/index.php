@@ -85,7 +85,7 @@
 
     </div>
 
-    <footer class="pie col justify-content-center text-center bg-primary">
+    <footer class="col justify-content-center text-center bg-primary">
       <p>Pie de página</p>
     </footer>
 
