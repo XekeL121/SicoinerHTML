@@ -10,13 +10,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
         <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
         <!-- Fin Google fonts -->
-        <link rel="preload" href="css/styles.css" as="style">
-        <link rel="stylesheet" href="css/styles.css">
         <link rel="preload" href="css/index.css" as="style">
         <link rel="stylesheet" href="css/index.css">
         <link rel="preload" href="css/main.css" as="style">
         <link rel="stylesheet" href="css/main.css">
         <link rel="icon" type="image/png" style="height: 100%; width: 100%;" href="images/Sicoiner favicon.png">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
         <title>Sicoiner V2</title>
     </head>
@@ -105,121 +106,56 @@
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <h2>Crear nuevo portafolio</h2>
+                <form id="newPortfolioForm">
+                    <label for="portfolioName">Nombre del portafolio:</label>
+                    <input type="text" id="portfolioName" required>
+                    <label for="broker">Bróker:</label>
+                    <input type="text" id="broker" required>
+                    <label for="ticker">Ticker:</label>
+                    <input type="text" id="ticker" required>
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" required>
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" required>
+                    <input type="submit" id="accept-modal" value="Aceptar">
+                    <input type="button" id="closeModal" value="Cerrar">
+                </form>
+            </div>
+        </div>
+        <!-- Fin modal -->
         <!-- Contenedor principal -->
         <main class="contenedor-principal">
 
-
-            <!-- Buscador historial -->
-
-            <h3 class="historial__titulo op-80">Historial de Operaciones</h3>
-            <!-- <hr class="historial__titulo__linea op-50"> -->
-
-            <div id="" class="vPro">                            
-                <form class="historial__formulario">
-                    <fieldset class="historial__formulario__opciones">                                    
-                        <div class="historial__formulario__opcion__periodo">
-                            <label for="disabledSelect" class="form-label text-light col">Periodo:</label>
-                            <select id="disabledSelect" class="form-select col px-2 cursor">
-                                <option>Completo</option>
-                                <option>Mensual</option>
-                                <option>Trimenstral</option>
-                                <option>Semestral</option>
-                                <option>Año en curso</option>
-                                <option>Año anterior</option>
-                                <option>Personalizar..</option>
-                            </select>
-                        </div>
-                        <div class="historial__formulario__opcion__portofolio">
-                            <label for="disabledSelect" class="">Portafolio:</label>
-                            <select id="disabledSelect" class="cursor">
-                                <option>Todos</option>
-                                <option>Portfolio 1</option>
-                            </select>
-                        </div>
-                        <div class="historial__formulario__opcion__ticker">
-                            <label for="disabledSelect" class="">Ticker:</label>
-                            <select id="disabledSelect" class="cursor">
-                                <option>Todos</option>
-                                <option>ETH</option>
-                            </select>
-                        </div>
-                        <div class="historial__formulario__opcion__ordenes">
-                            <label for="disabledSelect" class="">Órdenes:</label>
-                            <select id="disabledSelect" class="cursor">
-                                <option>Todas</option>
-                                <option>Compra</option>
-                                <option>Venta</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                </form>                            
-            </div>
-
-            <!-- HISTORIAL -->
-            <div id="" class="historial">
-
-                <table class="historial_table">
-                    <thead>                    
-                        <tr class="historial__th">
-                            <th class="">Fecha</th>
-                            <th class="">Portfolio</th>
-                            <th class="">Ticker</th>
-                            <th class="">Orden</th>
-                            <th class="">Posiciones</th>
-                            <th class="">Precio C/V</th>
-                            <th class="">Capital $</th>
-                            <th class="vPro cursor"><img id="portConfig" class="my-auto p-1" src="images/tune_white_24dp.svg" alt=""></th> 
-                        </tr>
-                    </thead>
-
-                    <tbody class="d-flex row">   
-                        <!-- fila del activo ETH por ejemplo -->
-                        <tr class="historial__fila historial__venta bg-rojo d-flex row align-items-center text-center nowrap rounded">
-                            <td class="">05/10/21</td>
-                            <td class="">Portafolio 1</td>
-                            <td class=" bg-marca2">ETH</td>
-                            <td class=" d-grid">VENTA</td>
-                            <td class="">-100</td>
-                            <td class="">2000</td>
-                            <td class="">+200,000</td>
-                            <td class="vPro cursor"><img src="images/linear_scale_white_24dp.svg" alt=""></td> 
-                            </tr>
-                        <tr class="salto1"></tr>
-                        <!-- FIN fila del activo ETH por ejemplo -->
             
-                        <!-- fila del activo ETH por ejemplo -->
-                        <tr class="historial__fila historial__compra d-flex row align-items-center text-center nowrap rounded">
-                            <td class="">25/08/21</td>
-                            <td class="">Portafolio 1</td>
-                            <td class=" bg-marca2">ADA</td>
-                            <td class=" d-grid">COMPRA</td>
-                            <td class="">+100</td>
-                            <td class="">1000</td>
-                            <td class="">-100,000</td>
-                            <td class="vPro cursor"><img src="images/linear_scale_white_24dp.svg" alt=""></td> 
-                            </tr>
-                        <tr class="salto1"></tr>
-                        <!-- FIN fila del activo ETH por ejemplo -->     
+            <!-- Portafolio -->
+            <!-- Fin portafolio -->
 
-                        <tr class="historial__totales">
-                            <th class="border-radius-left-bottom">Total 2 Ops.</th>
-                            <th class=""></th>
-                            <th class=""></th>
-                            <th class=""></th>
-                            <th class=""></th>
-                            <th class=""></th>
-                            <th class="cursor">Cap.&nbsp;200,000</th> <!-- ! El capital inicial debe calcularse con el capital invertido en cada compra que añada el usuario al crear sus portafolios, a partir de las ventas se reajustaría (también se podría ajustar manualmente al crear la cuenta pero puede llevar a confusión, estudiar) -->
-                            <th class="vPro border-radius-right-bottom"></th> 
-                        </tr>            
-                    </tbody>
-                </table>
+            <div class="btn__newPort__container">
+                <div class="btn__newPort__Bienvenida">
+                    <p>Bienvenido/a a Sicoiner, tu portafolio financiero digital</p>
+                </div>
+                <button class="btn__newPort__button">+ Nuevo Portafolio</button>
             </div>
+
+
+            
+            
+
         </main>
 
 
         <footer>
-            <p class="t-azul2">Sicoiner <span class="t-naranja">v1.0</span></p>
+            <p class="t-azul2">Sicoiner <span class="t-naranja">v1.2</span></p>
 
         </footer>
+
+        
+        <script src="js/home.js"></script>
+        
+
     </body>
 </html>

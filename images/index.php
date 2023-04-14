@@ -16,7 +16,7 @@
       
       <nav class="col-sm-8 col-12 pt-2">
         <div class="menu row d-flex align-items-center">
-          <a href="index.html" class="col-sm row align-items-center justify-content-end">
+          <a href="home.html" class="col-sm row align-items-center justify-content-end">
             <img class="icon op80 col-6" src="images/app_registration_white_24dp.svg" alt="">
             <h4 class="text-light col-6 ml-2">Portfolios</h4>
           </a>
