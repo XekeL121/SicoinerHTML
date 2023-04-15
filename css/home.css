@@ -276,15 +276,45 @@ a {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #07183fad;
+    backdrop-filter: blur(0.2rem);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
+    background-color: var(--azulFooter);
+    margin: 15% 10%;
+    text-align: center;
+    margin-inline: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border-radius: 1rem;
+    border: 1px solid var(--azulHead);
+    max-width: 40rem;
+    height: 50rem;    
+    color: rgb(180, 171, 202);
+}
+
+#newPortfolioForm {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#newPortfolioForm > label{
+    padding-top: 1.5rem;
+}
+
+#newPortfolioForm > input{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
     width: 80%;
+    background-color: var(--azulLogo1);
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .modal.open {

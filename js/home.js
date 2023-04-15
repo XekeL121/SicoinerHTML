@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <th id="" class=""></th>
                   <th id="totalProfit" class=""> &nbsp300,000</th>
                   <th id="totalDiferenciaPercent" class=""> &nbsp300%</th>
-                  <th id="" class="cursor border-radius-right-bottom"><img class=" op-50" src="img/add_box_white_24dp.svg" alt=""></th> 
+                  <th id="add-row" class="cursor border-radius-right-bottom"><img class=" op-50" src="img/add_box_white_24dp.svg" alt=""></th> 
               </tr>    
               </tbody>
             </table>
@@ -111,8 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const diferencia = (valorActual * cantidad - inversion).toFixed(2);
                     document.querySelector('#diferencia').textContent = diferencia;
                 });
-              }
-              
+              }                            
         });
 
     
