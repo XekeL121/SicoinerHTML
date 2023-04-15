@@ -3,30 +3,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalButton = document.querySelector('#closeModal');
     const acceptModalButton = document.querySelector('#accept-modal');
     const modal = document.querySelector('.modal');
-    const modalOverlay = document.querySelector('.modal-overlay');
+    
   
     btnNewPortButton.addEventListener('click', () => {
         modal.classList.add('open');
-        modalOverlay.classList.add('open');
+        
     });
     
     closeModalButton.addEventListener('click', () => {
         modal.classList.remove('open');
-        modalOverlay.classList.remove('open');
+        
     });
     
     
-    // modalOverlay.addEventListener('click', () => {
-    //   modal.classList.remove('open');
-    //   modalOverlay.classList.remove('open');
-    // });
     
-    // document.addEventListener('click', (event) => {
-    //     if (event.target === modalOverlay) {
-    //         modal.classList.remove('open');
-    //         modalOverlay.classList.remove('open');
-    //     }
-    // });
 
     acceptModalButton.addEventListener('click', () => {
       const portfolioName = document.querySelector('#portfolioName').value;
