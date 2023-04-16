@@ -19,40 +19,38 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
   // Asegurarse de que el formulario no se envíe al hacer clic en el botón submit
-document.querySelector('#newPortfolioForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-});
+  document.querySelector('#newPortfolioForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+  });
 
-acceptModalButton.addEventListener('click', () => {
-  const portfolioName = document.querySelector('#portfolioName').value;
-  const broker = document.querySelector('#broker').value;
-  const ticker = document.querySelector('#ticker').value;
-  const quantity = document.querySelector('#quantity').value;
-  const price = document.querySelector('#price').value;
+  acceptModalButton.addEventListener('click', () => {
+    const portfolioName = document.querySelector('#portfolioName').value;
+    const broker = document.querySelector('#broker').value;
+    const ticker = document.querySelector('#ticker').value;
+    const quantity = document.querySelector('#quantity').value;
+    const price = document.querySelector('#price').value;
 
-  // Verifica si todos los campos están completos
-  if (portfolioName && broker && ticker && quantity && price) {
-    createPortfolioTable(portfolioName, broker, ticker, quantity, price);
+    // Verifica si todos los campos están completos
+    if (portfolioName && broker && ticker && quantity && price) {
+      createPortfolioTable(portfolioName, broker, ticker, quantity, price);
 
-    // Restablecer valores en inputs excepto Bróker y Ticker
-    const inputs = document.querySelectorAll('#newPortfolioForm input:not(#broker):not(#ticker)');
-    inputs.forEach(input => {
-      input.value = "";
-    });
+      // Restablecer valores en inputs excepto Bróker y Ticker
+      const inputs = document.querySelectorAll('#newPortfolioForm input:not(#broker):not(#ticker)');
+      inputs.forEach(input => {
+        input.value = "";
+      });
 
-    modal.classList.remove('open');
-    modalOverlay.classList.remove('open');
-  } else {
-    alert("Por favor, complete todos los campos antes de continuar.");
-  }
-});
+      modal.classList.remove('open');      
+    } else {
+      alert("Por favor, complete todos los campos antes de continuar.");
+    }
+  });
 
   
 
     
-  modal.classList.remove('open');
-    modalOverlay.classList.remove('open');    
-  });
+  modal.classList.remove('open');   
+  
   
   function createPortfolioTable(portfolioName, broker, ticker, quantity, price) {
     // Crear el ID dinámicamente  
@@ -80,7 +78,7 @@ acceptModalButton.addEventListener('click', () => {
           <tbody id="" class="">
             <tr id="${rowId}" class="portafolio__fila">
               <td id="broker" class="px-1">${broker}</td>
-              <td id="ticker" class="">${ticker.toUpperCase()}</td>
+              <td id="ticker" class="t-naranja">${ticker.toUpperCase()}</td>
               <td id="cantidad" class="">${quantity}</td>
               <td id="precioMedio" class="">${price}</td>
               <td id="inversion" class="">${(quantity * price).toFixed(2)}</td>
@@ -118,82 +116,119 @@ acceptModalButton.addEventListener('click', () => {
       updateDifference(initialValue, cantidad, inversion);
 
       cotiTH.addEventListener('input', () => {
-        const valorActual = cotiTH.value;
+        const valorActual = cotiTH.value || price; // Utiliza el valor de price cuando el input está vacío
         updateDifference(valorActual, cantidad, inversion);
       });
       
+      
   }   
+
+  
 
   function updateDifference(valorActual, cantidad, inversion) {
     const diferencia = (valorActual * cantidad - inversion).toFixed(2);
     const diferenciaPercent = (diferencia / inversion * 100).toFixed(2);
     document.querySelector('#diferencia').textContent = diferencia;
     document.querySelector('#diferenciaPercent').textContent = diferenciaPercent;
+  
+    // Cambiar el color de fondo de la celda de diferencia en porcentaje
+    const diferenciaPercentCell = document.getElementById('diferenciaPercent');
+    const diferenciaPercentValue = parseFloat(diferenciaPercentCell.textContent);
+  
+    if (diferenciaPercentValue > 0) {
+      diferenciaPercentCell.classList.add('bg-up');
+      diferenciaPercentCell.classList.remove('bg-down');
+      diferenciaPercentCell.classList.remove('bg-white');
+    } else if (diferenciaPercentValue < 0) {
+      diferenciaPercentCell.classList.add('bg-down');
+      diferenciaPercentCell.classList.remove('bg-up');
+      diferenciaPercentCell.classList.remove('bg-white');
+    } else {
+      diferenciaPercentCell.classList.add('bg-white');
+      diferenciaPercentCell.classList.remove('bg-up');
+      diferenciaPercentCell.classList.remove('bg-down');
+    }
   }
 
 
-// Función para deshacer y rehacer cambios en inputs con Ctrl + Z
+  // Función para deshacer y rehacer cambios en inputs con Ctrl + Z
 
-const inputHistory = new Map();
-const inputFuture = new Map();
+  const inputHistory = new Map();
+  const inputFuture = new Map();
 
-document.addEventListener('keydown', (e) => {
-  const isRedo = (e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.shiftKey && e.key === 'Z'));
-  const isUndo = (e.ctrlKey || e.metaKey) && !e.shiftKey && e.key === 'z';
+  document.addEventListener('keydown', (e) => {
+    const isRedo = (e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.shiftKey && e.key === 'Z'));
+    const isUndo = (e.ctrlKey || e.metaKey) && !e.shiftKey && e.key === 'z';
 
-  if (e.target.tagName === 'INPUT' && (isRedo || isUndo)) {
-    e.preventDefault(); // Evita la acción predeterminada del navegador
+    if (e.target.tagName === 'INPUT' && (isRedo || isUndo)) {
+      e.preventDefault(); // Evita la acción predeterminada del navegador
 
-    const inputElement = e.target;
+      const inputElement = e.target;
 
-    if (!inputHistory.has(inputElement)) {
-      inputHistory.set(inputElement, []);
+      if (!inputHistory.has(inputElement)) {
+        inputHistory.set(inputElement, []);
+      }
+      if (!inputFuture.has(inputElement)) {
+        inputFuture.set(inputElement, []);
+      }
+
+      const history = inputHistory.get(inputElement);
+      const future = inputFuture.get(inputElement);
+
+      if (isUndo && history.length > 0) {
+        // Deshacer al valor anterior
+        const previousValue = history.pop();
+        future.push(inputElement.value);
+        inputElement.value = previousValue;
+      } else if (isRedo && future.length > 0) {
+        // Rehacer al siguiente valor
+        const nextValue = future.pop();
+        history.push(inputElement.value);
+        inputElement.value = nextValue;
+      }
     }
-    if (!inputFuture.has(inputElement)) {
-      inputFuture.set(inputElement, []);
-    }
+  });
 
-    const history = inputHistory.get(inputElement);
-    const future = inputFuture.get(inputElement);
+  document.addEventListener('input', (e) => {
+    if (e.target.tagName === 'INPUT') {
+      const inputElement = e.target;
 
-    if (isUndo && history.length > 0) {
-      // Deshacer al valor anterior
-      const previousValue = history.pop();
-      future.push(inputElement.value);
-      inputElement.value = previousValue;
-    } else if (isRedo && future.length > 0) {
-      // Rehacer al siguiente valor
-      const nextValue = future.pop();
+      if (!inputHistory.has(inputElement)) {
+        inputHistory.set(inputElement, []);
+      }
+      if (!inputFuture.has(inputElement)) {
+        inputFuture.set(inputElement, []);
+      }
+
+      const history = inputHistory.get(inputElement);
+      const future = inputFuture.get(inputElement);
+
+      // Guardar el valor actual en el historial antes de cambiar
       history.push(inputElement.value);
-      inputElement.value = nextValue;
-    }
-  }
+      // Limpiar el futuro cuando se realiza una nueva entrada
+      future.length = 0;
+    } 
+    
+  });
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+// Cierre del codigo completo
+
 });
-
-document.addEventListener('input', (e) => {
-  if (e.target.tagName === 'INPUT') {
-    const inputElement = e.target;
-
-    if (!inputHistory.has(inputElement)) {
-      inputHistory.set(inputElement, []);
-    }
-    if (!inputFuture.has(inputElement)) {
-      inputFuture.set(inputElement, []);
-    }
-
-    const history = inputHistory.get(inputElement);
-    const future = inputFuture.get(inputElement);
-
-    // Guardar el valor actual en el historial antes de cambiar
-    history.push(inputElement.value);
-    // Limpiar el futuro cuando se realiza una nueva entrada
-    future.length = 0;
-  }
-});
-
-
-
-
 
 
 

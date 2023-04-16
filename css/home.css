@@ -20,13 +20,15 @@
     --textoPort: rgba(255, 255, 255, 0.863);
     --loginLeft: #05112c;
     --greenSicoiner: rgb(25 89 25);
+
     
     /* color titulos dinámicos */
     --titulo1: white;
-
+    
     /* Filas */
     --azulBorder:#203d77;
 }
+
 
 /* Para ocultar los elementos de la versión Pro */
 /* .vPro {
@@ -714,3 +716,8 @@ footer p{
 .historial__compra {    
     background-color: var(--bg-compra);    
 }
+
+
+.bg-down {color: #3bbdee;}
+.bg-up {color: rgb(54 241 54);}
+.bg-white {color: white;}
