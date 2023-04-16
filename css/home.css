@@ -342,6 +342,11 @@ a {
     color: black;
 }
 
+.valorActual-placeholder::placeholder {
+    color: #ccc;
+    font-style: italic;
+  }
+
 .modal.open {
     display: block;
     position: fixed;

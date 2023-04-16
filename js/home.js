@@ -56,7 +56,7 @@ acceptModalButton.addEventListener('click', () => {
   
   function createPortfolioTable(portfolioName, broker, ticker, quantity, price) {
     // Crear el ID dinámicamente  
-    const rowId = `${portfolioName.substr(0, 3).toUpperCase()}_${portfolioName.slice(-1)}_${broker.substr(0, 2).toUpperCase()}-${ticker}`;
+    const rowId = `${portfolioName.replace(/\s/g, '').toUpperCase()}_${broker.substring(0, 2).toUpperCase()}_${ticker}`;
     const newTable = `
       <section class="contenedor-portafolio">
         <div class="portafolio__titulo">
@@ -84,7 +84,7 @@ acceptModalButton.addEventListener('click', () => {
               <td id="cantidad" class="">${quantity}</td>
               <td id="precioMedio" class="">${price}</td>
               <td id="inversion" class="">${(quantity * price).toFixed(2)}</td>
-              <td id="valorActual" class="py-05"><input id="cotiTH" class="" type="number" step="0.01" value=""></td>
+              <td id="valorActual" class="py-05"><input id="cotiTH" class="valorActual-placeholder" type="number" step="0.01" defaultValue="${price}" placeholder="Manual"></td>
               <td id="diferencia" class=""></td>
               <td id="diferenciaPercent" class=""></td>
               <td id="btnMenuFilaPort" class="cursor"><img class="size-min op-50" src="img/linear_scale_white_24dp.svg" alt=""></td>
