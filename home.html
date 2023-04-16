@@ -109,10 +109,33 @@
         <!-- Modal -->
         <div class="modal" id="myModal">
             <div class="modal-content">
-                <h2>Crear nuevo portafolio</h2>
+                <h2>Nuevo portafolio</h2>
                 <form id="newPortfolioForm">
                     <label for="portfolioName">Nombre del portafolio:</label>
                     <input type="text" id="portfolioName" required>
+                    <label for="broker">Bróker:</label>
+                    <input type="text" id="broker" required>
+                    <label for="ticker">Activo:</label>
+                    <input type="text" id="ticker" required>
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" required>
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" step="0.01" min="0" required>
+                    <div class="modalButtons">
+                        <input type="submit" id="accept-modal" value="Aceptar">
+                        <input type="button" id="closeModal" value="Cerrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Fin modal -->
+
+        <!-- Modal nueva fila -->                
+
+        <!-- <div class="modalFila" id="modalFila">
+            <div class="modalFila-content">
+                <h2>Añadir nuevo activo</h2>
+                <form id="newFilaForm">                    
                     <label for="broker">Bróker:</label>
                     <input type="text" id="broker" required>
                     <label for="ticker">Ticker:</label>
@@ -122,30 +145,12 @@
                     <label for="price">Precio:</label>
                     <input type="number" id="price" required>
                     <div>
-                        <input type="submit" id="accept-modal" value="Aceptar">
-                        <input type="button" id="closeModal" value="Cerrar">
+                        <input type="submit" id="accept-modal-fila" value="Aceptar">
+                        <input type="button" id="closeModal-fila" value="Cerrar">
                     </div>
                 </form>
             </div>
-        </div>
-        <!-- Fin modal -->
-
-        <!-- Modal nueva fila -->
-        <!-- Agrega este HTML debajo del modal existente -->
-        <div class="modal new-row-modal" id="newRowModal">
-            <div class="modal-content">
-            <h2>Agregar nueva fila</h2>
-            <form id="newRowForm">
-                <label for="newRowTicker">Ticker:</label>
-                <input type="text" id="newRowTicker" required>
-                <label for="newRowQuantity">Cantidad:</label>
-                <input type="number" id="newRowQuantity" required>
-                <label for="newRowPrice">Precio:</label>
-                <input type="number" id="newRowPrice" step="0.01" required>
-                <button type="submit" id="addRowButton">Aceptar</button>
-            </form>
-            </div>
-        </div>
+        </div> -->
   
         <!-- fin Modal nueva fila -->
 
