@@ -1,5 +1,59 @@
 /* Css PERSONALIZADO */
 
+
+:root {
+    --azulLogo1: #2c53b2;
+    --azulLogo2:#0f9bd7;
+    --azulHead: #081b48;
+    --azulNav:#1f3b75;
+    --azulFondo: #14244a;
+    --azulFooter: #040c1d;
+    --azulTH: #031132;
+    --azulFila: #081b48;
+    --azulFilaHover: #07183f;
+    --narLogo:#fbb03b;
+    --gris: #7d828b;
+    --navButonOver:#00ffff18;
+    --navPrincipalHover: #102861;
+    --bg-rojo: #2b0505;
+    --bg-compra: #021d08;
+    --bg-venta: #2b0505;
+    --bg-verde: #021d08;
+    --textoNav: white;
+    --textoPort: rgba(255, 255, 255, 0.863);
+    --loginLeft: #05112c;
+    --greenSicoiner: rgb(25 89 25);
+
+    
+    /* color titulos dinámicos */
+    --titulo1: white;
+    
+    /* Filas */
+    --azulBorder:#203d77;
+}
+
+/* Resto css */
+
+
+
+
+.row_linea {
+    background-color: var(--azulLogo2);
+    min-width: 60%;
+    height: 0.3rem;
+    /* border: 1px solid var(--azulLogo2); */
+    margin: 0.8rem auto 0rem auto;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* Resto */
+
 .b {
     border-color: 5px solid red;
 }
@@ -21,6 +75,12 @@
     padding: 0 1rem !important;
 }
 
+/* Alineación */
+
+.text-center {
+    text-align: center;
+}
+
 /* Margin */
 
 .m0 {
@@ -33,6 +93,22 @@
 
 .mt-05 {
     margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
 }
 
 
@@ -136,3 +212,17 @@ footer{
 
 */
 
+
+
+/* Botones */
+
+.btn-danger {
+    background-color: red  !important;
+    color: white !important;
+}
+
+.btn-dark {
+    background-color: rgb(54, 54, 54)  !important;
+    color: white !important;
+    
+}

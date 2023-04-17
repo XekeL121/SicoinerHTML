@@ -101,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
           
           </tbody>
           </table>
+
+          
           <div class="modalFila" id="myModalFila">
             <div class="modal-content">
                 <h2>Añadir activo</h2>
@@ -120,6 +122,36 @@ document.addEventListener('DOMContentLoaded', () => {
                   </form>
               </div>
           </div>
+
+          
+          <div class="modalChanges" id="myModalChanges-${rowId}">
+            <div class="modal-changes-content">
+              <h2 class="mt-3">${ticker.toUpperCase()}</h2>
+                <form id="changesForm" class="">
+                    <label for="he_comprado">Cálculo de operación:</label>
+                    <input class="ml-2" type="number" id="he_comprado_cantidad" name="he_comprado_cantidad" step="any" placeholder="Cantidad..." required>
+                    <input class="ml-2" type="number" id="he_comprado_precio" name="he_comprado_precio" step="0.01" placeholder="A precio..." required>                    
+                    <div class="resultadoModalChanges">
+                      <h2 class="" for="resultado_virtual">Resultado virtual:</h2> 
+                      <label for="cantidad_virtual">Cantidad total:</label> 
+                  		<input type="number" id="virtualActivos" name="virtualActivos" step="any" required>
+                      <label for="precio_medio_virtual">Media:</label>
+                      <input type="number" id="virtualMedia" name="virtualMedia" step="0.01" required>
+                      <label for="inversion_virtual">Inversión total:</label> 
+                  		<input type="number" id="virtualInversion" name="virtualInversion" step="any" required>
+                  	</div>
+                    <span class=""><p>Opciones</p></span>
+                    <hr class="row_linea op-25"></hr>
+                    <div class="modalChangesButtons">
+                        <input type="submit" id="aplicar-activo" value="Aplicar">
+                        <div></div>
+                        <input type="button" id="eliminar-activo" class="btn btn-danger" value="Eliminar">
+                    </div>
+                    <input type="button" class="btn btn-dark text-center" id="closeModalChanges" value="Cancelar">
+                  </form>
+              </div>
+          </div>
+
       </section>`;
 
                       
@@ -158,6 +190,27 @@ document.addEventListener('DOMContentLoaded', () => {
           if (event.target == myModalFila) {
               myModalFila.style.display = "none";
           }
+      });
+
+      const btnMenuFilaPort = newTableRow.querySelector('#btnMenuFilaPort');
+
+      // Código para abrir y cerrar el modal de editar fila
+      const myModalChanges = document.getElementById(`myModalChanges-${rowId}`);
+      const closeModalChanges = document.getElementById('closeModalChanges');      
+
+      btnMenuFilaPort.addEventListener("click", function() {
+        myModalChanges.style.display = "block";
+      });
+
+      myModalChanges.querySelector('#changesForm').appendChild(closeModalChanges);
+      closeModalChanges.addEventListener("click", function() {
+        myModalChanges.style.display = "none";
+      });
+
+      window.addEventListener("click", function(event) {
+        if (event.target == myModalChanges) {
+          myModalChanges.style.display = "none";
+        }
       });
       
       
