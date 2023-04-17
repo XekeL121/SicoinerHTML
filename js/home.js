@@ -98,12 +98,33 @@ document.addEventListener('DOMContentLoaded', () => {
               <th id="" class=""></th>
               <th id="totalProfit" class=""> &nbsp300,000</th>
               <th id="totalDiferenciaPercent" class=""> &nbsp300%</th>
-              <th id="add-row" class="cursor border-radius-right-bottom"><img class=" op-50" src="img/add_box_white_24dp.svg" alt=""></th> 
-          </tr>    
-          </tbody>
-        </table>
-      </section>`;
+              <th id="add-row" class="cursor border-radius-right-bottom"><img id="add-icon" class="op-50" src="img/add_box_white_24dp.svg" alt=""></th>
+          </tr>   
           
+          </tbody>
+          </table>
+          <div class="modalFila" id="myModalFila">
+            <div class="modal-content">
+                <h2>Añadir activo</h2>
+                <form id="newFilaForm" class="">
+                    <label for="broker">Bróker:</label>
+                    <input type="text" id="broker" name="broker" required>
+                    <label for="ticker">Activo:</label>
+                    <input type="text" id="ticker" name="ticker" required>
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" name="price" step="0.01" min="0" required>
+                    <div class="modalButtons">
+                        <input type="submit" id="accept-modal-fila" value="Aceptar">
+                        <input type="button" id="closeModalFila" value="Cerrar">
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </section>`;
+
+                
       const btnNewPortContainer = document.querySelector('.btn__newPort__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
 
@@ -118,6 +139,25 @@ document.addEventListener('DOMContentLoaded', () => {
       cotiTH.addEventListener('input', () => {
         const valorActual = cotiTH.value || price; // Utiliza el valor de price cuando el input está vacío
         updateDifference(valorActual, cantidad, inversion);
+      });
+
+      // Código para abrir y cerrar el modal de añadir fila
+      const addIcon = document.getElementById("add-icon");
+      const myModalFila = document.getElementById("myModalFila");
+      const closeModalFila = document.getElementById("closeModalFila");
+
+      addIcon.addEventListener("click", function() {
+          myModalFila.style.display = "block";
+      });
+
+      closeModalFila.addEventListener("click", function() {
+          myModalFila.style.display = "none";
+      });
+
+      window.addEventListener("click", function(event) {
+          if (event.target == myModalFila) {
+              myModalFila.style.display = "none";
+          }
       });
       
       
@@ -213,6 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 
+  // Código para añadir una nueva fila a la tabla del portafolio
+  
+
   
 
 
@@ -229,18 +272,3 @@ document.addEventListener('DOMContentLoaded', () => {
 // Cierre del codigo completo
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    
