@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <div class="modalChangesButtons">
                     <input type="submit" id="aplicar-activo" data-row-id="${rowId}" value="Aplicar">
                     <div></div>
-                    <input type="button" id="eliminar-activo" class="btn btn-danger" value="Eliminar fila">
+                    <input type="button" id="eliminar-activo" class="btn btn-danger" data-row-id="${rowId}" value="Eliminar fila">
                   </div>
                   <input type="button" class="btn btn-dark text-center" id="closeModalChanges" value="Cancelar">
                 </form>
@@ -269,11 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         document.getElementById("inversion").value = inversion.toFixed(2);
       }
-
-
-
-   
-      
       
       // Código para abrir y cerrar el modal de editar fila
       const myModalChanges = document.getElementById(`myModalChanges-${rowId}`);
@@ -295,7 +290,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });      
 
       // Funciones del botón "Aplicar" del modal de editar fila
-
       document.addEventListener('click', (e) => {
         if (e.target.id === 'aplicar-activo') {
           e.preventDefault();
@@ -333,10 +327,36 @@ document.addEventListener('DOMContentLoaded', () => {
             heCompradoCantidadElement.value = '';
             heCompradoPrecioElement.value = '';
           }
-        }
+        }     
         
 
-        
+        // Funciones del botón "Eliminar" del modal de editar fila
+        if (e.target.id === 'eliminar-activo') {
+          e.preventDefault();
+      
+          const rowId = e.target.getAttribute('data-row-id');
+          const row = document.getElementById(rowId);
+      
+          const confirmDelete = window.confirm('¿Eliminar activo del portfolio?');
+          if (confirmDelete) {
+            // Cerrar el modal y ocultarlo
+            const modalElement = document.getElementById(`myModalChanges-${rowId}`);  
+            modalElement.style.display = "none";
+            
+            // Eliminar la fila correspondiente
+            row.remove();
+      
+            // Comprobar si quedan filas en la tabla
+            const table = document.querySelector('#ID_DE_LA_TABLA'); // Reemplaza "ID_DE_LA_TABLA" con el ID de la tabla del DOM
+            const rows = table.querySelectorAll('.portfolio__fila');
+      
+            // Si no hay filas, mostrar la tabla vacía
+            if (rows.length === 0) {
+              const emptyTableMessage = '<tr><td colspan="9">La tabla está vacía</td></tr>';
+              table.innerHTML = emptyTableMessage;
+            }
+          }
+        }
       });
 
       // Agregar un listener al evento 'input' en todos los inputs con la clase 'valorActual-placeholder'
