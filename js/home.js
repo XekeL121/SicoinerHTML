@@ -4,9 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const acceptModalButton = document.querySelector('#accept-modal');
   const modal = document.querySelector('#myModal');  
 
-
   btnNewPortButton.addEventListener("click", function () {
-    openModal(myModal);
+    openModal(modal);
   });
   
   closeModalButton.addEventListener('click', () => {
@@ -14,17 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   // Código para abrir y cerrar el modal inicial
-  function openModal(modal) {
+  function openModal(myModal) {
     modal.classList.add("open");
   }
   
-  function closeModal(modal) {
+  function closeModal(myModal) {
     modal.classList.remove("open");
   }
 
   window.addEventListener("click", function (event) {
-    if (event.target == myModal) {
-      closeModal(myModal);
+    if (event.target == modal) {
+      closeModal(modal);
     }
   });    
 
@@ -132,30 +131,30 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="modal-changes-content">
               <h2 class="mt-3">${ticker.toUpperCase()}</h2>
                 <form id="changesForm" class="">
-                    <label for="he_comprado">Cálculo de operación:</label>
-                    <input class="ml-2" type="number" id="he_comprado_cantidad" name="he_comprado_cantidad" step="0.01" placeholder="Cantidad..." required>
-                    <input class="ml-2" type="number" id="he_comprado_precio" name="he_comprado_precio" step="0.01" placeholder="A precio..." required>                    
-                    <div class="resultadoModalChanges">
-                      <h2 class="" for="resultado_virtual">Resultado virtual:</h2> 
-                      <label for="cantidad_virtual">Cantidad total:</label> 
-                  		<input type="number" id="virtualActivos" name="virtualActivos" step="0.01" required>
-                      <label for="precio_medio_virtual">Media:</label>
-                      <input type="number" id="virtualMedia" name="virtualMedia" step="0.01" required>
-                      <label for="inversion_virtual">Inversión total:</label> 
-                  		<input type="number" id="virtualInversion" name="virtualInversion" step="any" required>
-                  	</div>
-                    <span class=""><p>Opciones</p></span>
-                    <hr class="row_linea op-25"></hr>
-                    <div class="modalChangesButtons">
-                        <input type="submit" id="aplicar-activo" value="Aplicar">
-                        <div></div>
-                        <input type="button" id="eliminar-activo" class="btn btn-danger" value="Eliminar">
-                    </div>
-                    <input type="button" class="btn btn-dark text-center" id="closeModalChanges" value="Cancelar">
-                  </form>
-              </div>
+                  <label for="he_comprado">Cálculo de operación:</label>
+                  <input class="ml-2" type="number" id="he_comprado_cantidad" name="he_comprado_cantidad" step="0.00001" placeholder="Cantidad..." required>
+                  <input class="ml-2" type="number" id="he_comprado_precio" name="he_comprado_precio" step="0.00001" placeholder="A precio..." required> 
+                  <input class="ml-2 no-select" type="number" id="he_invertido" name="he_invertido" step="0.00001" placeholder="Inversión..." required readonly>                   
+                  <div class="resultadoModalChanges">
+                    <h2 class="" for="resultado_virtual">Resultado virtual:</h2> 
+                    <label for="cantidad_virtual">Cantidad total:</label> 
+                    <input type="number" id="cantidad_virtual" name="cantidad_virtual" step="0.01">
+                    <label for="precio_medio_virtual">Media:</label>
+                    <input type="number" id="virtualMedia" name="virtualMedia" step="0.01">
+                    <label for="inversion_virtual">Inversión total:</label> 
+                    <input type="number" id="virtualInversion" name="virtualInversion" step="any">
+                  </div>
+                  <hr class="row_linea op-25"></hr>
+                  <div class="modalChangesButtons">
+                    <input type="submit" id="aplicar-activo" value="Aplicar">
+                    <div></div>
+                    <input type="button" id="eliminar-activo" class="btn btn-danger" value="Eliminar fila">
+                  </div>
+                  <input type="button" class="btn btn-dark text-center" id="closeModalChanges" value="Cancelar">
+                </form>
+            </div>
           </div>
-      </section>`;
+      </section>`;      
                       
       const btnNewPortContainer = document.querySelector('.btn__newPort__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
@@ -173,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cotiTH.addEventListener('input', () => {
         const valorActual = cotiTH.value || price; // Utiliza el valor de price cuando el input está vacío
         updateDifference(valorActual, cantidad, inversion, newTableRow);
-      });
+      });      
 
       // Código para abrir y cerrar el modal de añadir fila
       const addIcon = document.getElementById("add-icon");
@@ -213,8 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target == myModalChanges) {
           myModalChanges.style.display = "none";
         }
-      });          
-  }     
+      });      
+      
+  }       
 
   function updateDifference(valorActual, cantidad, inversion, row) {
     const diferencia = (valorActual * cantidad - inversion).toFixed(2);
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
       diferenciaPercentCell.classList.remove('bg-down');
     }
   }
-
+  
   // Función para deshacer y rehacer cambios en inputs con Ctrl + Z
   const inputHistory = new Map();
   const inputFuture = new Map();
@@ -301,6 +301,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });  
 
 
-// Cierre del codigo completo
 
-});
+  
+
+
+
+
+  
+  
+  // Cierre del codigo completo
+  });
+  
