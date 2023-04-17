@@ -57,12 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
     
-  modal.classList.remove('open');     
+  modal.classList.remove('open');  
+  
+  function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  }
   
   function createPortfolioTable(portfolioName, broker, ticker, quantity, price) {
     // Crear el ID dinámicamente  
     const rowId = `${portfolioName.replace(/\s/g, '').toUpperCase()}_${broker.substring(0, 2).toUpperCase()}_${ticker}`;
     const portfolioID = `portfolio-${portfolioName.replace(/\s/g, '').toUpperCase()}`;
+    portfolioName = capitalizeFirstLetter(portfolioName);
+    broker = capitalizeFirstLetter(broker);
     const newTable = `
       <section class="contenedor-portfolio">
         <div class="portfolio__titulo">
@@ -148,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
                   <hr class="row_linea op-25"></hr>
                   <div class="modalChangesButtons">
-                    <input type="submit" id="aplicar-activo" value="Aplicar">
+                    <input type="submit" id="aplicar-activo" data-row-id="${rowId}" value="Aplicar">
                     <div></div>
                     <input type="button" id="eliminar-activo" class="btn btn-danger" value="Eliminar fila">
                   </div>
@@ -287,6 +293,70 @@ document.addEventListener('DOMContentLoaded', () => {
           myModalChanges.style.display = "none";
         }
       });      
+
+      // Funciones del botón "Aplicar" del modal de editar fila
+
+      document.addEventListener('click', (e) => {
+        if (e.target.id === 'aplicar-activo') {
+          e.preventDefault();
+      
+          const rowId = e.target.getAttribute('data-row-id');
+          const row = document.getElementById(rowId);
+      
+          const cantidadVirtualElement = document.getElementById('cantidad_virtual');
+          const virtualMediaElement = document.getElementById('virtualMedia');
+      
+          const cantidad = parseFloat(cantidadVirtualElement.value);
+          const precioMedio = parseFloat(virtualMediaElement.value);
+      
+          if (!isNaN(cantidad) && !isNaN(precioMedio)) {
+            row.querySelector('#cantidad').textContent = cantidad;
+            row.querySelector('#precioMedio').textContent = precioMedio;
+      
+            const inversion = (cantidad * precioMedio).toFixed(2);
+            row.querySelector('#inversion').textContent = inversion;
+      
+            const valorActual = parseFloat(row.querySelector('#cotiTH').value);
+      
+            if (!isNaN(valorActual)) {
+              updateDifference(valorActual, cantidad, inversion, row);
+            }
+      
+            // Limpiar el modal y ocultarlo
+            cantidadVirtualElement.value = '';
+            virtualMediaElement.value = '';
+            const modalElement = document.getElementById(`myModalChanges-${rowId}`);  
+            modalElement.style.display = "none";
+
+            const heCompradoCantidadElement = document.getElementById('he_comprado_cantidad');
+            const heCompradoPrecioElement = document.getElementById('he_comprado_precio');
+            heCompradoCantidadElement.value = '';
+            heCompradoPrecioElement.value = '';
+          }
+        }
+        
+
+        
+      });
+
+      // Agregar un listener al evento 'input' en todos los inputs con la clase 'valorActual-placeholder'
+      document.querySelectorAll('.valorActual-placeholder').forEach((inputElement) => {
+        inputElement.addEventListener('input', (e) => {
+          const row = e.target.closest('tr');
+          const cantidad = parseFloat(row.querySelector('#cantidad').textContent);
+          const precioMedio = parseFloat(row.querySelector('#precioMedio').textContent);
+          const inversion = cantidad * precioMedio;
+          const valorActual = parseFloat(e.target.value);
+
+          if (!isNaN(valorActual) && !isNaN(cantidad) && !isNaN(inversion)) {
+            updateDifference(valorActual, cantidad, inversion, row);
+          }
+        });
+      });
+      
+      
+      
+      
       
   } 
   
