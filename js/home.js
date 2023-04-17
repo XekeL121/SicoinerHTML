@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const acceptModalButton = document.querySelector('#accept-modal');
   const modal = document.querySelector('#myModal');  
 
+  
+
   btnNewPortButton.addEventListener("click", function () {
     openModal(modal);
   });
@@ -195,26 +197,100 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const btnMenuFilaPort = newTableRow.querySelector('#btnMenuFilaPort');
 
+      // Función para los cálculos de nueva operación en el modalChanges
+      function calculateInvestment() {
+        // Obtén los valores de los campos de entrada
+        var cantidad = parseFloat(document.getElementById("he_comprado_cantidad").value);
+        var precio = parseFloat(document.getElementById("he_comprado_precio").value);
+
+        // Calcula la inversión y muestra el resultado en el campo "he_invertido"
+        if (!isNaN(cantidad) && !isNaN(precio)) {
+          var inversion = cantidad * precio;
+          document.getElementById("he_invertido").value = inversion.toFixed(2);
+        } else {
+          document.getElementById("he_invertido").value = "";
+        }
+
+        // Calcula los valores para los campos "cantidad_virtual", "virtualMedia" y "virtualInversion"
+        calculateVirtual();
+      }
+
+      // Función para calcular los valores de "cantidad_virtual", "virtualMedia" y "virtualInversion"
+      function calculateVirtual() {
+        // Obtener los valores de la fila de la tabla y los campos "he_comprado_cantidad" y "he_comprado_precio"
+        var cantidadTotal = parseFloat(document.getElementById("cantidad").innerHTML);
+        var precioMedio = parseFloat(document.getElementById("precioMedio").innerHTML);
+        var inversionTotal = parseFloat(document.getElementById("inversion").innerHTML);
+        var inversion = parseFloat(document.getElementById("inversion").innerHTML);
+        var heCompradoCantidad = parseFloat(document.getElementById("he_comprado_cantidad").value);
+        var heCompradoPrecio = parseFloat(document.getElementById("he_comprado_precio").value);
+
+        // Calcular los valores de "cantidad_virtual", "virtualMedia" y "virtualInversion"
+        var cantidadVirtual = cantidadTotal + heCompradoCantidad;
+        var virtualInversion = inversionTotal + (heCompradoCantidad * heCompradoPrecio);
+        var virtualMedia = (virtualInversion / cantidadVirtual);
+
+        // Mostrar los valores en los campos correspondientes
+        document.getElementById("cantidad_virtual").value = cantidadVirtual.toFixed(2);
+        document.getElementById("virtualMedia").value = virtualMedia.toFixed(2);
+        document.getElementById("virtualInversion").value = virtualInversion.toFixed(2);
+      }
+
+      // Agrega eventos "input" a los campos "he_comprado_cantidad" y "he_comprado_precio"
+      document.getElementById("he_comprado_cantidad").addEventListener("input", calculateInvestment);
+      document.getElementById("he_comprado_precio").addEventListener("input", calculateInvestment);
+
+      // Agrega eventos "DOMSubtreeModified" a los campos de la tabla
+      document.getElementById("cantidad").addEventListener("input", calculateInversion);
+      document.getElementById("precioMedio").addEventListener("input", calculateInversion);
+      document.getElementById("inversion").addEventListener("input", calculateInversion);
+
+
+      function calculateInversion() {
+        var cantidad = parseFloat(document.getElementById("cantidad").value);
+        var precioMedio = parseFloat(document.getElementById("precioMedio").value);
+        var inversion = parseFloat(document.getElementById("inversion").value);
+        
+        if (cantidad && precioMedio) {
+          if (inversion > 0) {
+            inversion = -inversion;
+          }
+        } else {
+          if (inversion < 0) {
+            inversion = -inversion;
+          }
+        }
+        
+        document.getElementById("inversion").value = inversion.toFixed(2);
+      }
+
+
+
+   
+      
+      
       // Código para abrir y cerrar el modal de editar fila
       const myModalChanges = document.getElementById(`myModalChanges-${rowId}`);
       const closeModalChanges = document.getElementById('closeModalChanges');      
-
+      
       btnMenuFilaPort.addEventListener("click", function() {
         myModalChanges.style.display = "block";
       });
-
+      
       myModalChanges.querySelector('#changesForm').appendChild(closeModalChanges);
       closeModalChanges.addEventListener("click", function() {
         myModalChanges.style.display = "none";
       });
-
+      
       window.addEventListener("click", function(event) {
         if (event.target == myModalChanges) {
           myModalChanges.style.display = "none";
         }
       });      
       
-  }       
+  } 
+  
+  
 
   function updateDifference(valorActual, cantidad, inversion, row) {
     const diferencia = (valorActual * cantidad - inversion).toFixed(2);
