@@ -139,12 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
                   <input class="ml-2 no-select" type="number" id="he_invertido" name="he_invertido" step="0.00001" placeholder="Inversión..." required readonly>                   
                   <div class="resultadoModalChanges">
                     <h2 class="" for="resultado_virtual">Resultado virtual:</h2> 
-                    <label for="cantidad_virtual">Cantidad total:</label> 
-                    <input type="number" id="cantidad_virtual" name="cantidad_virtual" step="0.01">
+                    <label for="cantidad_virtual">Cantidad total ${ticker.toUpperCase()}:</label> 
+                    <input type="number" id="cantidad_virtual" name="cantidad_virtual" step="0.01" placeholder="${quantity}" readonly>
                     <label for="precio_medio_virtual">Media:</label>
-                    <input type="number" id="virtualMedia" name="virtualMedia" step="0.01">
+                    <input type="number" id="virtualMedia" name="virtualMedia" step="0.01" placeholder="${price}" readonly>
                     <label for="inversion_virtual">Inversión total:</label> 
-                    <input type="number" id="virtualInversion" name="virtualInversion" step="any">
+                    <input type="number" id="virtualInversion" name="virtualInversion" step="any" placeholder="${(quantity * price)}" readonly>
                   </div>
                   <hr class="row_linea op-25"></hr>
                   <div class="modalChangesButtons">
@@ -251,15 +251,15 @@ document.addEventListener('DOMContentLoaded', () => {
         var precioMedio = parseFloat(document.getElementById("precioMedio").value);
         var inversion = parseFloat(document.getElementById("inversion").value);
         
-        if (cantidad && precioMedio) {
-          if (inversion > 0) {
-            inversion = -inversion;
-          }
-        } else {
-          if (inversion < 0) {
-            inversion = -inversion;
-          }
-        }
+        // if (cantidad && precioMedio) {
+        //   if (inversion > 0) {
+        //     inversion = -inversion;
+        //   }
+        // } else {
+        //   if (inversion < 0) {
+        //     inversion = -inversion;
+        //   }
+        // }
         
         document.getElementById("inversion").value = inversion.toFixed(2);
       }
