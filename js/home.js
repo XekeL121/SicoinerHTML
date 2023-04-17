@@ -45,9 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
       alert("Por favor, complete todos los campos antes de continuar.");
     }
   });
-
-  
-
     
   modal.classList.remove('open');   
   
@@ -55,15 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
   function createPortfolioTable(portfolioName, broker, ticker, quantity, price) {
     // Crear el ID dinámicamente  
     const rowId = `${portfolioName.replace(/\s/g, '').toUpperCase()}_${broker.substring(0, 2).toUpperCase()}_${ticker}`;
+    const portfolioID = `portfolio-${portfolioName.replace(/\s/g, '').toUpperCase()}`;
     const newTable = `
-      <section class="contenedor-portafolio">
-        <div class="portafolio__titulo">
+      <section class="contenedor-portfolio">
+        <div class="portfolio__titulo">
           <h1 class="nowrap">${portfolioName}</h1>
-          <hr class="portafolio__nombre__linea op-25"></hr>
+          <hr class="portfolio__nombre__linea op-25"></hr>
         </div>
-        <table class="portafolio-table">
+        <table id="${portfolioID}" class="portfolio-table">
           <thead class="">
-            <tr class="portafolio__th">
+            <tr class="portfolio__th">
               <th class="border-radius-left-top">Bróker</th>
               <th class="">Ticker</th>
               <th class="">Cant.</th>
@@ -76,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </tr>
           </thead>    
           <tbody id="" class="">
-            <tr id="${rowId}" class="portafolio__fila">
+            <tr id="${rowId}" class="portfolio__fila">
               <td id="broker" class="px-1">${broker}</td>
               <td id="ticker" class="t-naranja">${ticker.toUpperCase()}</td>
               <td id="cantidad" class="">${quantity}</td>
@@ -89,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </tr>
             <tr class="salto1"></tr>
             <!-- /** TOTALES **/ -->
-          <tr class="portafolio__totales">
+          <tr class="portfolio__totales">
               <th id="" class="border-radius-left-bottom"></th>
               <th id="totalActivos" class="nowrap">2 Activos</th>
               <th id="" class=""></th>
@@ -124,21 +122,23 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
       </section>`;
 
-                
+                      
       const btnNewPortContainer = document.querySelector('.btn__newPort__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
 
-      const cotiTH = document.querySelector('#cotiTH');
-      const cantidad = document.querySelector('#cantidad').textContent;
-      const inversion = document.querySelector('#inversion').textContent;
+      const newTableRow = document.getElementById(rowId);
+
+      const cotiTH = newTableRow.querySelector('#cotiTH');
+      const cantidad = newTableRow.querySelector('#cantidad').textContent;
+      const inversion = newTableRow.querySelector('#inversion').textContent;
 
       // Establecer el valor inicial para la diferencia y la diferencia en porcentaje
       const initialValue = parseFloat(price);
-      updateDifference(initialValue, cantidad, inversion);
+      updateDifference(initialValue, cantidad, inversion, newTableRow);
 
       cotiTH.addEventListener('input', () => {
         const valorActual = cotiTH.value || price; // Utiliza el valor de price cuando el input está vacío
-        updateDifference(valorActual, cantidad, inversion);
+        updateDifference(valorActual, cantidad, inversion, newTableRow);
       });
 
       // Código para abrir y cerrar el modal de añadir fila
@@ -165,14 +165,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 
-  function updateDifference(valorActual, cantidad, inversion) {
+  function updateDifference(valorActual, cantidad, inversion, row) {
     const diferencia = (valorActual * cantidad - inversion).toFixed(2);
     const diferenciaPercent = (diferencia / inversion * 100).toFixed(2);
-    document.querySelector('#diferencia').textContent = diferencia;
-    document.querySelector('#diferenciaPercent').textContent = diferenciaPercent;
+    row.querySelector('#diferencia').textContent = diferencia;
+    row.querySelector('#diferenciaPercent').textContent = diferenciaPercent;
   
     // Cambiar el color de fondo de la celda de diferencia en porcentaje
-    const diferenciaPercentCell = document.getElementById('diferenciaPercent');
+    const diferenciaPercentCell = row.querySelector('#diferenciaPercent');
     const diferenciaPercentValue = parseFloat(diferenciaPercentCell.textContent);
   
     if (diferenciaPercentValue > 0) {
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 
-  // Código para añadir una nueva fila a la tabla del portafolio
+  // Código para añadir una nueva fila a la tabla del portfolio
   
 
   

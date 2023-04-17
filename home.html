@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, height=200vh, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="description" content="Portafolio financiero digital y online para invertir en acciones y criptomonedas">
+        <meta name="description" content="portfolio financiero digital y online para organizar y calcular las inversiones en acciones, criptomonedas">
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
@@ -24,12 +24,12 @@
     <body class="">
         <header class="header">
             <a class="logo" href="home.html">
-                <img src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner" ></img>
-                <p class="nowrap">Portafolio Financiero</p>
+                <img src="img/Isotipo Sicoiner v1.png" alt="logotipo Sicoiner" >
+                <p class="nowrap">portfolio Financiero</p>
             </a>    
             <nav class="navegacion-principal op-80">
 
-                <a href="home.html" class="navegacion__portafolios">
+                <a href="home.html" class="navegacion__portfolios">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book mr-05" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
@@ -38,7 +38,7 @@
                         <line x1="12" y1="6" x2="12" y2="19" />
                         <line x1="21" y1="6" x2="21" y2="19" />
                     </svg>
-                    <p>Portafolios</p>
+                    <p>portfolios</p>
                 </a>
 
                 <a href="historial.html" class="navegacion__historial">
@@ -106,50 +106,50 @@
             </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal" id="myModal">
-            <div class="modal-content">
-                <h2>Nuevo portafolio</h2>
-                <form id="newPortfolioForm" class="">
-                    <label for="portfolioName">Nombre del portafolio:</label>
-                    <input type="text" id="portfolioName" name="portfolioName" required>
-                    <label for="broker">Bróker:</label>
-                    <input type="text" id="broker" name="broker" required>
-                    <label for="ticker">Activo:</label>
-                    <input type="text" id="ticker" name="ticker" required>
-                    <label for="quantity">Cantidad:</label>
-                    <input type="number" id="quantity" name="quantity" required>
-                    <label for="price">Precio:</label>
-                    <input type="number" id="price" name="price" step="0.01" min="0" required>
-                    <div class="modalButtons">
-                        <input type="submit" id="accept-modal" value="Aceptar">
-                        <input type="button" id="closeModal" value="Cerrar">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- Fin modal -->
-
         
-
+        
+        
         <!-- Contenedor principal -->
         <main class="contenedor-principal">
-
             
-            <!-- Portafolio -->
-            <!-- Fin portafolio -->
-
+            <!-- Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <h2>Nuevo portfolio</h2>
+                    <form id="newPortfolioForm" class="">
+                        <label for="portfolioName">Nombre del portfolio:</label>
+                        <input type="text" id="portfolioName" name="portfolioName" required>
+                        <label for="broker">Bróker:</label>
+                        <input type="text" id="broker" name="broker" required>
+                        <label for="ticker">Activo:</label>
+                        <input type="text" id="ticker" name="ticker" required>
+                        <label for="quantity">Cantidad:</label>
+                        <input type="number" id="quantity" name="quantity" required>
+                        <label for="price">Precio:</label>
+                        <input type="number" id="price" name="price" step="0.01" min="0" required>
+                        <div class="modalButtons">
+                            <input type="submit" id="accept-modal" value="Aceptar">
+                            <input type="button" id="closeModal" value="Cerrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Fin modal -->
+            
+            <!-- portfolio -->
+            <!-- Fin portfolio -->
+            
             <div class="btn__newPort__container">
                 <div class="btn__newPort__Bienvenida">
-                    <p>Bienvenid@ a Sicoiner, tu portafolio financiero digital</p>
+                    <p>Bienvenid@ a Sicoiner, tu portfolio financiero digital</p>
                 </div>
-                <button class="btn__newPort__button">+ Nuevo Portafolio</button>
+                <button class="btn__newPort__button">+ Nuevo portfolio</button>
             </div>
-
-
             
             
-
+            
+            
+            
         </main>
 
 
