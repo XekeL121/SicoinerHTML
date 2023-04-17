@@ -2,21 +2,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnNewPortButton = document.querySelector('.btn__newPort__button');
   const closeModalButton = document.querySelector('#closeModal');
   const acceptModalButton = document.querySelector('#accept-modal');
-  const modal = document.querySelector('.modal');
-  
+  const modal = document.querySelector('#myModal');  
 
-  btnNewPortButton.addEventListener('click', () => {
-      modal.classList.add('open');
-      
+
+  btnNewPortButton.addEventListener("click", function () {
+    openModal(myModal);
   });
   
   closeModalButton.addEventListener('click', () => {
-      modal.classList.remove('open');
-      
+      modal.classList.remove('open');      
   });
   
+  // Código para abrir y cerrar el modal inicial
+  function openModal(modal) {
+    modal.classList.add("open");
+  }
   
-  
+  function closeModal(modal) {
+    modal.classList.remove("open");
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target == myModal) {
+      closeModal(myModal);
+    }
+  });    
 
   // Asegurarse de que el formulario no se envíe al hacer clic en el botón submit
   document.querySelector('#newPortfolioForm').addEventListener('submit', (e) => {
@@ -46,8 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
     
-  modal.classList.remove('open');   
-  
+  modal.classList.remove('open');     
   
   function createPortfolioTable(portfolioName, broker, ticker, quantity, price) {
     // Crear el ID dinámicamente  
@@ -97,12 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
               <th id="totalProfit" class=""> &nbsp300,000</th>
               <th id="totalDiferenciaPercent" class=""> &nbsp300%</th>
               <th id="add-row" class="cursor border-radius-right-bottom"><img id="add-icon" class="op-50" src="img/add_box_white_24dp.svg" alt=""></th>
-          </tr>   
-          
+          </tr>             
           </tbody>
-          </table>
-
-          
+          </table>          
           <div class="modalFila" id="myModalFila">
             <div class="modal-content">
                 <h2>Añadir activo</h2>
@@ -112,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <label for="ticker">Activo:</label>
                     <input type="text" id="ticker" name="ticker" required>
                     <label for="quantity">Cantidad:</label>
-                    <input type="number" id="quantity" name="quantity" required>
+                    <input type="number" id="quantity" name="quantity" step="0.01" required>
                     <label for="price">Precio:</label>
                     <input type="number" id="price" name="price" step="0.01" min="0" required>
                     <div class="modalButtons">
@@ -121,20 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                   </form>
               </div>
-          </div>
-
-          
+          </div>          
           <div class="modalChanges" id="myModalChanges-${rowId}">
             <div class="modal-changes-content">
               <h2 class="mt-3">${ticker.toUpperCase()}</h2>
                 <form id="changesForm" class="">
                     <label for="he_comprado">Cálculo de operación:</label>
-                    <input class="ml-2" type="number" id="he_comprado_cantidad" name="he_comprado_cantidad" step="any" placeholder="Cantidad..." required>
+                    <input class="ml-2" type="number" id="he_comprado_cantidad" name="he_comprado_cantidad" step="0.01" placeholder="Cantidad..." required>
                     <input class="ml-2" type="number" id="he_comprado_precio" name="he_comprado_precio" step="0.01" placeholder="A precio..." required>                    
                     <div class="resultadoModalChanges">
                       <h2 class="" for="resultado_virtual">Resultado virtual:</h2> 
                       <label for="cantidad_virtual">Cantidad total:</label> 
-                  		<input type="number" id="virtualActivos" name="virtualActivos" step="any" required>
+                  		<input type="number" id="virtualActivos" name="virtualActivos" step="0.01" required>
                       <label for="precio_medio_virtual">Media:</label>
                       <input type="number" id="virtualMedia" name="virtualMedia" step="0.01" required>
                       <label for="inversion_virtual">Inversión total:</label> 
@@ -151,9 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </form>
               </div>
           </div>
-
       </section>`;
-
                       
       const btnNewPortContainer = document.querySelector('.btn__newPort__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
@@ -190,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (event.target == myModalFila) {
               myModalFila.style.display = "none";
           }
-      });
+      });      
 
       const btnMenuFilaPort = newTableRow.querySelector('#btnMenuFilaPort');
 
@@ -211,12 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target == myModalChanges) {
           myModalChanges.style.display = "none";
         }
-      });
-      
-      
-  }   
-
-  
+      });          
+  }     
 
   function updateDifference(valorActual, cantidad, inversion, row) {
     const diferencia = (valorActual * cantidad - inversion).toFixed(2);
@@ -243,9 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
   // Función para deshacer y rehacer cambios en inputs con Ctrl + Z
-
   const inputHistory = new Map();
   const inputFuture = new Map();
 
@@ -298,28 +294,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Guardar el valor actual en el historial antes de cambiar
       history.push(inputElement.value);
+
       // Limpiar el futuro cuando se realiza una nueva entrada
       future.length = 0;
-    } 
-    
-  });
-
-  
-
-  // Código para añadir una nueva fila a la tabla del portfolio
-  
-
-  
-
-
-
-
-
-
-
-
-
-
+    }     
+  });  
 
 
 // Cierre del codigo completo
