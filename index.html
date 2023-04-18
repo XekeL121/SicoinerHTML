@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="portfolio financiero digital y online para invertir en acciones y criptomonedas">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+
     <!-- Fin Google fonts -->
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/index.css" as="style">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preload" href="css/main.css" as="style">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" style="height: 100%; width: 100%;" href="img/Sicoiner favicon.png">
@@ -28,55 +29,62 @@
             <header class="login__header">
                 <span><img class="login__header__logo" src="img/Isotipo Sicoiner v1.png" alt=""></span>
                 <div class="vl op-50"></div>
-                <p class="op-80">portfolio Financiero</p>
+                <p class="op-80">Portfolio Financiero</p>
             </header>
-
-            <div class="login__form__container">
-                <form class="login__form" action="">
-
-                    <div class="login__form__header">
-                        <p>Acceso a tu cuenta</p>
-                    </div>
-
-                    <div class="login__form__options">
-
-                        <div class="">
-                            <label class="">Email:</label>
-                            <input type="email" class="login__form__inputs" id="inputEmail" value="email@example.com">
+            
+                <div class="login__form__header">
+                    <p>Acceso a tu cuenta</p>
+                </div>
+                <div class="login__form__container">
+                    <form class="login__form" action="">
+    
+    
+                        <div class="login__form__options">
+                    
+                            <div class="">
+                                <label class="">Email:</label>
+                                <input type="email" class="login__form__inputs" id="inputEmail" placeholder="email@example.com" autocomplete="username">
+                            </div>
+                    
+                            <div class="">
+                                <label class="">Contraseña:</label>
+                                <input type="password" class="login__form__inputs" id="inputPassword" autocomplete="current-password">
+                            </div>
+                    
+                            <div class="login__form__recordarme">
+                                <input class="login__form__check" type="checkbox" id="" name="" value="check">
+                                <p class="">Recordarme</p>
+                            </div>
+                    
+                            <div class="login__form__buttons">
+                                <a class="d-flex col-2" href="home.html">
+                                    <button type="button" class="cursor">Acceder</button>
+                                </a>
+                                <a class="" href="home.html">
+                                    <button type="button" class="nowrap cursor">Crear cuenta</button>
+                                </a>
+                            </div>
+                            <div class="btn-ini-google">
+                                <a class="" href="home.html">
+                                  <button type="button" class="nowrap cursor">
+                                    <img style="width: 2rem; height: 2rem;"  type="btn-ini-google" src="img/google_icon_G.png" alt="">Iniciar con Google
+                                  </button>
+                                </a>
+                              </div>
+                              
+                    
+                            <div class="nowrap text-center">¿Has olvidado la contraseña?<span class="t-azul2"> Restaurar</span></div>
+                    
                         </div>
-
-                        <div class="">
-                            <label class="">Contraseña:</label>
-                            <input type="password" class="login__form__inputs" id="inputPassword">
-                        </div>
-
-                        <div class="login__form__recordarme">
-                            <input class="login__form__check" type="checkbox" id="" name="" value="check">
-                            <p class="">Recordarme</p>
-                        </div>
-
-                        <div class="login__form__buttons">
-                            <a class="" href="home.html">
-                                <button type="button" class="cursor">Acceder</button>
-                            </a>
-                            <a class="" href="home.html">
-                                <button type="button" class="nowrap cursor">Crear cuenta</button>
-                            </a>
-                            <a class="" href="home.html">
-                                <button style="width: 15rem;" type="button" class="nowrap cursor">Iniciar con Google</button>
-                            </a>
-                        </div>
-
-                        <div class="nowrap">Recuperar contraseña</div>
-
-                    </div>
-                </form>
-            </div>
+                    </form>
+                    
+                </div>
+          
         </section>
         <section class="login__right">
             <div class="login__right__container">
                 <div class="login__right__header">
-                    <h1 class="">Fácil de utilizar, sin distracciones...</h1>
+                    <h1 class="">Fácil de usar, sin distracciones...</h1>
                     <h2>Con Sicoiner, controlar tus finanzas será más fácil:</h2>
                 </div>
 
@@ -97,12 +105,12 @@
                                 <line x1="21" y1="6" x2="21" y2="19" />
                             </svg>
 
-                            <div class="">
-                                Creación de portfolios
+                            <div class="login__right__section__title">
+                                <h3>Creación de portfolios</h3>
                             </div>
                         </div>
                         <div class="login__right__section__text">
-                            Organiza tus activos financieros de forma intuitiva
+                           <p>Organiza tus activos financieros de forma intuitiva</p> 
                         </div>
 
                         <!-- sección -->
@@ -117,12 +125,12 @@
                                 <line x1="9" y1="15" x2="13" y2="15" />
                             </svg>
 
-                            <div class="">
-                                Historial de operaciones
+                            <div class="login__right__section__title">
+                                <h3>Historial de operaciones</h3>
                             </div>
                         </div>
                         <div class="login__right__section__text">
-                            Guardado automático de las operaciones registradas
+                           <p> Guardado automático de las operaciones registradas</p>
                         </div>
 
                         <!-- sección -->
@@ -135,12 +143,12 @@
                                 </g>
                             </svg>
 
-                            <div class="">
-                                Gráfico de rentabilidad
+                            <div class="login__right__section__title">
+                                <h3>Gráfico de rentabilidad</h3>
                             </div>
                         </div>
                         <div class="login__right__section__text">
-                            Controla la rentabilidad en el tiempo, de forma detallada
+                           <p>Controla la rentabilidad en el tiempo, de forma detallada</p> 
                         </div>
 
                         <!-- sección -->
@@ -150,12 +158,12 @@
                                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                             </svg>
 
-                            <div class="">
-                                Cotización de precios en tiempo real
+                            <div class="login__right__section__title">
+                                <h3>Cotización de precios en tiempo real</h3>
                             </div>
                         </div>
                         <div class="login__right__section__text">
-                            Tu portfolio actualizado cada segundo, sé profesional gestionando tus finanzas
+                           <p>Tu portfolio actualizado cada segundo, sé profesional gestionando tus finanzas</p> 
                         </div>
 
                     </div>
@@ -171,3 +179,4 @@
 
 </html>
 <script src="js/index.js"></script>
+<script src="js/main.js"></script>
