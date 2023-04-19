@@ -62,15 +62,31 @@ document.addEventListener('DOMContentLoaded', () => {
   function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   }
+
+
+  // Selecciona el botón con la clase '.btn__newPort__button'
+  // const btnNewPortButton = document.querySelector('.btn__newPort__button');
+
+  // Agrega un event listener al botón para escuchar el evento 'click'
+  // acceptModalButton.addEventListener('click', () => {
+    // Selecciona el div con id 'btn__newport__ini'
+    // const btnNewPortIni = document.getElementById('btn__newport__ini');
+
+    // Oculta el div modificando su propiedad 'display' a 'none'
+  //   btnNewPortIni.style.display = 'none';
+  // });
+
   
-  function createPortfolioTable(portfolioName, broker, ticker, quantity, price) {
+  
+  
+  function createPortfolioTable(portfolioName, broker, ticker, quantity, price) {    
     // Crear el ID dinámicamente  
     const rowId = `${portfolioName.replace(/\s/g, '').toUpperCase()}_${broker.substring(0, 2).toUpperCase()}_${ticker}`;
     const portfolioID = `portfolio-${portfolioName.replace(/\s/g, '').toUpperCase()}`;
     portfolioName = capitalizeFirstLetter(portfolioName);
-    broker = capitalizeFirstLetter(broker);
+    broker = capitalizeFirstLetter(broker);    
     const newTable = `
-      <section class="contenedor-portfolio">
+      <section id="${portfolioName}" class="contenedor-portfolio">
         <div class="portfolio__titulo">
           <h1 class="nowrap">${portfolioName}</h1>
           <hr class="portfolio__nombre__linea op-25"></hr>
@@ -162,8 +178,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 </form>
             </div>
           </div>
-      </section>`;      
-                      
+      </section>
+      <div id="btn__newport__user__container" class="btn__newPort__container">          
+          <button id="btn__newport__user" class="btn__newPort__button">+ Nuevo portfolio</button>
+      </div>`;        
+                            
       const btnNewPortContainer = document.querySelector('.btn__newPort__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
 
@@ -347,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
             row.remove();
       
             // Comprobar si quedan filas en la tabla
-            const table = document.querySelector('#ID_DE_LA_TABLA'); // Reemplaza "ID_DE_LA_TABLA" con el ID de la tabla del DOM
+            const table = document.querySelector('#rowId'); // Reemplaza "ID_DE_LA_TABLA" con el ID de la tabla del DOM
             const rows = table.querySelectorAll('.portfolio__fila');
       
             // Si no hay filas, mostrar la tabla vacía
@@ -374,11 +393,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
       
+      // Ocultar el botón "Nuevo portfolio" si hay elementos con la clase "contenedor-portfolio"
+      const contenedorPortfolio = document.querySelectorAll('.contenedor-portfolio');
+      const btnNewPortIniContainer = document.querySelector('#btn__newport__ini__container');
+
+      if (contenedorPortfolio.length > 0) {
+        btnNewPortIniContainer.style.display = 'none';
+      } else {
+        btnNewPortIniContainer.style.display = 'block';
+      }
+
+      // Utilizar MutationObserver para detectar cuando se agregue un nuevo elemento con la clase "contenedor-portfolio"
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+            const addedNode = mutation.addedNodes[0];
+            if (addedNode.classList && addedNode.classList.contains('contenedor-portfolio')) {
+              if (contenedorPortfolio.length > 0) {
+                btnNewPortIniContainer.style.display = 'none';
+              } else {
+                btnNewPortIniContainer.style.display = 'block';
+              }
+            }
+          }
+        });
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
       
       
       
       
-  } 
+    } 
+
+    
   
   
 
@@ -468,6 +520,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
   
 
 
@@ -477,4 +531,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Cierre del codigo completo
   });
+
+
+
+
+
   
