@@ -647,7 +647,7 @@
 
 /* Botón nuevo portfolio */
 
-.btn__newPort__container {
+.btn__newport__ini__container {
     padding: 4rem 0rem 8rem 0rem;
 }
 
@@ -656,7 +656,7 @@
     padding: 2rem;
 }
 
-.btn__newPort__button {
+.btn__newport__ini {
     border: none;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
@@ -666,7 +666,7 @@
     cursor: pointer;
 }
 
-.btn__newPort__button:hover {    
+.btn__newport__ini:hover {    
     background-color: var(--azulLogo1);    
     /* border: 0.1rem solid var(--azulHead); */
 }
