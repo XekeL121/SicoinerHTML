@@ -623,21 +623,21 @@ a {
 
 .portfolio-table {
     display: flex row;
-    width: 60%;
+    min-width: 60%;
     margin: auto;
     color: var(--textoPort);
     border-spacing: 0;
     height: auto;
 }
-@media (max-width:640px) {
+@media (min-width:640px) {
     .portfolio-table {        
         border-spacing: 0 0.2rem;
-        width: 98%;     
+        width: 60%;     
         height: auto;   
     }    
 }
 
-@media (max-width:1000px) {
+@media (min-width:1000px) {
     .portfolio-table {        
         min-width: 70%;        
     }    
