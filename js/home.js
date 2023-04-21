@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const btnNewPortButton = document.querySelector('.btn__newPort__button');
+  const btnNewPortButton = document.querySelector('.btn__newport__button');
   const closeModalButton = document.querySelector('#closeModal');
   const acceptModalButton = document.querySelector('#accept-modal');
   const modal = document.querySelector('#myModal');  
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
       </section>`;      
                       
-      const btnNewPortContainer = document.querySelector('.btn__newPort__container');
+      const btnNewPortContainer = document.querySelector('.btn__newport__ini__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
 
       const newTableRow = document.getElementById(rowId);

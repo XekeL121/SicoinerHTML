@@ -727,16 +727,26 @@ a {
 
 /* Botón nuevo portfolio */
 
-.btn__newport__ini__container {
+.btn__newport__container {
     padding: 4rem 0rem 8rem 0rem;
 }
 
-.btn__newPort__Bienvenida {
+.btn__newport__Bienvenida {
     color: white;
     padding: 2rem;
 }
 
 .btn__newport__ini {
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--azulNav);
+    cursor: pointer;
+}
+
+.btn__newport__button {
     border: none;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
