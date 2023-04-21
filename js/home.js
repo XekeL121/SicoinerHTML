@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
       </section>`;      
                       
-      const btnNewPortContainer = document.querySelector('.btn__newport__ini__container');
+      const btnNewPortContainer = document.querySelector('.btn__newport__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
 
       const newTableRow = document.getElementById(rowId);
