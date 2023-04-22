@@ -115,7 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
               <th id="add-row" class="cursor border-radius-right-bottom"><img id="add-icon" class="op-50" src="img/add_box_white_24dp.svg" alt=""></th>
           </tr>             
           </tbody>
-          </table>          
+          </table>     
+
           <div class="modalFila" id="myModalFila">
             <div class="modal-content">
                 <h2>Añadir activo</h2>
@@ -135,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </form>
               </div>
           </div>          
+
           <div class="modalChanges" id="myModalChanges-${rowId}">
             <div class="modal-changes-content">
               <h2 class="mt-3">${ticker.toUpperCase()}</h2>
@@ -372,10 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateDifference(valorActual, cantidad, inversion, row);
           }
         });
-      });
-      
-      
-      
+      });    
       
       
   } 
