@@ -58,7 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
     
   modal.classList.remove('open');  
+
   
+
   function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   }
@@ -115,7 +117,16 @@ document.addEventListener('DOMContentLoaded', () => {
               <th id="add-row" class="cursor border-radius-right-bottom"><img id="add-icon" class="op-50" src="img/add_box_white_24dp.svg" alt=""></th>
           </tr>             
           </tbody>
-          </table>     
+          </table>  
+          
+                     
+            <div id="btn__newport__user" class="btn__newport__user">
+            <button id="btn__newport__button__user" class="btn__newport__button__user">+ Nuevo portfolio</button>
+                <div class="btn__newport__Bienvenida_user">
+                    <p>¡Enhorabuena, has creado tu primer Portofolio!</p>
+                </div>
+            </div>
+
 
           <div class="modalFila" id="myModalFila">
             <div class="modal-content">
@@ -164,17 +175,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 </form>
             </div>
           </div>
-      </section>`;      
-                      
+      </section>`; 
+      
+      
       const btnNewPortContainer = document.querySelector('.btn__newport__container');
       btnNewPortContainer.insertAdjacentHTML('beforebegin', newTable);
-
+      
       const newTableRow = document.getElementById(rowId);
-
+      
       const cotiTH = newTableRow.querySelector('#cotiTH');
       const cantidad = newTableRow.querySelector('#cantidad').textContent;
       const inversion = newTableRow.querySelector('#inversion').textContent;
+      
+      
+      // Ocultar el botón de Nuevo portfolio inicial al haber un portfolio creado
+      function hideButtonIfTableExists() {
+        const portfolioTables = document.querySelectorAll('.portfolio-table');
+        const newPortButtonContainer = document.getElementById('btn__newport__container');
+      
+        if (portfolioTables.length > 0) {
+          newPortButtonContainer.style.display = 'none';
+        } else {
+          newPortButtonContainer.style.display = 'block';
+        }
+      }
+      // Llama a la función hideButtonIfTableExists
+      hideButtonIfTableExists();
 
+      // Fin de Ocultar el botón de Nuevo portfolio inicial al haber un portfolio creado
+      
       // Establecer el valor inicial para la diferencia y la diferencia en porcentaje
       const initialValue = parseFloat(price);
       updateDifference(initialValue, cantidad, inversion, newTableRow);

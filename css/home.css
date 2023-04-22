@@ -731,20 +731,20 @@ a {
     padding: 4rem 0rem 8rem 0rem;
 }
 
+.btn__newport__user {
+    padding: 4rem 0rem 8rem 0rem;
+}
+
 .btn__newport__Bienvenida {
     color: white;
     padding: 2rem;
 }
 
-.btn__newport__ini {
-    border: none;
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
+.btn__newport__Bienvenida_user {
     color: white;
-    background-color: var(--azulNav);
-    cursor: pointer;
+    padding: 2rem;
 }
+
 
 .btn__newport__button {
     border: none;
@@ -756,10 +756,16 @@ a {
     cursor: pointer;
 }
 
-.btn__newport__ini:hover {    
-    background-color: var(--azulLogo1);    
-    /* border: 0.1rem solid var(--azulHead); */
+.btn__newport__button__user {
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--azulNav);
+    cursor: pointer;
 }
+
 
 /* Footer */
 footer {
