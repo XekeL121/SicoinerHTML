@@ -159,11 +159,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   <div class="resultadoModalChanges">
                     <h2 class="" for="resultado_virtual">Resultado virtual:</h2> 
                     <label for="cantidad_virtual">Cantidad total ${ticker.toUpperCase()}:</label> 
-                    <input type="number" id="cantidad_virtual" name="cantidad_virtual" step="0.01" placeholder="${quantity}" readonly>
+                    <input type="number" id="cantidad_virtual" name="cantidad_virtual" step="0.01" value="${quantity}" readonly>
                     <label for="precio_medio_virtual">Media:</label>
-                    <input type="number" id="virtualMedia" name="virtualMedia" step="0.01" placeholder="${price}" readonly>
+                    <input type="number" id="virtualMedia" name="virtualMedia" step="0.01" value="${price}" readonly>
                     <label for="inversion_virtual">Inversión total:</label> 
-                    <input type="number" id="virtualInversion" name="virtualInversion" step="any" placeholder="${(quantity * price)}" readonly>
+                    <input type="number" id="virtualInversion" name="virtualInversion" step="any" value="${(quantity * price)}" readonly>
                   </div>
                   <hr class="row_linea op-25"></hr>
                   <div class="modalChangesButtons">
@@ -348,8 +348,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
       
             // Limpiar el modal y ocultarlo
-            cantidadVirtualElement.value = '';
-            virtualMediaElement.value = '';
+            cantidadVirtualElement.value = cantidad;
+            virtualMediaElement.value = precioMedio;
             const modalElement = document.getElementById(`myModalChanges-${rowId}`);  
             modalElement.style.display = "none";
 
@@ -357,6 +357,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const heCompradoPrecioElement = document.getElementById('he_comprado_precio');
             heCompradoCantidadElement.value = '';
             heCompradoPrecioElement.value = '';
+
+            // Actualizar los campos de cantidad_virtual, virtualMedia y virtualInversion con los nuevos valores guardados
+            document.getElementById("cantidad_virtual").value = cantidad;
+            document.getElementById("virtualMedia").value = precioMedio;
+            document.getElementById("virtualInversion").value = inversion;
           }
         }     
         
