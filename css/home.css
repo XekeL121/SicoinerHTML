@@ -229,7 +229,7 @@ a {
     background-color: var(--azulBorder);    
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 1024px) {
     .nav__bar {
         display: grid;
         grid-template-columns: repeat(12, 1fr);

@@ -32,6 +32,56 @@
     --azulBorder:#203d77;
 }
 
+/* Para ocultar los elementos de la versión Pro */
+/* .vPro {
+    display: none !important;
+} */
+
+/* Para ocultar elementos */
+.off {
+    display: none !important;
+}
+
+
+.b {
+    border: 1px solid red;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ocultar barra scroll vertical */
+::-webkit-scrollbar {
+    display: none;
+    }
+
+html {
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background: var(--azulFondo);     
+    list-style: none;
+    font-family: 'Signika', sans-serif; 
+    width: 100%;   
+    position: absolute;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {    
+    text-decoration: none;
+    color: var(--textoNav);
+}
+
 /* Resto css */
 
 
