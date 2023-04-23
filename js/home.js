@@ -128,10 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
 
-          <div class="modalFila" id="myModalFila">
+          <div class="modalFila" id="myModalFila-${rowId}">
             <div class="modal-content">
                 <h2>Añadir activo</h2>
-                <form id="newFilaForm" class="">
+                <form id="newFilaForm" class="newFilaForm">
                     <label for="broker">Bróker:</label>
                     <input type="text" id="broker" name="broker" required>
                     <label for="ticker">Activo:</label>
@@ -214,8 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });      
 
       // Código para abrir y cerrar el modal de añadir fila
-      const addIcon = document.getElementById("add-icon");
-      const myModalFila = document.getElementById("myModalFila");
+      const addIcon = document.querySelector("#add-row");
+      const myModalFila = document.querySelector(`#myModalFila-${rowId}`);
       const closeModalFila = document.getElementById("closeModalFila");
 
       addIcon.addEventListener("click", function() {
@@ -383,8 +383,8 @@ document.addEventListener('DOMContentLoaded', () => {
             row.remove();
       
             // Comprobar si quedan filas en la tabla
-            const table = document.querySelector('#ID_DE_LA_TABLA'); // Reemplaza "ID_DE_LA_TABLA" con el ID de la tabla del DOM
-            const rows = table.querySelectorAll('.portfolio__fila');
+            const table = document.querySelector(portfolioID); // Reemplaza "ID_DE_LA_TABLA" con el ID de la tabla del DOM
+            const rows = table.querySelectorAll(rowId);
       
             // Si no hay filas, mostrar la tabla vacía
             if (rows.length === 0) {
