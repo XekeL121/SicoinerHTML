@@ -54,17 +54,8 @@
     overflow: visible; 
 }
 
-.login__left__container {
 
-    
-}
 
-.login__header__logo {
-    /* display: flex;
-    height: 4rem;
-    padding: 1rem 1rem 0 1rem; */
-    margin: 0 auto;
-}
 
 /* @media(min-width:1119px) {
     .login__header__logo {
@@ -218,7 +209,7 @@
         display: inline-block;
     }  
 
-    .login__header {}
+    
         
     /* .login__form__header {
         color: white;
